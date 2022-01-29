@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core';
+import { contentMatchCache } from 'tailwindcss/lib/jit/lib/sharedState';
 
 const useStyles = makeStyles({
   navbar: {
@@ -30,6 +31,22 @@ const useStyles = makeStyles({
 
   footer: {
     textAlign: 'left',
+  },
+
+  searchBar: {
+    marginLeft: 200,
+  },
+
+  searchIcon: {
+    width: 5,
+    height: 5,
+  },
+
+  button: {
+    backgroundColor: '#0D5CB8',
+    height: '35px',
+    width: '100px',
+    color: 'white',
   },
 });
 

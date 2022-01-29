@@ -39,6 +39,15 @@ export default function Layout({ children }) {
           <div className={classes.logo2}>
             <Image src="/freeship.png" alt="freeship" width={80} height={12} />
           </div>
+          <div className={classes.searchBar}>
+            <input
+              placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn..."
+              style={{ height: '35px', width: '600px' }}
+            />
+          </div>
+          <div>
+            <button className={classes.button}>Tìm kiếm</button>
+          </div>
         </Toolbar>
       </AppBar>
       <Container className={classes.main}>{children}</Container>
