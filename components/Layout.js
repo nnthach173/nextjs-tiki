@@ -49,7 +49,7 @@ export default function Layout({ children }) {
         </p>
         <p>
           Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và
-          nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng
+          nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
         </p>
         <p>
           Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu
