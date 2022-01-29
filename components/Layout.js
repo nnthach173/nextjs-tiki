@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { AppBar, Toolbar, Typography, Container } from '@material-ui/core';
 import useStyles from '../utils/styles';
+import Image from 'next/image';
 
 // const useStyles = makeStyles({
 //   logo: {
@@ -11,7 +12,7 @@ import useStyles from '../utils/styles';
 //   },
 
 //   logo2: {
-//     width: 80,
+//     width: 80,npm
 //     height: 12,
 //     position: 'relative',
 //     marginTop: 35,
@@ -32,13 +33,12 @@ export default function Layout({ children }) {
       </Head>
       <AppBar position="static" className={classes.navbar}>
         <Toolbar className={classes.customizeToolbar}>
-          <img src="tiki.png" alt="tiki" className={classes.logo} />
-          <img
-            src="freeship.png"
-            alt="freeship"
-            className={classes.logo2}
-            layout="fill"
-          />
+          <div className={classes.logo}>
+            <Image src="/tiki.png" alt="tiki" width={55} height={40} />
+          </div>
+          <div className={classes.logo2}>
+            <Image src="/freeship.png" alt="freeship" width={80} height={12} />
+          </div>
         </Toolbar>
       </AppBar>
       <Container className={classes.main}>{children}</Container>
