@@ -6,6 +6,10 @@ const useStyles = makeStyles({
     backgroundColor: '#1A94FF',
   },
 
+  navbar2: {
+    backgroundColor: '#FFFFFF',
+  },
+
   logo: {
     width: 55,
     height: 40,
@@ -23,6 +27,17 @@ const useStyles = makeStyles({
 
   customizeToolbar: {
     minHeight: 100,
+  },
+  customizeToolbar2: {
+    minHeight: 20,
+  },
+
+  menuwordsPosition: {
+    marginLeft: 300,
+  },
+
+  menuWords: {
+    color: '#000000',
   },
 
   main: {

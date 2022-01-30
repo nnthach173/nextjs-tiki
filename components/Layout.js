@@ -50,6 +50,14 @@ export default function Layout({ children }) {
           </div>
         </Toolbar>
       </AppBar>
+
+      <AppBar position="relative" className={classes.navbar2}>
+        <Toolbar className={classes.customizeToolbar2}>
+          <div className={classes.menuwordsPosition}>Thịt, rau củ</div>
+          <div className={classes.menuWords}>Thịt, rau củ</div>
+        </Toolbar>
+      </AppBar>
+
       <Container className={classes.main}>{children}</Container>
       <footer className={classes.footer}>
         <p>
