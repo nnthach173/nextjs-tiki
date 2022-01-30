@@ -29,7 +29,7 @@ const useStyles = makeStyles({
     minHeight: 100,
   },
   customizeToolbar2: {
-    minHeight: 20,
+    minHeight: 35,
   },
 
   menuWordsPosition: {
