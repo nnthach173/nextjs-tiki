@@ -53,8 +53,22 @@ export default function Layout({ children }) {
 
       <AppBar position="relative" className={classes.navbar2}>
         <Toolbar className={classes.customizeToolbar2}>
-          <div className={classes.menuwordsPosition}>Thịt, rau củ</div>
-          <div className={classes.menuWords}>Thịt, rau củ</div>
+          <div
+            className={`${classes.menuWordsPosition} ${classes.menuWordsColor}`}
+          >
+            Thịt, rau củ
+          </div>
+          <div className={classes.menuWords}>Bách Hóa</div>
+          <div className={classes.menuWords}>Nhà Cửa</div>
+          <div className={classes.menuWords}>Điện tử</div>
+          <div className={classes.menuWords}>Thiết bị số</div>
+          <div className={classes.menuWords}>Điện thoại</div>
+          <div className={classes.menuWords}>Mẹ & Bé</div>
+          <div className={classes.menuWords}>Gia Dụng</div>
+          <div className={classes.menuWords}>Thời trang nữ</div>
+          <div className={classes.menuWords}>Thời trang nam</div>
+          <div className={classes.menuWords}>Giày nữ</div>
+          <div className={classes.menuWords}>Túi nữ</div>
         </Toolbar>
       </AppBar>
 

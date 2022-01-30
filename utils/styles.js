@@ -32,12 +32,17 @@ const useStyles = makeStyles({
     minHeight: 20,
   },
 
-  menuwordsPosition: {
-    marginLeft: 300,
+  menuWordsPosition: {
+    marginLeft: 320,
+  },
+
+  menuWordsColor: {
+    color: '#000000',
   },
 
   menuWords: {
     color: '#000000',
+    marginLeft: 30,
   },
 
   main: {
