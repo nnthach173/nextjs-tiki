@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core';
+import { BiCommentError } from 'react-icons/bi';
 import { contentMatchCache } from 'tailwindcss/lib/jit/lib/sharedState';
 
 const useStyles = makeStyles({

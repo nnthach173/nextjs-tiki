@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { AppBar, Toolbar, Typography, Container } from '@material-ui/core';
 import useStyles from '../utils/styles';
 import Image from 'next/image';
+import { BiSearchAlt } from 'react-icons/bi';
 
 // const useStyles = makeStyles({
 //   logo: {
@@ -46,7 +47,12 @@ export default function Layout({ children }) {
             />
           </div>
           <div>
-            <button className={classes.button}>Tìm kiếm</button>
+            <Typography>
+              <button className={classes.button}>
+                <BiSearchAlt size={20} />
+                Tìm kiếm
+              </button>
+            </Typography>
           </div>
         </Toolbar>
       </AppBar>
