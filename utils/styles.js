@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core';
-import { BiCommentError } from 'react-icons/bi';
+import { BiCommentError, BiLock } from 'react-icons/bi';
 import { contentMatchCache } from 'tailwindcss/lib/jit/lib/sharedState';
 
 const useStyles = makeStyles({
@@ -45,7 +45,6 @@ const useStyles = makeStyles({
     color: '#000000',
     marginLeft: 30,
   },
-
   main: {
     minHeight: '80vh',
   },
@@ -69,6 +68,21 @@ const useStyles = makeStyles({
     width: '100px',
     color: 'white',
   },
+
+  suggestWords: {
+    display: 'inline-block',
+    position: 'relative',
+    marginLeft: 15,
+    fontSize: 11,
+    marginTop: 55,
+  },
+
+  suggestWordsFinal: {
+    position: 'absolute',
+    top: 20,
+    left: 600,
+  },
+  outerBlock: {},
 });
 
 export default useStyles;

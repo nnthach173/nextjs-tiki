@@ -40,6 +40,7 @@ export default function Layout({ children }) {
           <div className={classes.logo2}>
             <Image src="/freeship.png" alt="freeship" width={80} height={12} />
           </div>
+
           <div className={classes.searchBar}>
             <input
               placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn..."
@@ -53,6 +54,16 @@ export default function Layout({ children }) {
                 Tìm kiếm
               </button>
             </Typography>
+          </div>
+          <div className={classes.suggestWordsFinal}>
+            <div className={classes.suggestWords}>trái cây</div>
+            <div className={classes.suggestWords}>thịt trứng</div>
+            <div className={classes.suggestWords}>rau củ quả</div>
+            <div className={classes.suggestWords}>sữa, bơ, phô mai</div>
+            <div className={classes.suggestWords}>hải sản</div>
+            <div className={classes.suggestWords}>gạo, mì ăn liền</div>
+            <div className={classes.suggestWords}>đồ uống, bia rượu</div>
+            <div className={classes.suggestWords}>bánh kẹo</div>
           </div>
         </Toolbar>
       </AppBar>
