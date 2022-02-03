@@ -115,6 +115,7 @@ const useStyles = makeStyles({
     height: 20,
     '&:hover': {
       backgroundColor: '#48A8F5',
+      boxShadow: 'none',
     },
     boxShadow: 'none',
     border: 'none',
