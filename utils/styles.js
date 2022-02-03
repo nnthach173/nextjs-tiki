@@ -67,6 +67,12 @@ const useStyles = makeStyles({
     height: '35px',
     width: '100px',
     color: 'white',
+    boxShadow: 'none',
+    textTransform: 'none',
+    borderRadius: 0,
+    '&:hover': {
+      backgroundColor: '#0D5CB8',
+    },
   },
 
   suggestWords: {
@@ -90,6 +96,28 @@ const useStyles = makeStyles({
   personIcon: {
     position: 'relative',
     left: 20,
+  },
+  shoppingCart: {
+    position: 'relative',
+    left: 70,
+  },
+  shoppingButton: {
+    positon: 'relative',
+    top: 30,
+    right: 60,
+    textTransform: 'none',
+    color: 'white',
+    fontSize: 10,
+
+    borderRadius: 50,
+    backgroundColor: '#49B3FF',
+    width: 140,
+    height: 20,
+    '&:hover': {
+      backgroundColor: '#48A8F5',
+    },
+    boxShadow: 'none',
+    border: 'none',
   },
 });
 

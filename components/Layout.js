@@ -7,12 +7,15 @@ import {
   Typography,
   Container,
   Link,
+  Button,
 } from '@material-ui/core';
 import useStyles from '../utils/styles';
 import Image from 'next/image';
 import { BiSearchAlt } from 'react-icons/bi';
 import { AiFillCaretDown } from 'react-icons/ai';
 import { BsPerson } from 'react-icons/bs';
+import { FiShoppingCart } from 'react-icons/fi';
+import { MdOutlineStorefront } from 'react-icons/md';
 
 export default function Layout({ children }) {
   const classes = useStyles();
@@ -38,10 +41,10 @@ export default function Layout({ children }) {
           </div>
           <div>
             <Typography>
-              <button className={classes.button}>
+              <Button className={classes.button}>
                 <BiSearchAlt size={20} />
                 Tìm kiếm
-              </button>
+              </Button>
             </Typography>
           </div>
           <div className={classes.suggestWordsFinal}>
@@ -66,6 +69,23 @@ export default function Layout({ children }) {
                 Tài khoản <AiFillCaretDown />
               </div>
             </Link>
+          </div>
+
+          <div
+            className={classes.shoppingCart}
+            style={{ fontSize: '12px', color: 'white' }}
+          >
+            <FiShoppingCart size={30} />
+            <Link href="#" underline="none" color="white">
+              Giỏ Hàng
+            </Link>
+          </div>
+
+          <div>
+            <Button className={classes.shoppingButton} variant="contained">
+              <MdOutlineStorefront />
+              Bán hàng cùng Tiki
+            </Button>
           </div>
         </Toolbar>
       </AppBar>
