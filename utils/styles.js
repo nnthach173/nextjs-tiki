@@ -82,7 +82,15 @@ const useStyles = makeStyles({
     top: 20,
     left: 600,
   },
-  outerBlock: {},
+
+  loginButton: {
+    position: 'relative',
+    left: 20,
+  },
+  personIcon: {
+    position: 'relative',
+    left: 20,
+  },
 });
 
 export default useStyles;

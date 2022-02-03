@@ -1,29 +1,18 @@
 import React from 'react';
 import Head from 'next/head';
-import { AppBar, Toolbar, Typography, Container } from '@material-ui/core';
+import NextLink from 'next/link';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Container,
+  Link,
+} from '@material-ui/core';
 import useStyles from '../utils/styles';
 import Image from 'next/image';
 import { BiSearchAlt } from 'react-icons/bi';
-
-// const useStyles = makeStyles({
-//   logo: {
-//     width: 55,
-//     height: 40,
-//     marginBottom: 30,
-//   },
-
-//   logo2: {
-//     width: 80,npm
-//     height: 12,
-//     position: 'relative',
-//     marginTop: 35,
-//     marginLeft: -55,
-//   },
-
-//   customizeToolbar: {
-//     minHeight: 100,
-//   },
-// });
+import { AiFillCaretDown } from 'react-icons/ai';
+import { BsPerson } from 'react-icons/bs';
 
 export default function Layout({ children }) {
   const classes = useStyles();
@@ -64,6 +53,19 @@ export default function Layout({ children }) {
             <div className={classes.suggestWords}>gạo, mì ăn liền</div>
             <div className={classes.suggestWords}>đồ uống, bia rượu</div>
             <div className={classes.suggestWords}>bánh kẹo</div>
+          </div>
+          <BsPerson size={30} className={classes.personIcon} />
+          <div className={classes.loginButton}>
+            <Link href="#" underline="none">
+              <div style={{ fontSize: '12px', color: 'white' }}>
+                Đăng nhập / Đăng ký
+              </div>
+            </Link>
+            <Link href="#" underline="none">
+              <div style={{ fontSize: '12px', color: 'white' }}>
+                Tài khoản <AiFillCaretDown />
+              </div>
+            </Link>
           </div>
         </Toolbar>
       </AppBar>
