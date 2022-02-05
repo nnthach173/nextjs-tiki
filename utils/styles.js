@@ -120,6 +120,17 @@ const useStyles = makeStyles({
     boxShadow: 'none',
     border: 'none',
   },
+
+  carousel: {
+    position: 'relative',
+    top: 30,
+    right: 10,
+  },
+  carouselHeader: {
+    position: 'absolute',
+    top: 165,
+    right: 340,
+  },
 });
 
 export default useStyles;
