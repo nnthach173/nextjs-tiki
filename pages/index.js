@@ -1,11 +1,22 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/Layout';
+import {
+  Grid,
+  Card,
+  CardActionArea,
+  CardMedia,
+  CardContent,
+  Typography,
+  CardActions,
+  Button,
+} from '@material-ui/core';
 import styles from '../styles/Home.module.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import substituteClassApplyAtRules from 'tailwindcss/lib/lib/substituteClassApplyAtRules';
 import useStyles from '../utils/styles';
+import data from '../utils/data';
 
 export default function Home() {
   const classes = useStyles();
@@ -63,6 +74,29 @@ export default function Home() {
       <div className={classes.carouselHeader}>
         <Image src="/header.png" alt="header" width={410} height={271} />
       </div>
+
+      <Grid container spacing={4}>
+        {data.products.map((product) => (
+          <Grid item md={2} key={product.name}>
+            <Card>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  image={product.image}
+                  title={product.name}
+                ></CardMedia>
+                <CardContent>{product.name}</CardContent>
+              </CardActionArea>
+              <CardActions>
+                {product.price}đ
+                <Button size="small" color="primary">
+                  Đã bán {product.sold}
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
     </Layout>
   );
 }
