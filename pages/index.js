@@ -11,6 +11,7 @@ import {
   CardActions,
   Button,
 } from '@material-ui/core';
+import NextLink from 'next/link';
 import styles from '../styles/Home.module.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
@@ -79,14 +80,16 @@ export default function Home() {
         {data.products.map((product) => (
           <Grid item md={2} key={product.name}>
             <Card>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  image={product.image}
-                  title={product.name}
-                ></CardMedia>
-                <CardContent>{product.name}</CardContent>
-              </CardActionArea>
+              <NextLink href={`/product/${product.slug}`} passHref>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    image={product.image}
+                    title={product.name}
+                  ></CardMedia>
+                  <CardContent>{product.name}</CardContent>
+                </CardActionArea>
+              </NextLink>
               <CardActions>
                 {product.price}đ
                 <Button size="small" color="primary">

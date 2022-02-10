@@ -2,6 +2,7 @@ const data = {
   products: [
     {
       name: 'Găng tay da nam',
+      slug: 'gang-tay-da-nam',
       category: 'clothing',
       image: '/images/gloves.png',
       price: 157.0,
@@ -12,6 +13,7 @@ const data = {
     },
     {
       name: 'Điện thoại Iphone 11',
+      slug: 'dien-thoai-iphone-11',
       category: 'electronics',
       image: '/images/phone.png',
       price: 13650000,
@@ -22,6 +24,7 @@ const data = {
     },
     {
       name: 'Găng tay đi xe máy giữ ấm mùa đông cảm ứng điện thoại dành cho nam',
+      slug: 'gang-tay-di-xe-may-giu-am-mua-dong-cam-ung-dien-thoai-danh-cho-nam',
       category: 'clothing',
       image: '/images/gloves2.png',
       price: 92.0,
@@ -32,6 +35,7 @@ const data = {
     },
     {
       name: 'iPad 10.2 Inch WiFi 64GB (Gen 9) New 2021',
+      slug: 'ipad-10-2-inch-wifi-65gb-new-2021',
       category: 'electronics',
       image: '/images/ipad.png',
       price: 9450000,
@@ -42,6 +46,7 @@ const data = {
     },
     {
       name: 'Hộp cơm thủy tinh kèm muỗng đũa LocknLock LLG991CL 930ml',
+      slug: 'hop-com-thuy-tinh-kem-muong-dua-locknlock-llg991cl-930ml',
       category: 'stuff',
       image: '/images/lunchbox.png',
       price: 157.0,
@@ -52,6 +57,7 @@ const data = {
     },
     {
       name: 'Nước dưỡng làm mềm và trắng da Senka White Beauty Lotion',
+      slug: 'nuoc-duong-lam-mem-va-trang-da-senka-white-beauty-lotion',
       category: 'stuff',
       image: '/images/skincare.png',
       price: 189.0,
