@@ -5,7 +5,6 @@ import { Grid, Link, List, ListItem, AppBar, Toolbar } from '@material-ui/core';
 import { useRouter } from 'next/router';
 import data from '../../utils/data';
 import Layout from '../../components/Layout';
-import substituteClassApplyAtRules from 'tailwindcss/lib/lib/substituteClassApplyAtRules';
 import useStyles from '../../utils/styles';
 
 export default function ProductScreen() {

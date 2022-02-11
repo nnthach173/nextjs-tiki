@@ -15,7 +15,6 @@ import NextLink from 'next/link';
 import styles from '../styles/Home.module.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-import substituteClassApplyAtRules from 'tailwindcss/lib/lib/substituteClassApplyAtRules';
 import useStyles from '../utils/styles';
 import data from '../utils/data';
 
