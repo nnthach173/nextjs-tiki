@@ -131,6 +131,17 @@ const useStyles = makeStyles({
     top: 165,
     right: 340,
   },
+
+  section: {
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  buyButton: {
+    backgroundColor: '#FF5A32',
+    position: 'absolute',
+    top: 50,
+    left: 10,
+  },
 });
 
 export default useStyles;

@@ -16,12 +16,12 @@ import { BsPerson } from 'react-icons/bs';
 import { FiShoppingCart } from 'react-icons/fi';
 import { MdOutlineStorefront } from 'react-icons/md';
 
-export default function Layout({ children }) {
+export default function Layout({ title, children }) {
   const classes = useStyles();
   return (
     <div>
       <Head>
-        <title>Next Tiki</title>
+        <title>{title ? `${title} - Next Tiki` : 'Next Tiki'}</title>
       </Head>
       <AppBar position="static" className={classes.navbar}>
         <Toolbar className={classes.customizeToolbar}>
