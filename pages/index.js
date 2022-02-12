@@ -22,95 +22,112 @@ import data from '../utils/data';
 export default function Home() {
   const classes = useStyles();
   return (
-    <Layout>
-      <div className={classes.carousel}>
-        <Carousel width={825} infiniteLoop={true} showStatus={false}>
-          <div>
-            <Image src="/1.png" alt="1" width={824} height={271} />
+    <Grid
+      style={{
+        backgroundColor: '#F6F5FA',
+      }}
+    >
+      <Layout>
+        <Grid
+          style={{
+            backgroundColor: 'white',
+          }}
+        >
+          <div className={classes.carousel}>
+            <Carousel
+              width={820}
+              infiniteLoop={true}
+              showStatus={false}
+              autoPlay={true}
+            >
+              <div>
+                <Image src="/1.png" alt="1" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/2.png" alt="2" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/3.png" alt="3" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/4.png" alt="4" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/5.png" alt="5" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/6.png" alt="6" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/7.png" alt="7" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/8.png" alt="8" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/9.png" alt="9" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/10.png" alt="10" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/11.png" alt="11" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/12.png" alt="12" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/13.png" alt="13" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/14.png" alt="14" width={824} height={271} />
+              </div>
+              <div>
+                <Image src="/15.png" alt="15" width={824} height={271} />
+              </div>
+            </Carousel>
           </div>
-          <div>
-            <Image src="/2.png" alt="2" width={824} height={271} />
+          <div className={classes.carouselHeader}>
+            <Image src="/header.png" alt="header" width={410} height={271} />
           </div>
-          <div>
-            <Image src="/3.png" alt="3" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/4.png" alt="4" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/5.png" alt="5" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/6.png" alt="6" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/7.png" alt="7" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/8.png" alt="8" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/9.png" alt="9" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/10.png" alt="10" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/11.png" alt="11" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/12.png" alt="12" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/13.png" alt="13" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/14.png" alt="14" width={824} height={271} />
-          </div>
-          <div>
-            <Image src="/15.png" alt="15" width={824} height={271} />
-          </div>
-        </Carousel>
-      </div>
-      <div className={classes.carouselHeader}>
-        <Image src="/header.png" alt="header" width={410} height={271} />
-      </div>
 
-      <Grid container spacing={3}>
-        {data.products.map((product) => (
-          <Grid item md={2} key={product.name}>
-            <Card>
-              <NextLink href={`/product/${product.slug}`} passHref>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    image={product.image}
-                    title={product.name}
-                  ></CardMedia>
-                </CardActionArea>
-              </NextLink>
+          <Grid container spacing={3}>
+            {data.products.map((product) => (
+              <Grid item md={2} key={product.name}>
+                <Card>
+                  <NextLink href={`/product/${product.slug}`} passHref>
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        image={product.image}
+                        title={product.name}
+                      ></CardMedia>
+                    </CardActionArea>
+                  </NextLink>
 
-              <CardActions>
-                <Typography
-                  style={{
-                    fontWeight: 'bold',
-                    color: 'red',
-                    margin: '0px auto',
-                  }}
-                >
-                  {product.price}đ
-                </Typography>
-              </CardActions>
+                  <CardActions>
+                    <Typography
+                      style={{
+                        fontWeight: 'bold',
+                        color: 'red',
+                        margin: '0px auto',
+                      }}
+                    >
+                      {product.price}đ
+                    </Typography>
+                  </CardActions>
 
-              <Box textAlign="center">
-                <Button className={classes.soldButton}>
-                  Đã bán {product.sold}
-                </Button>
-              </Box>
-            </Card>
+                  <Box textAlign="center">
+                    <Button className={classes.soldButton}>
+                      Đã bán {product.sold}
+                    </Button>
+                  </Box>
+                </Card>
+              </Grid>
+            ))}
           </Grid>
-        ))}
-      </Grid>
-    </Layout>
+        </Grid>
+      </Layout>
+    </Grid>
   );
 }
