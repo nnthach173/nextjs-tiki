@@ -104,7 +104,7 @@ export default function Home() {
 
               <Box textAlign="center">
                 <Button className={classes.soldButton}>
-                  Sold {product.sold}
+                  Đã bán {product.sold}
                 </Button>
               </Box>
             </Card>
