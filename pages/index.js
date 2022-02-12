@@ -10,6 +10,7 @@ import {
   Typography,
   CardActions,
   Button,
+  Box,
 } from '@material-ui/core';
 import NextLink from 'next/link';
 import styles from '../styles/Home.module.css';
@@ -75,7 +76,7 @@ export default function Home() {
         <Image src="/header.png" alt="header" width={410} height={271} />
       </div>
 
-      <Grid container spacing={4}>
+      <Grid container spacing={3}>
         {data.products.map((product) => (
           <Grid item md={2} key={product.name}>
             <Card>
@@ -86,15 +87,26 @@ export default function Home() {
                     image={product.image}
                     title={product.name}
                   ></CardMedia>
-                  <CardContent>{product.name}</CardContent>
                 </CardActionArea>
               </NextLink>
+
               <CardActions>
-                {product.price}đ
-                <Button size="small" color="primary">
-                  Đã bán {product.sold}
-                </Button>
+                <Typography
+                  style={{
+                    fontWeight: 'bold',
+                    color: 'red',
+                    margin: '0px auto',
+                  }}
+                >
+                  {product.price}đ
+                </Typography>
               </CardActions>
+
+              <Box textAlign="center">
+                <Button className={classes.soldButton}>
+                  Sold {product.sold}
+                </Button>
+              </Box>
             </Card>
           </Grid>
         ))}

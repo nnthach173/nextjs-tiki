@@ -135,11 +135,52 @@ const useStyles = makeStyles({
     marginTop: 10,
     marginBottom: 10,
   },
-  buyButton: {
+  priceTag: {
     backgroundColor: '#FF5A32',
     position: 'absolute',
     top: 50,
     left: 10,
+  },
+  soldButton: {
+    positon: 'relative',
+    textTransform: 'none',
+    size: 'small',
+    color: 'white',
+    fontSize: 13,
+    bottom: 5,
+    borderRadius: 50,
+    backgroundColor: 'red',
+    width: 140,
+    height: 20,
+    '&:hover': {
+      backgroundColor: '#FF6863',
+      boxShadow: 'none',
+    },
+    boxShadow: 'none',
+    border: 'none',
+  },
+  quantitySelect: {
+    position: 'absolute',
+    top: 150,
+  },
+  buyButton: {
+    positon: 'absolute',
+    top: 230,
+    right: 350,
+    textTransform: 'none',
+
+    color: 'white',
+    fontSize: 20,
+    borderRadius: 3,
+    backgroundColor: 'red',
+    width: 350,
+    height: 50,
+    '&:hover': {
+      backgroundColor: '#FF6863',
+      boxShadow: 'none',
+    },
+    boxShadow: 'none',
+    border: 'none',
   },
 });
 

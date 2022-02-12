@@ -1,3 +1,10 @@
+var a = 157000;
+var b = 13650000;
+var c = 192000;
+var d = 9450000;
+var e = 157000;
+var f = 189000;
+console.log(a.toLocaleString());
 const data = {
   products: [
     {
@@ -5,7 +12,7 @@ const data = {
       slug: 'gang-tay-da-nam',
       category: 'clothing',
       image: '/images/gloves.png',
-      price: 157.0,
+      price: a.toLocaleString(),
       shop: 'Viewshop36',
       rating: 5,
       numReviews: 7,
@@ -16,7 +23,7 @@ const data = {
       slug: 'dien-thoai-iphone-11',
       category: 'electronics',
       image: '/images/phone.png',
-      price: 13650000,
+      price: b.toLocaleString(),
       shop: 'Tiki Trading',
       rating: 5,
       numReviews: 353,
@@ -27,7 +34,7 @@ const data = {
       slug: 'gang-tay-di-xe-may-giu-am-mua-dong-cam-ung-dien-thoai-danh-cho-nam',
       category: 'clothing',
       image: '/images/gloves2.png',
-      price: 92.0,
+      price: c.toLocaleString(),
       shop: 'Winshop36',
       rating: 5,
       numReviews: 1,
@@ -38,7 +45,7 @@ const data = {
       slug: 'ipad-10-2-inch-wifi-65gb-new-2021',
       category: 'electronics',
       image: '/images/ipad.png',
-      price: 9450000,
+      price: d.toLocaleString(),
       shop: 'TikiTrading',
       rating: 5,
       numReviews: 46,
@@ -49,7 +56,7 @@ const data = {
       slug: 'hop-com-thuy-tinh-kem-muong-dua-locknlock-llg991cl-930ml',
       category: 'stuff',
       image: '/images/lunchbox.png',
-      price: 157.0,
+      price: e.toLocaleString(),
       shop: 'TikiTrading',
       rating: 5,
       numReviews: 742,
@@ -60,7 +67,7 @@ const data = {
       slug: 'nuoc-duong-lam-mem-va-trang-da-senka-white-beauty-lotion',
       category: 'stuff',
       image: '/images/skincare.png',
-      price: 189.0,
+      price: f.toLocaleString(),
       shop: 'Senka Official Store',
       rating: 5,
       numReviews: 39,
