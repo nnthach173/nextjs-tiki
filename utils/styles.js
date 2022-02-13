@@ -181,6 +181,10 @@ const useStyles = makeStyles({
     boxShadow: 'none',
     border: 'none',
   },
+  bannerMini1: {
+    position: 'relative',
+    marginTop: 30,
+  },
 });
 
 export default useStyles;
