@@ -182,8 +182,19 @@ const useStyles = makeStyles({
     border: 'none',
   },
   bannerMini1: {
-    position: 'relative',
-    marginTop: 30,
+    position: 'absolute',
+    top: 740,
+    left: 340,
+  },
+  bannerMini2: {
+    position: 'absolute',
+    top: 740,
+    left: 552,
+  },
+  bannerMini3: {
+    position: 'absolute',
+    top: 740,
+    right: 340,
   },
 });
 

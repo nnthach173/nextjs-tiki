@@ -132,20 +132,23 @@ export default function Home() {
             backgroundColor: '#F6F5FA',
           }}
         >
-          <div position="relative" className={classes.bannerMini1}>
+          <div className={classes.bannerMini1}>
             <Image
               src="/bannerMini1.png"
               alt="bannerMini1"
               width={204}
               height={164}
-              style={{ marginLeft: '20px' }}
             />
+          </div>
+          <div className={classes.bannerMini2}>
             <Image
               src="/bannerMini2.png"
               alt="bannerMini2"
               width={800}
               height={164}
             />
+          </div>
+          <div className={classes.bannerMini3}>
             <Image
               src="/bannerMini3.png"
               alt="bannerMini2"
