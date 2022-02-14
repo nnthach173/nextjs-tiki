@@ -1,5 +1,7 @@
 import { makeStyles } from '@material-ui/core';
-import { BiCommentError, BiLock } from 'react-icons/bi';
+import { AiOutlineEllipsis } from 'react-icons/ai';
+import { BiCommentError, BiLock, BiVerticalCenter } from 'react-icons/bi';
+import LinesEllipsis from 'react-lines-ellipsis';
 
 const useStyles = makeStyles({
   navbar: {
@@ -182,19 +184,31 @@ const useStyles = makeStyles({
     border: 'none',
   },
   bannerMini1: {
-    position: 'absolute',
-    top: 740,
-    left: 340,
+    position: 'relative',
+    marginTop: 30,
+    marginBottom: 20,
   },
   bannerMini2: {
-    position: 'absolute',
-    top: 740,
-    left: 552,
+    position: 'relative',
+    display: 'inline-block',
+    marginLeft: 8,
   },
-  bannerMini3: {
-    position: 'absolute',
-    top: 740,
-    right: 340,
+  span: {
+    fontSize: 13,
+    width: '81px',
+    display: 'webkit-box',
+    WebkitBoxOrient: 'vertical',
+    WebkitLineClamp: 2,
+    textOverflow: 'ellipsis',
+    overflow: 'hidden',
+  },
+  innerIcon: {
+    position: 'relative',
+    display: 'inline-block',
+    marginLeft: 50,
+  },
+  outerIcon: {
+    position: 'relative',
   },
 });
 

@@ -133,28 +133,154 @@ export default function Home() {
           }}
         >
           <div className={classes.bannerMini1}>
-            <Image
-              src="/bannerMini1.png"
-              alt="bannerMini1"
-              width={204}
-              height={164}
-            />
+            <div className={classes.bannerMini2}>
+              <Image
+                src="/bannerMini1.png"
+                alt="bannerMini1"
+                width={204}
+                height={164}
+              />
+            </div>
+            <div className={classes.bannerMini2}>
+              <Image
+                src="/bannerMini2.png"
+                alt="bannerMini2"
+                width={800}
+                height={164}
+              />
+            </div>
+            <div className={classes.bannerMini2}>
+              <Image
+                src="/bannerMini3.png"
+                alt="bannerMini2"
+                width={204}
+                height={164}
+              />
+            </div>
           </div>
-          <div className={classes.bannerMini2}>
-            <Image
-              src="/bannerMini2.png"
-              alt="bannerMini2"
-              width={800}
-              height={164}
-            />
-          </div>
-          <div className={classes.bannerMini3}>
-            <Image
-              src="/bannerMini3.png"
-              alt="bannerMini2"
-              width={204}
-              height={164}
-            />
+        </Grid>
+        <Grid style={{ backgroundColor: '#FFFFFF' }}>
+          <div className={classes.outerIcon}>
+            <div className={classes.innerIcon}>
+              <div>
+                <Button>
+                  <Image
+                    src="/button1.png"
+                    alt="santhuong"
+                    width={48}
+                    height={52}
+                  />
+                </Button>
+              </div>
+              <span className={classes.span}>săn thưởng mỗi ngày</span>
+            </div>
+
+            <div className={classes.innerIcon}>
+              <div>
+                <Button>
+                  <Image
+                    src="/button2.png"
+                    alt="dicho"
+                    width={48}
+                    height={52}
+                  />
+                </Button>
+              </div>
+              <span className={classes.span}>Đi chợ</span>
+            </div>
+
+            <div className={classes.innerIcon}>
+              <div>
+                <Button>
+                  <Image
+                    src="/button3.png"
+                    alt="magiamgia"
+                    width={48}
+                    height={52}
+                  />
+                </Button>
+              </div>
+              <span className={classes.span}>Mã giảm giá</span>
+            </div>
+
+            <div className={classes.innerIcon}>
+              <div>
+                <Button>
+                  <Image
+                    src="/button4.png"
+                    alt="baohiemtiki360"
+                    width={48}
+                    height={52}
+                  />
+                </Button>
+              </div>
+              <span className={classes.span}>Bảo hiểm Tiki 360</span>
+            </div>
+            <div className={classes.innerIcon}>
+              <div>
+                <Button>
+                  <Image
+                    src="/button5.png"
+                    alt="dichvu&tienich"
+                    width={48}
+                    height={52}
+                  />
+                </Button>
+              </div>
+              <span className={classes.span}>Dịch vụ & Tiện ích</span>
+            </div>
+            <div className={classes.innerIcon}>
+              <div>
+                <Button>
+                  <Image
+                    src="/button6.png"
+                    alt="goihoivien"
+                    width={48}
+                    height={52}
+                  />
+                </Button>
+              </div>
+              <span className={classes.span}>Gói hội viên</span>
+            </div>
+            <div className={classes.innerIcon}>
+              <div>
+                <Button>
+                  <Image
+                    src="/button7.png"
+                    alt="giamden50%"
+                    width={48}
+                    height={52}
+                  />
+                </Button>
+              </div>
+              <span className={classes.span}>Giảm đến 50%</span>
+            </div>
+            <div className={classes.innerIcon}>
+              <div>
+                <Button>
+                  <Image
+                    src="/button8.png"
+                    alt="hoantien15%"
+                    width={48}
+                    height={52}
+                  />
+                </Button>
+              </div>
+              <span className={classes.span}>Hoàn tiền 15%</span>
+            </div>
+            <div className={classes.innerIcon}>
+              <div>
+                <Button>
+                  <Image
+                    src="/button9.png"
+                    alt="uudaithanhtoan"
+                    width={48}
+                    height={52}
+                  />
+                </Button>
+              </div>
+              <span className={classes.span}>Ưu đãi thanh toán</span>
+            </div>
           </div>
         </Grid>
       </Layout>
