@@ -172,7 +172,9 @@ export default function Home() {
                   />
                 </Button>
               </div>
-              <span className={classes.span}>săn thưởng mỗi ngày</span>
+              <span className={classes.span}>
+                Săn thưởng <br /> mỗi ngày
+              </span>
             </div>
 
             <div className={classes.innerIcon}>
@@ -186,7 +188,11 @@ export default function Home() {
                   />
                 </Button>
               </div>
-              <span className={classes.span}>Đi chợ</span>
+              <span className={classes.span}>
+                Đi chợ
+                <br />
+                <a style={{ color: '#FFFFFF' }}>a</a>
+              </span>
             </div>
 
             <div className={classes.innerIcon}>
@@ -200,7 +206,11 @@ export default function Home() {
                   />
                 </Button>
               </div>
-              <span className={classes.span}>Mã giảm giá</span>
+              <span className={classes.span}>
+                Mã giảm giá
+                <br />
+                <a style={{ color: '#FFFFFF' }}>a</a> <br />
+              </span>
             </div>
 
             <div className={classes.innerIcon}>
@@ -214,7 +224,9 @@ export default function Home() {
                   />
                 </Button>
               </div>
-              <span className={classes.span}>Bảo hiểm Tiki 360</span>
+              <span className={classes.span}>
+                Bảo hiểm <br /> Tiki 360
+              </span>
             </div>
             <div className={classes.innerIcon}>
               <div>
@@ -227,7 +239,10 @@ export default function Home() {
                   />
                 </Button>
               </div>
-              <span className={classes.span}>Dịch vụ & Tiện ích</span>
+              <span className={classes.span}>
+                Dịch vụ & <br />
+                Tiện ích
+              </span>
             </div>
             <div className={classes.innerIcon}>
               <div>
@@ -240,7 +255,11 @@ export default function Home() {
                   />
                 </Button>
               </div>
-              <span className={classes.span}>Gói hội viên</span>
+              <span className={classes.span}>
+                Gói hội viên
+                <br />
+                <a style={{ color: '#FFFFFF' }}>a</a>
+              </span>
             </div>
             <div className={classes.innerIcon}>
               <div>
@@ -253,7 +272,10 @@ export default function Home() {
                   />
                 </Button>
               </div>
-              <span className={classes.span}>Giảm đến 50%</span>
+              <span className={classes.span}>
+                Giảm đến
+                <br /> 50%
+              </span>
             </div>
             <div className={classes.innerIcon}>
               <div>
@@ -266,7 +288,10 @@ export default function Home() {
                   />
                 </Button>
               </div>
-              <span className={classes.span}>Hoàn tiền 15%</span>
+              <span className={classes.span}>
+                Hoàn tiền
+                <br /> 15%
+              </span>
             </div>
             <div className={classes.innerIcon}>
               <div>
@@ -279,7 +304,10 @@ export default function Home() {
                   />
                 </Button>
               </div>
-              <span className={classes.span}>Ưu đãi thanh toán</span>
+              <span className={classes.span}>
+                Ưu đãi
+                <br /> thanh toán
+              </span>
             </div>
           </div>
         </Grid>

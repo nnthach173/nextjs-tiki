@@ -194,18 +194,15 @@ const useStyles = makeStyles({
     marginLeft: 8,
   },
   span: {
-    fontSize: 13,
-    width: '81px',
-    display: 'webkit-box',
-    WebkitBoxOrient: 'vertical',
-    WebkitLineClamp: 2,
-    textOverflow: 'ellipsis',
-    overflow: 'hidden',
+    fontSize: '13px',
   },
   innerIcon: {
     position: 'relative',
     display: 'inline-block',
-    marginLeft: 50,
+    marginLeft: 65,
+    marginTop: 10,
+
+    textAlign: 'center',
   },
   outerIcon: {
     position: 'relative',
