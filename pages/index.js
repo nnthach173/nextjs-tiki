@@ -191,7 +191,7 @@ export default function Home() {
               <span className={classes.span}>
                 Đi chợ
                 <br />
-                <a style={{ color: '#FFFFFF' }}>a</a>
+                <a style={{ color: '#FFFFFF' }}>|</a>
               </span>
             </div>
 
@@ -209,7 +209,7 @@ export default function Home() {
               <span className={classes.span}>
                 Mã giảm giá
                 <br />
-                <a style={{ color: '#FFFFFF' }}>a</a> <br />
+                <a style={{ color: '#FFFFFF' }}>|</a> <br />
               </span>
             </div>
 
@@ -258,7 +258,7 @@ export default function Home() {
               <span className={classes.span}>
                 Gói hội viên
                 <br />
-                <a style={{ color: '#FFFFFF' }}>a</a>
+                <a style={{ color: '#FFFFFF' }}>|</a>
               </span>
             </div>
             <div className={classes.innerIcon}>
@@ -308,6 +308,46 @@ export default function Home() {
                 Ưu đãi
                 <br /> thanh toán
               </span>
+            </div>
+          </div>
+        </Grid>
+        <Grid
+          style={{
+            backgroundColor: '#F6F5FA',
+          }}
+        >
+          <div className={classes.bannerMini3}>
+            <div className={classes.bannerMini4}>
+              <Image
+                src="/miniBannerA.png"
+                alt="bannerMiniA"
+                width={295}
+                height={150}
+              />
+            </div>
+            <div className={classes.bannerMini4}>
+              <Image
+                src="/miniBannerB.png"
+                alt="bannerMiniB"
+                width={295}
+                height={150}
+              />
+            </div>
+            <div className={classes.bannerMini4}>
+              <Image
+                src="/miniBannerC.png"
+                alt="bannerMiniC"
+                width={295}
+                height={150}
+              />
+            </div>
+            <div className={classes.bannerMini4}>
+              <Image
+                src="/miniBannerD.png"
+                alt="bannerMiniD"
+                width={295}
+                height={150}
+              />
             </div>
           </div>
         </Grid>

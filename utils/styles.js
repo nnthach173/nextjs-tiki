@@ -207,6 +207,19 @@ const useStyles = makeStyles({
   outerIcon: {
     position: 'relative',
   },
+  bannerMini3: {
+    position: 'relative',
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  bannerMini4: {
+    position: 'relative',
+    display: 'inline-block',
+    marginLeft: 10,
+    marginBottom: 10,
+    overflow: 'hidden',
+    borderRadius: 20,
+  },
 });
 
 export default useStyles;
