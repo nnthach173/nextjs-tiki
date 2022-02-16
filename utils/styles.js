@@ -241,8 +241,15 @@ const useStyles = makeStyles({
     marginBottom: 'auto',
     marginLeft: 'auto',
     lineHeight: '24px',
-    fontSize: '15',
+    fontSize: '15px',
     color: '#0B74E5',
+    border: 'none',
+    backgroundColor: '#FFFFFF',
+    '&:hover': {
+      backgroundColor: '#FFFFFF',
+      boxShadow: 'none',
+      cursor: 'pointer',
+    },
   },
   bannerMini5: {
     position: 'relative',

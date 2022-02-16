@@ -358,14 +358,15 @@ export default function Home() {
               <Image
                 src="/checkmark.png"
                 alt="checkmark"
-                width={24}
-                height={24}
+                width={26}
+                height={26}
               />
               <div className={classes.mainTitleText}>
                 Thương hiệu chính hãng
               </div>
             </div>
-            <a className={classes.mainTitleText2}>XEM THÊM</a>
+
+            <button className={classes.mainTitleText2}>XEM THÊM</button>
           </div>
 
           <div className={classes.bannerMini5}>
