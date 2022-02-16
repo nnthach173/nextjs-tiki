@@ -11,6 +11,7 @@ import {
   CardActions,
   Button,
   Box,
+  Link,
 } from '@material-ui/core';
 import NextLink from 'next/link';
 import styles from '../styles/Home.module.css';
@@ -348,6 +349,98 @@ export default function Home() {
                 width={295}
                 height={150}
               />
+            </div>
+          </div>
+        </Grid>
+        <Grid style={{ backgroundColor: '#FFFFFF' }}>
+          <div className={classes.mainTitle}>
+            <div className={classes.mainTitle2}>
+              <Image
+                src="/checkmark.png"
+                alt="checkmark"
+                width={24}
+                height={24}
+              />
+              <div className={classes.mainTitleText}>
+                Thương hiệu chính hãng
+              </div>
+            </div>
+            <a className={classes.mainTitleText2}>XEM THÊM</a>
+          </div>
+
+          <div className={classes.bannerMini5}>
+            <div className={classes.bannerMini6}>
+              <Image
+                src="/miniBannerE.png"
+                alt="bannerMiniA"
+                width={600}
+                height={205}
+              />
+            </div>
+            <div className={classes.bannerMini6}>
+              <Image
+                src="/miniBannerF.png"
+                alt="bannerMiniB"
+                width={600}
+                height={205}
+              />
+            </div>
+          </div>
+
+          <div className={classes.bannerMini7}>
+            <div className={classes.bannerMini8}>
+              <Image
+                src="/miniBanner1.png"
+                alt="miniBanner1"
+                width={190}
+                height={284}
+              />
+              <p className={classes.brandCardItemTitle}>Mua 1 Tặng 1</p>
+            </div>
+            <div className={classes.bannerMini8}>
+              <Image
+                src="/miniBanner2.png"
+                alt="miniBanner2"
+                width={190}
+                height={284}
+              />
+              <p className={classes.brandCardItemTitle}>Tặng Mẹ Voucher 50K</p>
+            </div>
+            <div className={classes.bannerMini8}>
+              <Image
+                src="/miniBanner3.png"
+                alt="miniBanner3"
+                width={190}
+                height={284}
+              />
+              <p className={classes.brandCardItemTitle}>Flash Sale Đến 40%</p>
+            </div>
+            <div className={classes.bannerMini8}>
+              <Image
+                src="/miniBanner4.png"
+                alt="miniBanner4"
+                width={190}
+                height={284}
+              />
+              <p className={classes.brandCardItemTitle}>Chỉ Từ 85K</p>
+            </div>
+            <div className={classes.bannerMini8}>
+              <Image
+                src="/miniBanner5.png"
+                alt="miniBanner5"
+                width={190}
+                height={284}
+              />
+              <p className={classes.brandCardItemTitle}>Coupon đến 1,1 Triệu</p>
+            </div>
+            <div className={classes.bannerMini8}>
+              <Image
+                src="/miniBanner6.png"
+                alt="miniBanner6"
+                width={190}
+                height={284}
+              />
+              <p className={classes.brandCardItemTitle}>Ưu Đãi Siêu Phẩm</p>
             </div>
           </div>
         </Grid>

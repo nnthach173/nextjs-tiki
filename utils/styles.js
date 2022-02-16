@@ -220,6 +220,69 @@ const useStyles = makeStyles({
     overflow: 'hidden',
     borderRadius: 20,
   },
+  mainTitle: {
+    display: 'flex',
+    paddingTop: 16,
+    paddingRight: 16,
+    paddingBottom: 16,
+    paddingLeft: 16,
+  },
+  mainTitle2: {
+    display: 'flex',
+    fontSize: '20px',
+  },
+  mainTitleText: {
+    marginLeft: 8,
+    textTransform: 'capitalize',
+  },
+  mainTitleText2: {
+    marginTop: 'auto',
+    marginRight: 0,
+    marginBottom: 'auto',
+    marginLeft: 'auto',
+    lineHeight: '24px',
+    fontSize: '15',
+    color: '#0B74E5',
+  },
+  bannerMini5: {
+    position: 'relative',
+    marginTop: 5,
+    marginBottom: 20,
+  },
+  bannerMini6: {
+    position: 'relative',
+    display: 'inline-block',
+    marginLeft: 10,
+
+    marginBottom: 10,
+    overflow: 'hidden',
+    borderRadius: 20,
+  },
+  brandCardItemTitle: {
+    display: 'inline-block',
+    textAlign: 'center',
+    position: 'absolute',
+    color: '#0B74E5',
+    bottom: 2,
+    left: '50%',
+    transform: 'translateX(-50%)',
+    width: '200px',
+  },
+  bannerMini7: {
+    position: 'relative',
+    marginTop: 5,
+    marginLeft: 15,
+    marginBottom: 20,
+  },
+  bannerMini8: {
+    position: 'relative',
+    display: 'inline-block',
+    marginLeft: 5,
+    marginRight: 5,
+    marginBottom: 10,
+    overflow: 'hidden',
+    borderRadius: 20,
+  },
 });
 
 export default useStyles;
