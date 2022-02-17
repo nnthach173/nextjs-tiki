@@ -290,6 +290,23 @@ const useStyles = makeStyles({
     overflow: 'hidden',
     borderRadius: 20,
   },
+
+  outerIcon2: {
+    position: 'relative',
+  },
+  innerIcon2: {
+    position: 'relative',
+    display: 'inline-block',
+    marginLeft: 20,
+    marginRight: 20,
+    marginTop: 2,
+    textAlign: 'center',
+  },
+  brandCardItemTitle2: {
+    position: 'relative',
+    fontSize: '13px',
+    color: '#000000',
+  },
 });
 
 export default useStyles;

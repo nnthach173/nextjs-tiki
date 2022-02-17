@@ -362,7 +362,7 @@ export default function Home() {
                 height={26}
               />
               <div className={classes.mainTitleText}>
-                Thương hiệu chính hãng
+                Thương Hiệu Chính Hãng
               </div>
             </div>
 
@@ -442,6 +442,187 @@ export default function Home() {
                 height={284}
               />
               <p className={classes.brandCardItemTitle}>Ưu Đãi Siêu Phẩm</p>
+            </div>
+          </div>
+        </Grid>
+
+        <Grid style={{ backgroundColor: '#FFFFFF' }}>
+          <div className={classes.mainTitle}>
+            <div className={classes.mainTitle2}>
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+            </div>
+          </div>
+          <div className={classes.outerIcon2}>
+            <div className={classes.innerIcon2}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/1.webp"
+                    alt="santhuong"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                TIKINGON
+                <br />
+                <a style={{ color: '#FFFFFF' }}>|</a>
+              </span>
+            </div>
+
+            <div className={classes.innerIcon2}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/2.webp"
+                    alt="tikingon"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Giày thể thao
+                <br />
+                nam
+              </span>
+            </div>
+            <div className={classes.innerIcon2}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/3.webp"
+                    alt="balo"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Balo
+                <br />
+                <a style={{ color: '#FFFFFF' }}>|</a>
+              </span>
+            </div>
+            <div className={classes.innerIcon2}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/4.webp"
+                    alt="taybamgame"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Tay bấm game
+                <br />
+                <a style={{ color: '#FFFFFF' }}>|</a>
+              </span>
+            </div>
+            <div className={classes.innerIcon2}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/5.webp"
+                    alt="cap"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Các Loại Cáp
+                <br />
+                Khác
+              </span>
+            </div>
+            <div className={classes.innerIcon2}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/6.webp"
+                    alt="vga"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Card Màn Hình -
+                <br />
+                VGA
+              </span>
+            </div>
+            <div className={classes.innerIcon2}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/7.webp"
+                    alt="manhinhphothong"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Màn Hình Phổ
+                <br />
+                Thông
+              </span>
+            </div>
+            <div className={classes.innerIcon2}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/8.webp"
+                    alt="manhinhgaming"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Màn Hình
+                <br />
+                Gaming
+              </span>
+            </div>
+            <div className={classes.innerIcon2}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/9.webp"
+                    alt="phone"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Điện thoại
+                <br />
+                Smartphone
+              </span>
+            </div>
+            <div className={classes.innerIcon2}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/10.webp"
+                    alt="book"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Sách Tư Duy - Kỹ
+                <br />
+                Năng Sống
+              </span>
             </div>
           </div>
         </Grid>
