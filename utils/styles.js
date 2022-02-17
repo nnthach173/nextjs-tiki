@@ -293,12 +293,13 @@ const useStyles = makeStyles({
 
   outerIcon2: {
     position: 'relative',
+    marginBottom: 10,
   },
   innerIcon2: {
     position: 'relative',
     display: 'inline-block',
-    marginLeft: 20,
-    marginRight: 20,
+    marginLeft: 40,
+
     marginTop: 2,
     textAlign: 'center',
   },
@@ -306,6 +307,28 @@ const useStyles = makeStyles({
     position: 'relative',
     fontSize: '13px',
     color: '#000000',
+  },
+  innerIcon3: {
+    position: 'relative',
+    display: 'inline-block',
+    marginLeft: 40,
+    marginBottom: 20,
+    marginTop: 30,
+    textAlign: 'center',
+  },
+  cataBanner: {
+    position: 'relative',
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  cataBanner2: {
+    position: 'relative',
+    display: 'inline-block',
+    marginLeft: 11,
+    marginRight: 5,
+    marginBottom: 10,
+    overflow: 'hidden',
+    borderRadius: 20,
   },
 });
 

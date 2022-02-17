@@ -551,9 +551,9 @@ export default function Home() {
                 </Button>
               </div>
               <span className={classes.brandCardItemTitle2}>
-                Card Màn Hình -
+                Card Màn
                 <br />
-                VGA
+                Hình VGA
               </span>
             </div>
             <div className={classes.innerIcon2}>
@@ -568,9 +568,9 @@ export default function Home() {
                 </Button>
               </div>
               <span className={classes.brandCardItemTitle2}>
-                Màn Hình Phổ
+                Màn Hình
                 <br />
-                Thông
+                Phổ Thông
               </span>
             </div>
             <div className={classes.innerIcon2}>
@@ -619,13 +619,210 @@ export default function Home() {
                 </Button>
               </div>
               <span className={classes.brandCardItemTitle2}>
-                Sách Tư Duy - Kỹ
+                Sách Tư Duy
                 <br />
-                Năng Sống
+                Kỹ Năng Sống
+              </span>
+            </div>
+            <div className={classes.innerIcon3}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/11.webp"
+                    alt="tieuthuyet"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Tiểu thuyết
+                <br />
+                <a style={{ color: '#FFFFFF' }}>|</a>
+              </span>
+            </div>
+
+            <div className={classes.innerIcon3}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/12.webp"
+                    alt="truyenngan"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Truyện ngắn
+                <br />
+                Tản văn
+              </span>
+            </div>
+            <div className={classes.innerIcon3}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/13.webp"
+                    alt="manga"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Truyện Tranh
+                <br />
+                Manga, Comic
+              </span>
+            </div>
+            <div className={classes.innerIcon3}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/14.webp"
+                    alt="banghe"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Bàn ghế
+                <br />
+                làm việc
+              </span>
+            </div>
+            <div className={classes.innerIcon3}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/15.webp"
+                    alt="tu"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Tủ
+                <br />
+                <a style={{ color: '#FFFFFF' }}>|</a>
+              </span>
+            </div>
+            <div className={classes.innerIcon3}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/16.webp"
+                    alt="bhkinhdoanh"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Bài Học
+                <br />
+                Kinh Doanh
+              </span>
+            </div>
+            <div className={classes.innerIcon3}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/17.webp"
+                    alt="duongda"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Kem Và Sữa
+                <br />
+                Dưỡng Da
+              </span>
+            </div>
+            <div className={classes.innerIcon3}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/18.webp"
+                    alt="other"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Khác
+                <br />
+                <a style={{ color: '#FFFFFF' }}>|</a>
+              </span>
+            </div>
+            <div className={classes.innerIcon3}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/19.webp"
+                    alt="phone"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Xe tay ga
+                <br />
+                <a style={{ color: '#FFFFFF' }}>|</a>
+              </span>
+            </div>
+            <div className={classes.innerIcon3}>
+              <div>
+                <Button>
+                  <Image
+                    src="/featured-categories/20.webp"
+                    alt="book"
+                    width={60}
+                    height={60}
+                  />
+                </Button>
+              </div>
+              <span className={classes.brandCardItemTitle2}>
+                Phụ kiện nhà
+                <br />
+                bếp khác
               </span>
             </div>
           </div>
         </Grid>
+        <div className={classes.cataBanner}>
+          <div className={classes.cataBanner2}>
+            <Image
+              src="/featured-categories/miniBanner1.webp"
+              alt="bannerMiniB"
+              width={394}
+              height={150}
+            />
+          </div>
+          <div className={classes.cataBanner2}>
+            <Image
+              src="/featured-categories/miniBanner2.webp"
+              alt="bannerMiniC"
+              width={394}
+              height={150}
+            />
+          </div>
+          <div className={classes.cataBanner2}>
+            <Image
+              src="/featured-categories/miniBanner3.webp"
+              alt="bannerMiniD"
+              width={394}
+              height={150}
+            />
+          </div>
+        </div>
       </Layout>
     </Grid>
   );
