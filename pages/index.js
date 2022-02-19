@@ -95,7 +95,7 @@ export default function Home() {
           </div>
 
           <Grid container spacing={3}>
-            {data.products.map((product) => (
+            {data.props.map((product) => (
               <Grid item md={2} key={product.name}>
                 <Card>
                   <NextLink href={`/product/${product.slug}`} passHref>
@@ -934,30 +934,61 @@ export default function Home() {
             </div>
           </Grid>
         </div>
-        <Grid style={{ backgroundColor: '#FFFFFF' }}>
-          <div className={classes.mainTitle}>
-            <div className={classes.mainTitle2}>
-              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
-              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+        <div>
+          <Grid style={{ backgroundColor: '#FFFFFF' }}>
+            <div className={classes.mainTitle}>
+              <div className={classes.mainTitle2}>
+                <Grid container spacing={3}>
+                  {data.products.map((product) => (
+                    <Grid item md={2} key={product.name}>
+                      <Card style={{ border: 'none', boxShadow: 'none' }}>
+                        <NextLink href={`/product/${product.slug}`} passHref>
+                          <CardActionArea>
+                            <CardMedia
+                              component="img"
+                              image={product.image}
+                              title={product.name}
+                            ></CardMedia>
+                            <CardContent className={classes.cardNames}>
+                              <Typography className={classes.twoLines}>
+                                {product.name}
+                              </Typography>
+                            </CardContent>
+                          </CardActionArea>
+                        </NextLink>
 
-              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
-
-              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
-
-              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
-
-              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
-
-              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
-
-              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
-
-              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
-
-              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+                        <CardActions className={classes.cardActionsProducts}>
+                          <div style={{ textAlign: 'center' }}>
+                            <Typography
+                              style={{
+                                fontSize: '12px',
+                                color: 'black',
+                                fontWeight: 400,
+                              }}
+                            >
+                              {product.numReviews} reviews | sold {product.sold}
+                            </Typography>
+                          </div>
+                        </CardActions>
+                        <CardActions className={classes.cardActionsProducts}>
+                          <Typography
+                            style={{
+                              fontWeight: 'bold',
+                              color: 'red',
+                              margin: '0px',
+                            }}
+                          >
+                            {product.price}đ
+                          </Typography>
+                        </CardActions>
+                      </Card>
+                    </Grid>
+                  ))}
+                </Grid>
+              </div>
             </div>
-          </div>
-        </Grid>
+          </Grid>
+        </div>
       </Layout>
     </Grid>
   );

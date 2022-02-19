@@ -114,110 +114,36 @@ export default function Layout({ title, children }) {
       <Container className={classes.main}>{children}</Container>
       <Grid style={{ backgroundColor: '#FFFFFF' }}>
         <footer className={classes.footer}>
-          <p>
-            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
-            Chí Minh
-          </p>
-          <p>
-            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
-            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
-          </p>
-          <p>
-            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
-            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
-          </p>
-          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
-          <p>
-            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
-            Chí Minh
-          </p>
-          <p>
-            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
-            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
-          </p>
-          <p>
-            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
-            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
-          </p>
-          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
-          <p>
-            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
-            Chí Minh
-          </p>
-          <p>
-            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
-            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
-          </p>
-          <p>
-            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
-            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
-          </p>
-          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
-          <p>
-            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
-            Chí Minh
-          </p>
-          <p>
-            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
-            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
-          </p>
-          <p>
-            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
-            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
-          </p>
-          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
-          <p>
-            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
-            Chí Minh
-          </p>
-          <p>
-            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
-            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
-          </p>
-          <p>
-            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
-            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
-          </p>
-          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
-          <p>
-            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
-            Chí Minh
-          </p>
-          <p>
-            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
-            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
-          </p>
-          <p>
-            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
-            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
-          </p>
-          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
-          <p>
-            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
-            Chí Minh
-          </p>
-          <p>
-            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
-            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
-          </p>
-          <p>
-            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
-            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
-          </p>
-          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
-          <p>
-            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
-            Chí Minh
-          </p>
-          <p>
-            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
-            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
-          </p>
-          <p>
-            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
-            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
-          </p>
-          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
+          <div className={classes.footerPadding}>
+            <div className={classes.footerBlock}>
+              <div className={classes.block}>
+                <h4 className={classes.customerSupport}>Hỗ trợ khách hàng</h4>
+                <p className={classes.hotline}>
+                  <a className={classes.phoneNumbers}>1900-6035</a>
+                  <span className={classes.smallText}>
+                    (1000 đ/phút, 8-21h kể cả T7, CN)
+                  </span>
+                </p>
+                <a className={classes.smallText}>Các câu hỏi thường gặp</a>
+                <a className={classes.smallText}>Gửi yêu cầu hỗ trợ</a>
+                <a className={classes.smallText}>Hướng dẫn đặt hàng</a>
+                <a className={classes.smallText}>Phương thức vận chuyển</a>
+                <a className={classes.smallText}>Chính sách đổi trả</a>
+                <a className={classes.smallText}>Hướng dẫn trả góp</a>
+                <a className={classes.smallText}>Chính sách hàng nhập khẩu</a>
+                <a className={classes.smallText}>
+                  Hỗ trợ khách hàng: hotro@tiki.vn
+                </a>
+                <a className={classes.smallText}>
+                  Báo lỗi bảo mật: security@tiki.vn
+                </a>
+              </div>
+              <div className={classes.block2}>
+                <h4 className={classes.customerSupport}>Về Tiki</h4>
+                <a className={classes.smallText}>Giới thiệu Tiki</a>
+              </div>
+            </div>
+          </div>
         </footer>
       </Grid>
     </div>

@@ -51,10 +51,6 @@ const useStyles = makeStyles({
     minHeight: '80vh',
   },
 
-  footer: {
-    textAlign: 'center',
-  },
-
   searchBar: {
     marginLeft: 200,
   },
@@ -335,6 +331,7 @@ const useStyles = makeStyles({
     position: 'sticky',
     top: '0',
     width: '100%',
+    zIndex: 998,
   },
   outerTab: {
     display: 'flex',
@@ -349,7 +346,7 @@ const useStyles = makeStyles({
   },
   outerTab2: {
     position: 'relative',
-    marginTop: 10,
+    marginTop: 0,
     marginBottom: 10,
   },
   innerTab2: {
@@ -403,6 +400,95 @@ const useStyles = makeStyles({
   },
   imageTags: {
     display: 'block',
+  },
+  cardActionsProducts: {
+    paddingTop: 1,
+    paddingBottom: 1,
+    paddingLeft: 1,
+    paddingRight: 1,
+  },
+  footer: {
+    color: 'black',
+    marginTop: 16,
+  },
+  footerPadding: {
+    padding: '16px 0px',
+    display: 'block',
+  },
+  footerBlock: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '1270px',
+    boxSizing: 'border-box',
+    paddingLeft: '15px',
+    paddingRight: '15px',
+    marginRight: 'auto',
+    marginLeft: 'auto',
+  },
+  cardNames: {
+    padding: 0,
+  },
+  twoLines: {
+    whiteSpace: 'wrap',
+    width: '400px',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+
+    border: '1px solid #FFFFFF',
+  },
+  block: {
+    display: 'block',
+    width: '268px',
+    boxSizing: 'border-box',
+    fontSize: '12px',
+    lineHeight: '16px',
+    fontWeight: 'normal',
+    color: '#808089',
+  },
+
+  customerSupport: {
+    display: 'block',
+    fontSize: '16px',
+    lineHeight: '24px',
+    fontWeight: '500',
+    color: '#3D3838',
+    marginBottom: '12px',
+    marginTop: '0px',
+  },
+  hotline: {
+    marginBottom: '8px',
+    fontSize: '13px',
+    lineHeight: '16px',
+    color: '#808089',
+    marginTop: '0px',
+  },
+  smallText: {
+    display: 'block',
+    marginBottom: '8px',
+    color: '#808089',
+    fontSize: '12px',
+    lineHeight: '16px',
+    fontWeight: 'normal',
+  },
+  phoneNumbers: {
+    color: '#808089',
+    fontWeight: '500',
+  },
+  block2: {
+    display: 'block',
+    width: '226px',
+    boxSizing: 'border-box',
+    fontSize: '12px',
+    lineHeight: '16px',
+    fontWeight: 'normal',
+    color: '#808089',
+  },
+  h4: {
+    display: 'block',
+    marginBlockStart: '1.33em',
+    marginBlockEnd: '1.33em',
+    marginInlineStart: '0px',
+    marginInlineEnd: '0px',
   },
 });
 
