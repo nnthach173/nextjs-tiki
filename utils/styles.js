@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core';
+import Column from 'antd/lib/table/Column';
 import { AiOutlineEllipsis } from 'react-icons/ai';
 import { BiCommentError, BiLock, BiVerticalCenter } from 'react-icons/bi';
 import LinesEllipsis from 'react-lines-ellipsis';
@@ -51,7 +52,7 @@ const useStyles = makeStyles({
   },
 
   footer: {
-    textAlign: 'left',
+    textAlign: 'center',
   },
 
   searchBar: {
@@ -319,7 +320,7 @@ const useStyles = makeStyles({
   cataBanner: {
     position: 'relative',
     marginTop: 20,
-    marginBottom: 20,
+    marginBottom: 10,
   },
   cataBanner2: {
     position: 'relative',
@@ -329,6 +330,79 @@ const useStyles = makeStyles({
     marginBottom: 10,
     overflow: 'hidden',
     borderRadius: 20,
+  },
+  stickyTab: {
+    position: 'sticky',
+    top: '0',
+    width: '100%',
+  },
+  outerTab: {
+    display: 'flex',
+    paddingTop: 16,
+    paddingRight: 16,
+    paddingBottom: 16,
+    paddingLeft: 16,
+  },
+  innerTab: {
+    fontSize: '20px',
+    display: 'flex',
+  },
+  outerTab2: {
+    position: 'relative',
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  innerTab2: {
+    position: 'relative',
+    marginLeft: 0,
+    marginRight: 10,
+    marginBottom: 10,
+  },
+  insideTabsCurrent: {
+    border: '1px solid blue',
+  },
+  insideTabs: {
+    border: '1px solid white',
+    display: 'flex',
+    backgroundColor: 'white',
+    flexDirection: 'column',
+    WebkitBoxAlign: 'center',
+    alignItems: 'center',
+    flexShrink: 0,
+    minHeight: '78px',
+    cursor: 'pointer',
+    paddingTop: '4px',
+    paddingBottom: '4px',
+    paddingLeft: '8px',
+    paddingLeft: '8px',
+  },
+
+  widgetTabs: {
+    display: 'flex',
+    flexDirection: 'column',
+    WebkitBoxAlign: 'center',
+    alignItems: 'center',
+    flexShrink: 0,
+  },
+  tabText: {
+    position: 'relative',
+    display: 'inline-block',
+    marginLeft: 5,
+    textAlign: 'center',
+  },
+  dummyButton: {
+    backgroundColor: 'white',
+    borderRadius: 5,
+    border: 'none',
+    width: 151,
+    height: 84,
+    cursor: 'pointer',
+    '&:hover': {
+      backgroundColor: '#F6F5FA',
+    },
+  },
+  imageTags: {
+    display: 'block',
   },
 });
 

@@ -7,6 +7,7 @@ import {
   Container,
   Link,
   Button,
+  Grid,
 } from '@material-ui/core';
 import useStyles from '../utils/styles';
 import Image from 'next/image';
@@ -111,21 +112,114 @@ export default function Layout({ title, children }) {
       </AppBar>
 
       <Container className={classes.main}>{children}</Container>
-      <footer className={classes.footer}>
-        <p>
-          Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
-          Chí Minh
-        </p>
-        <p>
-          Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và
-          nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
-        </p>
-        <p>
-          Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu
-          tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
-        </p>
-        <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
-      </footer>
+      <Grid style={{ backgroundColor: '#FFFFFF' }}>
+        <footer className={classes.footer}>
+          <p>
+            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
+            Chí Minh
+          </p>
+          <p>
+            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
+            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
+          </p>
+          <p>
+            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
+            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
+          </p>
+          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
+          <p>
+            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
+            Chí Minh
+          </p>
+          <p>
+            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
+            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
+          </p>
+          <p>
+            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
+            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
+          </p>
+          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
+          <p>
+            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
+            Chí Minh
+          </p>
+          <p>
+            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
+            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
+          </p>
+          <p>
+            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
+            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
+          </p>
+          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
+          <p>
+            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
+            Chí Minh
+          </p>
+          <p>
+            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
+            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
+          </p>
+          <p>
+            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
+            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
+          </p>
+          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
+          <p>
+            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
+            Chí Minh
+          </p>
+          <p>
+            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
+            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
+          </p>
+          <p>
+            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
+            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
+          </p>
+          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
+          <p>
+            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
+            Chí Minh
+          </p>
+          <p>
+            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
+            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
+          </p>
+          <p>
+            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
+            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
+          </p>
+          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
+          <p>
+            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
+            Chí Minh
+          </p>
+          <p>
+            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
+            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
+          </p>
+          <p>
+            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
+            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
+          </p>
+          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
+          <p>
+            Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ
+            Chí Minh
+          </p>
+          <p>
+            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua
+            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý.
+          </p>
+          <p>
+            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và
+            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
+          </p>
+          <p>© 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
+        </footer>
+      </Grid>
     </div>
   );
 }

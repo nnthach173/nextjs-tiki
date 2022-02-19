@@ -12,6 +12,8 @@ import {
   Button,
   Box,
   Link,
+  AppBar,
+  Toolbar,
 } from '@material-ui/core';
 import NextLink from 'next/link';
 import styles from '../styles/Home.module.css';
@@ -823,6 +825,139 @@ export default function Home() {
             />
           </div>
         </div>
+        <div className={classes.stickyTab}>
+          <Grid style={{ backgroundColor: '#FFFFFF' }}>
+            <div className={classes.outerTab}>
+              <div className={classes.innerTab}>
+                <div>Gợi Ý Hôm Nay</div>
+              </div>
+            </div>
+          </Grid>
+
+          <Grid style={{ backgroundColor: '#F6F5FA' }}>
+            <div className={classes.outerTab2}>
+              <div className={classes.innerTab2}>
+                <div>
+                  <div className={classes.tabText}>
+                    <button className={classes.dummyButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage1.webp"
+                          alt="buttonimage1"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Dummy Button</span>
+                    </button>
+                  </div>
+                  <div className={classes.tabText}>
+                    <button className={classes.dummyButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage2.webp"
+                          alt="buttonimage2"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Deal Siêu Hot</span>
+                    </button>
+                  </div>
+                  <div className={classes.tabText}>
+                    <button className={classes.dummyButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage3.webp"
+                          alt="buttonimage3"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Rẻ Vô Đối</span>
+                    </button>
+                  </div>
+                  <div className={classes.tabText}>
+                    <button className={classes.dummyButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage4.webp"
+                          alt="buttonimage4"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Đi Chợ Siêu Sale</span>
+                    </button>
+                  </div>
+                  <div className={classes.tabText}>
+                    <button className={classes.dummyButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage5.webp"
+                          alt="buttonimage5"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Hàng Mới</span>
+                    </button>
+                  </div>
+                  <div className={classes.tabText}>
+                    <button className={classes.dummyButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage6.webp"
+                          alt="buttonimage6"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Không giới hạn</span>
+                    </button>
+                  </div>
+                  <div className={classes.tabText}>
+                    <button className={classes.dummyButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage7.webp"
+                          alt="buttonimage7"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Quà Tết 2022</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Grid>
+        </div>
+        <Grid style={{ backgroundColor: '#FFFFFF' }}>
+          <div className={classes.mainTitle}>
+            <div className={classes.mainTitle2}>
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+
+              <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
+            </div>
+          </div>
+        </Grid>
       </Layout>
     </Grid>
   );
