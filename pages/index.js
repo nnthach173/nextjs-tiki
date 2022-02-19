@@ -848,7 +848,7 @@ export default function Home() {
                           height={48}
                         />
                       </span>
-                      <span>Dummy Button</span>
+                      <span>Dành cho bạn</span>
                     </button>
                   </div>
                   <div className={classes.tabText}>
