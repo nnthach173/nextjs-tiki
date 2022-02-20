@@ -149,21 +149,28 @@ const useStyles = makeStyles({
   carousel: {
     position: 'relative',
     display: 'inline-block',
+    paddingTop: 20,
   },
   carouselHeader: {
-    // position: 'absolute',
-    // top: 165,
+    position: 'absolute',
+    right: 350,
+    top: 150,
+    // top: 100,
     // right: 335,
-    position: 'relative',
-    display: 'inline-block',
-    paddingLeft: 10,
-    paddingBottom: 10,
-    marginBottom: 10,
+    // position: 'relative',
+    // display: 'inline-block',
+
+    // paddingLeft: 10,
+    // paddingBottom: 10,
+    // marginBottom: 10,
   },
   carouselHeaderPosition: {
     position: 'relative',
     display: 'inline-block',
-    paddingTop: 10,
+
+    // position: 'absolute',
+    // top: 100,
+    // right: 335,
   },
 
   section: {
@@ -370,6 +377,7 @@ const useStyles = makeStyles({
     width: '100%',
     zIndex: 998,
   },
+
   outerTab: {
     display: 'flex',
     paddingTop: 16,
@@ -526,6 +534,11 @@ const useStyles = makeStyles({
     marginBlockEnd: '1.33em',
     marginInlineStart: '0px',
     marginInlineEnd: '0px',
+  },
+  hangHoa: {
+    position: 'relative',
+    display: 'inline-block',
+    padding: 5,
   },
 });
 

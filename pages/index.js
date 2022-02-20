@@ -48,7 +48,6 @@ export default function Home() {
                 infiniteLoop={true}
                 showStatus={false}
                 autoPlay={true}
-                dynamicHeight={true}
               >
                 <div>
                   <Image src="/1.png" alt="1" width={824} height={274} />
@@ -96,18 +95,13 @@ export default function Home() {
                   <Image src="/15.png" alt="15" width={824} height={274} />
                 </div>
               </Carousel>
+              {/* </div> */}
+              {/* </div> */}
+              {/* <div className={classes.carouselHeaderPosition}> */}
             </div>
-            <div className={classes.carouselHeaderPosition}>
-              <div className={classes.carouselHeader}>
-                <Image
-                  src="/header.png"
-                  alt="header"
-                  width={400}
-                  height={274}
-                />
-              </div>
+            <div className={classes.carouselHeader}>
+              <Image src="/header.png" alt="header" width={400} height={274} />
             </div>
-            {/* </div> */}
           </Grid>
 
           <Grid
@@ -118,39 +112,79 @@ export default function Home() {
             container
             spacing={3}
           >
-            {data.props.map((product) => (
-              <Grid item md={2} key={product.name}>
-                <Card>
-                  <NextLink href={`/product/${product.slug}`} passHref>
-                    <CardActionArea>
-                      <CardMedia
-                        component="img"
-                        image={product.image}
-                        title={product.name}
-                      ></CardMedia>
-                    </CardActionArea>
-                  </NextLink>
+            <Grid>
+              <div className={classes.mainTitle}>
+                <div className={classes.mainTitle2}>
+                  <div className={classes.flashIcon}>
+                    <Image
+                      className={classes.flashIcon}
+                      src="/giasoc.svg"
+                      alt=""
+                      width={89}
+                      height={28}
+                    />
+                  </div>
+                  <div className={classes.flashIcon}>
+                    <Image
+                      className={classes.flashIcon}
+                      src="/dealFlashIcon.svg"
+                      alt=""
+                      width={24}
+                      height={28}
+                    />
+                  </div>
+                  <div className={classes.flashIcon}>
+                    <Image
+                      className={classes.flashIcon}
+                      src="/homnay.svg"
+                      alt=""
+                      width={113}
+                      height={28}
+                    />
+                  </div>
+                </div>
+              </div>
+            </Grid>
+            <div className={classes.hangHoa}>
+              {data.props.map((product) => (
+                <Grid
+                  className={classes.hangHoa}
+                  item
+                  md={2}
+                  key={product.name}
+                >
+                  <Card>
+                    <NextLink href={`/product/${product.slug}`} passHref>
+                      <CardActionArea>
+                        <CardMedia
+                          component="img"
+                          image={product.image}
+                          title={product.name}
+                        ></CardMedia>
+                      </CardActionArea>
+                    </NextLink>
 
-                  <CardActions>
-                    <Typography
-                      style={{
-                        fontWeight: 'bold',
-                        color: 'red',
-                        margin: '0px auto',
-                      }}
-                    >
-                      {product.price}đ
-                    </Typography>
-                  </CardActions>
+                    <CardActions>
+                      <Typography
+                        style={{
+                          fontWeight: 'bold',
+                          color: 'red',
+                          margin: '0px auto',
+                        }}
+                      >
+                        {product.price}đ
+                      </Typography>
+                    </CardActions>
 
-                  <Box textAlign="center">
-                    <Button className={classes.soldButton}>
-                      Đã bán {product.sold}
-                    </Button>
-                  </Box>
-                </Card>
-              </Grid>
-            ))}
+                    <Box textAlign="center">
+                      <Button className={classes.soldButton}>
+                        Đã bán {product.sold}
+                      </Button>
+                    </Box>
+                  </Card>
+                </Grid>
+              ))}
+            </div>
           </Grid>
         </Grid>
         <Grid
