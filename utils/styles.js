@@ -12,20 +12,25 @@ const useStyles = makeStyles({
   navbar2: {
     backgroundColor: '#FFFFFF',
   },
-
+  logoPosition: {
+    position: 'relative',
+    paddingLeft: 320,
+  },
   logo: {
+    position: 'relative',
     width: 55,
     height: 40,
-    marginBottom: 30,
-    marginLeft: 300,
+    // marginBottom: 30,
+    // marginLeft: 300,
   },
 
   logo2: {
+    position: 'relative',
     width: 80,
     height: 12,
-    position: 'relative',
-    marginTop: 35,
-    marginLeft: -55,
+
+    // marginTop: 35,
+    // marginLeft: 55,
   },
 
   customizeToolbar: {
@@ -45,21 +50,34 @@ const useStyles = makeStyles({
 
   menuWords: {
     color: '#000000',
-    marginLeft: 30,
+    //marginLeft: 30,
+    position: 'relative',
+    display: 'inline-block',
+    paddingLeft: 30,
   },
+  menuWordsPosition: {
+    position: 'relative',
+    paddingLeft: 300,
+  },
+
   main: {
     minHeight: '80vh',
   },
 
   searchBar: {
-    marginLeft: 200,
+    //marginLeft: 150,
+    position: 'relative',
+    display: 'inline-block',
   },
 
   searchIcon: {
     width: 5,
     height: 5,
   },
-
+  buttonPosition: {
+    position: 'relative',
+    display: 'inline-block',
+  },
   button: {
     backgroundColor: '#0D5CB8',
     height: '35px',
@@ -72,19 +90,23 @@ const useStyles = makeStyles({
       backgroundColor: '#0D5CB8',
     },
   },
+  searchBarPosition: {
+    position: 'relative',
+    paddingLeft: 120,
+    paddingTop: 10,
+  },
 
   suggestWords: {
-    display: 'inline-block',
     position: 'relative',
+    display: 'inline-block',
+
     marginLeft: 15,
     fontSize: 11,
-    marginTop: 55,
+    // marginTop: 55,
   },
 
   suggestWordsFinal: {
-    position: 'absolute',
-    top: 20,
-    left: 600,
+    position: 'relative',
   },
 
   loginButton: {
@@ -119,14 +141,29 @@ const useStyles = makeStyles({
     border: 'none',
   },
 
+  carouselPosition: {
+    position: 'relative',
+    display: 'inline-block',
+  },
+
   carousel: {
     position: 'relative',
-    top: 30,
+    display: 'inline-block',
   },
   carouselHeader: {
-    position: 'absolute',
-    top: 165,
-    right: 335,
+    // position: 'absolute',
+    // top: 165,
+    // right: 335,
+    position: 'relative',
+    display: 'inline-block',
+    paddingLeft: 10,
+    paddingBottom: 10,
+    marginBottom: 10,
+  },
+  carouselHeaderPosition: {
+    position: 'relative',
+    display: 'inline-block',
+    paddingTop: 10,
   },
 
   section: {

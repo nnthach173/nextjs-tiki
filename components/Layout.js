@@ -26,37 +26,48 @@ export default function Layout({ title, children }) {
       </Head>
       <AppBar position="static" className={classes.navbar}>
         <Toolbar className={classes.customizeToolbar}>
-          <div className={classes.logo}>
-            <Image src="/tiki.png" alt="tiki" width={55} height={40} />
+          <div className={classes.logoPosition}>
+            <div className={classes.logo}>
+              <Image src="/tiki.png" alt="tiki" width={55} height={40} />
+            </div>
+            <div className={classes.logo2}>
+              <Image
+                src="/freeship.png"
+                alt="freeship"
+                width={80}
+                height={12}
+              />
+            </div>
           </div>
-          <div className={classes.logo2}>
-            <Image src="/freeship.png" alt="freeship" width={80} height={12} />
+          <div className={classes.searchBarPosition}>
+            <div className={classes.searchBar}>
+              <input
+                placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn..."
+                style={{ height: '35px', width: '600px' }}
+              />
+            </div>
+
+            <div className={classes.buttonPosition}>
+              <Typography>
+                <Button className={classes.button}>
+                  <BiSearchAlt size={20} />
+                  Tìm kiếm
+                </Button>
+              </Typography>
+            </div>
+
+            <div className={classes.suggestWordsFinal}>
+              <div className={classes.suggestWords}>trái cây</div>
+              <div className={classes.suggestWords}>thịt trứng</div>
+              <div className={classes.suggestWords}>rau củ quả</div>
+              <div className={classes.suggestWords}>sữa, bơ, phô mai</div>
+              <div className={classes.suggestWords}>hải sản</div>
+              <div className={classes.suggestWords}>gạo, mì ăn liền</div>
+              <div className={classes.suggestWords}>đồ uống, bia rượu</div>
+              <div className={classes.suggestWords}>bánh kẹo</div>
+            </div>
           </div>
 
-          <div className={classes.searchBar}>
-            <input
-              placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn..."
-              style={{ height: '35px', width: '600px' }}
-            />
-          </div>
-          <div>
-            <Typography>
-              <Button className={classes.button}>
-                <BiSearchAlt size={20} />
-                Tìm kiếm
-              </Button>
-            </Typography>
-          </div>
-          <div className={classes.suggestWordsFinal}>
-            <div className={classes.suggestWords}>trái cây</div>
-            <div className={classes.suggestWords}>thịt trứng</div>
-            <div className={classes.suggestWords}>rau củ quả</div>
-            <div className={classes.suggestWords}>sữa, bơ, phô mai</div>
-            <div className={classes.suggestWords}>hải sản</div>
-            <div className={classes.suggestWords}>gạo, mì ăn liền</div>
-            <div className={classes.suggestWords}>đồ uống, bia rượu</div>
-            <div className={classes.suggestWords}>bánh kẹo</div>
-          </div>
           <BsPerson size={30} className={classes.personIcon} />
           <div className={classes.loginButton}>
             <Link href="#" underline="none">
@@ -92,22 +103,29 @@ export default function Layout({ title, children }) {
 
       <AppBar position="relative" className={classes.navbar2}>
         <Toolbar className={classes.customizeToolbar2}>
-          <div
+          {/* <div
             className={`${classes.menuWordsPosition} ${classes.menuWordsColor}`}
           >
             Thịt, rau củ
+          </div> */}
+          <div className={classes.menuWordsPosition}>
+            <div className={classes.menuWords}>Thịt, Rau Củ</div>
+            <div className={classes.menuWords}>Bách Hóa</div>
+            <div className={classes.menuWords}>Nhà Cửa</div>
+            <div className={classes.menuWords}>Điện tử</div>
+            <div className={classes.menuWords}>Thiết bị số</div>
+            <div className={classes.menuWords}>Điện thoại</div>
+            <div className={classes.menuWords}>Mẹ & Bé</div>
+            <div className={classes.menuWords}>Gia Dụng</div>
+            <div className={classes.menuWords}>Thời trang nữ</div>
+            <div className={classes.menuWords}>Thời trang nam</div>
+            <div className={classes.menuWords}>Giày nữ</div>
+            <div className={classes.menuWords}>Túi nữ</div>
           </div>
-          <div className={classes.menuWords}>Bách Hóa</div>
-          <div className={classes.menuWords}>Nhà Cửa</div>
-          <div className={classes.menuWords}>Điện tử</div>
-          <div className={classes.menuWords}>Thiết bị số</div>
-          <div className={classes.menuWords}>Điện thoại</div>
-          <div className={classes.menuWords}>Mẹ & Bé</div>
-          <div className={classes.menuWords}>Gia Dụng</div>
-          <div className={classes.menuWords}>Thời trang nữ</div>
-          <div className={classes.menuWords}>Thời trang nam</div>
-          <div className={classes.menuWords}>Giày nữ</div>
-          <div className={classes.menuWords}>Túi nữ</div>
+          {/* <div className={classes.menuWordsPosition}>
+            <div className={classes.menuWords}>test 1</div>
+            <div className={classes.menuWords}>test 1</div>
+          </div> */}
         </Toolbar>
       </AppBar>
 
