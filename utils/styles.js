@@ -633,6 +633,14 @@ const useStyles = makeStyles({
     textDecorationColor: 'initial',
     cursor: 'pointer',
   },
+  miniLink2: {
+    color: '#0b74e5',
+
+    cursor: 'pointer',
+    '&:hover': {
+      textDecoration: 'underline',
+    },
+  },
 });
 
 export default useStyles;

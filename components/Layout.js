@@ -248,39 +248,53 @@ export default function Layout({ title, children }) {
               <a className={classes.smallText}>
                 Với hàng triệu sản phẩm từ các thương hiệu, cửa hàng uy tín,
                 hàng nghìn loại mặt hàng từ{' '}
-                <Link className={classes.miniLink}>Điện thoại smartphone</Link>{' '}
-                tới <Link className={classes.miniLink}>Rau củ quả tươi</Link>,
-                kèm theo dịch vụ giao hàng siêu tốc TikiNOW, Tiki mang đến cho
+                <a underline="hover" className={classes.miniLink2}>
+                  Điện thoại smartphone
+                </a>{' '}
+                tới{' '}
+                <a underline="hover" className={classes.miniLink2}>
+                  Rau củ quả tươi
+                </a>
+                , kèm theo dịch vụ giao hàng siêu tốc TikiNOW, Tiki mang đến cho
                 bạn một trải nghiệm mua sắm online bắt đầu bằng chữ tín. Thêm
                 vào đó, ở Tiki bạn có thể dễ dàng sử dụng vô vàn các tiện ích
                 khác như{' '}
-                <Link className={classes.miniLink}>
+                <a underline="hover" className={classes.miniLink2}>
                   mua thẻ cào, thanh toán hoá đơn điện nước, các dịch vụ bảo
                   hiểm.
-                </Link>
+                </a>
               </a>
               <h2 className={classes.h2}>Khuyến mãi, ưu đãi tràn ngập</h2>
-              <a className={classes.smallText}>
-                Bạn muốn săn giá sốc, Tiki có{' '}
-                <Link className={classes.miniLink}>giá sốc mỗi ngày</Link> cho
-                bạn! Bạn là tín đồ của các thương hiệu, các{' '}
-                <Link className={classes.miniLink}>
-                  cửa hàng Official chính hãng
-                </Link>{' '}
-                đang chờ đón bạn. Không cần săn mã freeship, vì Tiki đã có hàng
-                triệu sản phẩm trong{' '}
-                <Link className={classes.miniLink}>chương trình Freeship+</Link>
-                , không giới hạn lượt đặt, tiết kiệm thời gian vàng bạc của bạn.
-                Mua thêm gói{' '}
-                <Link className={classes.miniLink}>TikiNOW tiết kiệm</Link> để
-                nhận 100% free ship 2h & trong ngày, hoặc mua gói TikiNOW cao
-                cấp để nhận được 100% freeship, áp dụng cho 100% sản phẩm, 100%
-                tỉnh thành Việt Nam. Bạn muốn tiết kiệm hơn nữa? Đã có TikiCARD,
-                <Link className={classes.miniLink}>
-                  thẻ tín dụng Tiki hoàn tiền 15%
-                </Link>{' '}
-                trên mọi giao dịch (tối đa hoàn 600k/tháng)
-              </a>
+              <div>
+                <a className={classes.smallText}>
+                  Bạn muốn săn giá sốc, Tiki có{' '}
+                  <a underline="hover" className={classes.miniLink2}>
+                    giá sốc mỗi ngày
+                  </a>{' '}
+                  cho bạn! Bạn là tín đồ của các thương hiệu, các{' '}
+                  <a underline="hover" className={classes.miniLink2}>
+                    cửa hàng Official chính hãng
+                  </a>{' '}
+                  đang chờ đón bạn. Không cần săn mã freeship, vì Tiki đã có
+                  hàng triệu sản phẩm trong{' '}
+                  <a underline="hover" className={classes.miniLink2}>
+                    chương trình Freeship+
+                  </a>{' '}
+                  , không giới hạn lượt đặt, tiết kiệm thời gian vàng bạc của
+                  bạn. Mua thêm gói{' '}
+                  <a underline="hover" className={classes.miniLink2}>
+                    TikiNOW tiết kiệm
+                  </a>{' '}
+                  để nhận 100% free ship 2h & trong ngày, hoặc mua gói TikiNOW
+                  cao cấp để nhận được 100% freeship, áp dụng cho 100% sản phẩm,
+                  100% tỉnh thành Việt Nam. Bạn muốn tiết kiệm hơn nữa? Đã có
+                  TikiCARD,{' '}
+                  <a underline="hover" className={classes.miniLink2}>
+                    thẻ tín dụng Tiki hoàn tiền 15%
+                  </a>{' '}
+                  trên mọi giao dịch (tối đa hoàn 600k/tháng)
+                </a>
+              </div>
             </div>
           </div>
           <div className={classes.separator}></div>
