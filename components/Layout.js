@@ -158,8 +158,292 @@ export default function Layout({ title, children }) {
               </div>
               <div className={classes.block2}>
                 <h4 className={classes.customerSupport}>Về Tiki</h4>
-                <a className={classes.smallText}>Giới thiệu Tiki</a>
+                <a className={classes.smallText}>Giới thiệu về tiki</a>
+                <a className={classes.smallText}>Tuyển dụng</a>
+                <a className={classes.smallText}>
+                  Chính sách bảo mật thanh toán
+                </a>
+                <a className={classes.smallText}>
+                  Chính sách bảo mật thông tin cá nhân
+                </a>
+                <a className={classes.smallText}>
+                  Chính sách giải quyết khiếu nại
+                </a>
+                <a className={classes.smallText}>Điều khoản sử dụng</a>
+                <a className={classes.smallText}>Giới thiệu TiKi Xu</a>
+                <a className={classes.smallText}>Tiếp thị liên kết cùng Tiki</a>
+                <a className={classes.smallText}>Bán hàng doanh nghiệp</a>
               </div>
+              <div className={classes.block2}>
+                <h4 className={classes.customerSupport}>Hợp tác và liên kết</h4>
+                <a className={classes.smallText}>
+                  Quy chế hoạt động Sàn GDTMĐT
+                </a>
+                <a className={classes.smallText}>Bán hàng cùng Tiki</a>
+                <h4 className={classes.customerSupport2}>Chứng nhận bởi</h4>
+                <Image src="/bocongthuong.png" alt="" width={32} height={32} />
+                <div className={classes.boCongThuong}>
+                  <Image
+                    src="/bocongthuong.svg"
+                    alt=""
+                    width={83}
+                    height={32}
+                  />
+                </div>
+              </div>
+              <div className={classes.block2}>
+                <h4 className={classes.customerSupport}>Dịch vụ giao hàng</h4>
+                <Image src="/tikinow.webp" alt="" width={68} height={33} />
+              </div>
+              <div className={classes.block2}>
+                <h4 className={classes.customerSupport}>
+                  Tải ứng dụng trên điện thoại
+                </h4>
+
+                <div className={classes.iconBorder}>
+                  <Image src="/qrcode.png" alt="" width={80} height={80} />
+                  <div className={classes.qrCode}>
+                    <Image src="/appstore.png" alt="" width={122} height={36} />
+                    <Image
+                      src="/googleplay.png"
+                      alt=""
+                      width={122}
+                      height={36}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={classes.separator}></div>
+          <div className={classes.footerPadding}>
+            <div className={classes.footerBlock}>
+              <div className={classes.block3}>
+                <a className={classes.smallText}>
+                  Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành
+                  phố Hồ Chí Minh
+                </a>
+                <a className={classes.smallText}>
+                  Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ
+                  trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử
+                  lý đơn hàng
+                </a>
+                <a className={classes.smallText}>
+                  Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế
+                  hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
+                </a>
+                <a className={classes.smallText}>
+                  © 2021 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={classes.separator}></div>
+          <div className={classes.footerBlock}>
+            <div className={classes.block4}>
+              <h1 className={classes.h1}>
+                Tiki - Thật nhanh, thật chất lượng, thật rẻ
+              </h1>
+              <h2 className={classes.h2}>Tiki có tất cả</h2>
+              <a className={classes.smallText}>
+                Với hàng triệu sản phẩm từ các thương hiệu, cửa hàng uy tín,
+                hàng nghìn loại mặt hàng từ{' '}
+                <Link className={classes.miniLink}>Điện thoại smartphone</Link>{' '}
+                tới <Link className={classes.miniLink}>Rau củ quả tươi</Link>,
+                kèm theo dịch vụ giao hàng siêu tốc TikiNOW, Tiki mang đến cho
+                bạn một trải nghiệm mua sắm online bắt đầu bằng chữ tín. Thêm
+                vào đó, ở Tiki bạn có thể dễ dàng sử dụng vô vàn các tiện ích
+                khác như{' '}
+                <Link className={classes.miniLink}>
+                  mua thẻ cào, thanh toán hoá đơn điện nước, các dịch vụ bảo
+                  hiểm.
+                </Link>
+              </a>
+              <h2 className={classes.h2}>Khuyến mãi, ưu đãi tràn ngập</h2>
+              <a className={classes.smallText}>
+                Bạn muốn săn giá sốc, Tiki có{' '}
+                <Link className={classes.miniLink}>giá sốc mỗi ngày</Link> cho
+                bạn! Bạn là tín đồ của các thương hiệu, các{' '}
+                <Link className={classes.miniLink}>
+                  cửa hàng Official chính hãng
+                </Link>{' '}
+                đang chờ đón bạn. Không cần săn mã freeship, vì Tiki đã có hàng
+                triệu sản phẩm trong{' '}
+                <Link className={classes.miniLink}>chương trình Freeship+</Link>
+                , không giới hạn lượt đặt, tiết kiệm thời gian vàng bạc của bạn.
+                Mua thêm gói{' '}
+                <Link className={classes.miniLink}>TikiNOW tiết kiệm</Link> để
+                nhận 100% free ship 2h & trong ngày, hoặc mua gói TikiNOW cao
+                cấp để nhận được 100% freeship, áp dụng cho 100% sản phẩm, 100%
+                tỉnh thành Việt Nam. Bạn muốn tiết kiệm hơn nữa? Đã có TikiCARD,
+                <Link className={classes.miniLink}>
+                  thẻ tín dụng Tiki hoàn tiền 15%
+                </Link>{' '}
+                trên mọi giao dịch (tối đa hoàn 600k/tháng)
+              </a>
+            </div>
+          </div>
+          <div className={classes.separator}></div>
+          <div className={classes.footerBlock}>
+            <h1 className={classes.h1}>Danh mục sản phẩm</h1>
+          </div>
+          <div className={classes.footerBlock}>
+            <div className={classes.block}>
+              <h2 className={classes.h2}>Đồ Chơi - Mẹ & Bé</h2>
+              <a className={classes.smallText}>
+                Thời Trang Cho Mẹ Và Bé / Đồ chơi / Đồ dùng cho bé / Chăm sóc
+                nhà cửa / Chăm sóc mẹ mang thai, sau sinh / Dinh dưỡng cho bé /
+                Tã, Bỉm / Dinh dưỡng cho người lớn / Dinh dưỡng cho mẹ / Thực
+                phẩm ăn dặm / Chuẩn bị mang thai
+              </a>
+              <h2 className={classes.h2}>Thực Phẩm Tươi Sống</h2>
+              <a className={classes.smallText}>
+                Trái Cây / Thịt, Trứng / Cá, thuỷ hải sản / Rau củ quả / Thực
+                phẩm Việt / Sữa, bơ, phô mai / Đông lạnh, mát / Dầu ăn, gia vị /
+                Gạo, mì, nông sản / Đồ hộp, đóng gói / Bia, đồ uống / Thực phẩm
+                chay / Dành cho trẻ em / Bánh kẹo, giỏ quà / Thức ăn, đồ thú
+                cưng / Chăm sóc cá nhân / Chăm sóc nhà cửa
+              </a>
+              <h2 className={classes.h2}>Điện Thoại - Máy Tính Bảng</h2>
+              <a className={classes.smallText}>
+                Điện thoại Smartphone / Điện thoại bàn / Điện thoại phổ thông /
+                Máy đọc sách / Máy tính bảng
+              </a>
+              <h2 className={classes.h2}>Làm Đẹp - Sức Khỏe</h2>
+              <a className={classes.smallText}>
+                Chăm sóc da mặt / Dụng cụ làm đẹp / Thực phẩm chức năng / Trang
+                điểm / Chăm sóc cơ thể / Máy Massage & Thiết bị chăm sóc sức
+                khỏe / Sản phẩm thiên nhiên & Khác / Chăm sóc tóc và da đầu /
+                Chăm sóc cá nhân / Nước hoa / Hỗ trợ tình dục / Bộ sản phẩm làm
+                đẹp / Dược mỹ phẩm
+              </a>
+              <h2 className={classes.h2}>Điện gia dụng</h2>
+              <a className={classes.smallText}>
+                Đồ dùng nhà bếp / Thiết bị gia đình
+              </a>
+            </div>
+            <div className={classes.block2}>
+              <h2 className={classes.h2}>Thời trang nữ</h2>
+              <a className={classes.smallText}>
+                Áo nữ / Đầm nữ / Quần nữ / Áo liền quần - Bộ trang phục / Áo
+                khoác nữ / Đồ ngủ - Đồ mặc nhà nữ / Chân váy / Trang phục bơi nữ
+                / Thời trang bầu và sau sinh / Thời trang trung niên
+              </a>
+              <h2 className={classes.h2}>Thời trang nam</h2>
+              <a className={classes.smallText}>
+                Áo thun nam / Quần nam / Áo vest - Áo khoác nam / Áo sơ mi nam /
+                Đồ lót nam / Áo hoodie nam / Đồ ngủ, đồ mặc nhà nam / Đồ đôi -
+                Đồ gia đình nam / Áo nỉ - Áo len nam / Đồ bơi - Đồ đi biển nam /
+                Quần áo nam trung niên / Quần áo nam kích cỡ lớn
+              </a>
+              <h2 className={classes.h2}>Giày - Dép nữ</h2>
+              <a className={classes.smallText}>
+                Giày cao gót / Dép - Guốc nữ / Giày thể thao nữ / Giày sandals
+                nữ / Giày búp bê / Giày boots nữ / Giày lười nữ / Phụ kiện giày
+                / Giày Đế xuồng nữ
+              </a>
+              <h2 className={classes.h2}>Giày - Dép nam</h2>
+              <a className={classes.smallText}>
+                Giày lười nam / Giày tây nam / Giày thể thao nam / Dép nam /
+                Giày sandals nam / Phụ kiện giày nam / Giày boots nam
+              </a>
+              <h2 className={classes.h2}>Túi thời trang nữ</h2>
+              <a className={classes.smallText}>
+                Túi đeo chéo, túi đeo vai nữ / Ví nữ / Túi xách tay nữ / Túi
+                tote nữ / Phụ kiện túi
+              </a>
+              <h2 className={classes.h2}>Túi thời trang nam</h2>
+              <a className={classes.smallText}>
+                Ví nam / Túi đeo chéo nam / Túi xách công sở nam / Túi bao tử,
+                túi đeo bụng
+              </a>
+            </div>
+            <div className={classes.block2}>
+              <h2 className={classes.h2}>Balo và Vali</h2>
+              <a className={classes.smallText}>
+                Balo / Túi du lịch và phụ kiện / Balo, cặp, túi chống sốc laptop
+                / Vali, phụ kiện vali
+              </a>
+              <h2 className={classes.h2}>Phụ kiện thời trang</h2>
+              <a className={classes.smallText}>
+                Phụ kiện thời trang nữ / Mắt kính / Phụ kiện thời trang nam
+              </a>
+              <h2 className={classes.h2}>Đồng hồ và Trang sức</h2>
+              <a className={classes.smallText}>
+                Trang sức / Đồng hồ nữ / Đồng hồ nam / Phụ kiện đồng hồ / Đồng
+                hồ trẻ em
+              </a>
+              <h2 className={classes.h2}>Laptop - Máy Vi Tính - Linh kiện</h2>
+              <a className={classes.smallText}>
+                Linh Kiện Máy Tính - Phụ Kiện Máy Tính / Thiết Bị Văn Phòng -
+                Thiết Bị Ngoại Vi / Thiết Bị Mạng / Thiết Bị Lưu Trữ / PC - Máy
+                Tính Bộ / Laptop
+              </a>
+              <h2 className={classes.h2}>Bách Hóa Online</h2>
+              <a className={classes.smallText}>
+                Chăm sóc thú cưng / Đồ uống - Pha chế dạng bột / Thực phẩm Đóng
+                hộp và Khô / Gia Vị và Chế Biến / Đậu & Hạt Các Loại / Đồ Ăn Vặt
+                / Sữa và các Sản phẩm từ sữa / Đồ Uống Không Cồn / Đồ uống có
+                cồn / Bộ quà tặng
+              </a>
+            </div>
+            <div className={classes.block2}>
+              <h2 className={classes.h2}>Hàng Quốc Tế</h2>
+              <a className={classes.smallText}>
+                Nhà Cửa - Đời Sống / Thời Trang / Ô tô, xe máy, xe đạp / Thiết
+                Bị Số - Phụ Kiện Số / Thể thao - Dã ngoại / Làm Đẹp - Sức Khỏe /
+                Sách, Văn phòng phẩm & Quà lưu niệm / Mẹ & Bé / Điện gia dụng /
+                Bách hóa online / Máy Ảnh - Máy Quay Phim / Laptop & Máy Vi Tính
+                / Sản phẩm - thiết bị công nghiệp / Tivi & Thiết Bị Nghe Nhìn /
+                Điện Thoại - Máy Tính Bảng
+              </a>
+              <h2 className={classes.h2}>Thiết Bị Số - Phụ Kiện Số</h2>
+              <a className={classes.smallText}>
+                Phụ Kiện Điện Thoại và Máy Tính Bảng / Phụ kiện máy tính và
+                Laptop / Thiết Bị Âm Thanh và Phụ Kiện / Thiết Bị Thông Minh và
+                Linh Kiện Điện Tử / Thiết Bị Đeo Thông Minh và Phụ Kiện / Thiết
+                Bị Chơi Game và Phụ Kiện
+              </a>
+              <h2 className={classes.h2}>Voucher - Dịch vụ</h2>
+              <a className={classes.smallText}>
+                Thanh toán hóa đơn / Khóa học / Du lịch - Khách sạn / Spa & Làm
+                đẹp / Dịch vụ khác / Nhà hàng - Ăn uống / Sự kiện - Giải trí /
+                Nha khoa - Sức khỏe / Phiếu quà tặng / Sim số - Thẻ cào - Thẻ
+                game
+              </a>
+              <h2 className={classes.h2}>Ô Tô - Xe Máy - Xe Đạp</h2>
+              <a className={classes.smallText}>
+                Phụ kiện - Chăm sóc xe / Xe điện / Xe đạp / Xe máy / Ô tô / Xe
+                Scooter / Dịch vụ, lắp đặt
+              </a>
+              <h2 className={classes.h2}>Nhà Sách Tiki</h2>
+              <a className={classes.smallText}>
+                Sách tiếng Việt / Văn phòng phẩm / Quà lưu niệm / English Books
+              </a>
+            </div>
+            <div className={classes.block2}>
+              <h2 className={classes.h2}>Điện Tử - Điện Lạnh</h2>
+              <a className={classes.smallText}>
+                Âm thanh & Phụ kiện Tivi / Phụ kiện điện lạnh / Tủ lạnh / Máy
+                lạnh - Máy điều hòa / Máy giặt / Tủ đông - Tủ mát / Tivi / Máy
+                nước nóng / Máy rửa chén / Máy sấy quần áo / Tủ ướp rượu
+              </a>
+              <h2 className={classes.h2}>Thể Thao - Dã Ngoại</h2>
+              <a className={classes.smallText}>
+                Trang phục thể thao nữ / Trang phục thể thao nam / Đồ dùng dã
+                ngoại / Giày thể thao nam / Phụ kiện thể thao / Dụng cụ - thiết
+                bị tập thể thao / Các môn thể thao khác / Dụng cụ câu cá / Thể
+                thao dưới nước / Các môn thể thao đồng đội / Các môn thể thao
+                chơi vợt / Các môn thể thao đối kháng / Giày thể thao nữ / Thực
+                phẩm bổ sung năng lượng / Dụng cụ leo núi
+              </a>
+              <h2 className={classes.h2}>Máy Ảnh - Máy Quay Phim</h2>
+              <a className={classes.smallText}>
+                Phụ Kiện Máy Ảnh, Máy Quay / Camera Giám Sát / Thiết Bị Ánh Sáng
+                / Camera Hành Trình - Action Camera và Phụ Kiện / Balo - Túi
+                Đựng - Bao Da / Ống Kính - Ống Ngắm / Ống Kính (Lens) / Thiết Bị
+                Quay Phim / Máy Bay Camera và Phụ Kiện / Máy Ảnh
+              </a>
             </div>
           </div>
         </footer>
