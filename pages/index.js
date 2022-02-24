@@ -33,78 +33,79 @@ export default function Home() {
       <Layout>
         <Grid
           style={{
+            backgroundColor: '#F6F5FA',
+          }}
+        >
+          {/* <div className={classes.carouselPosition}> */}
+          <div className={classes.carousel}>
+            <Carousel
+              width={810}
+              infiniteLoop={true}
+              showStatus={false}
+              autoPlay={true}
+            >
+              <div>
+                <Image src="/1.png" alt="1" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/2.png" alt="2" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/3.png" alt="3" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/4.png" alt="4" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/5.png" alt="5" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/6.png" alt="6" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/7.png" alt="7" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/8.png" alt="8" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/9.png" alt="9" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/10.png" alt="10" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/11.png" alt="11" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/12.png" alt="12" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/13.png" alt="13" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/14.png" alt="14" width={824} height={274} />
+              </div>
+              <div>
+                <Image src="/15.png" alt="15" width={824} height={274} />
+              </div>
+            </Carousel>
+            {/* </div> */}
+            {/* </div> */}
+            {/* <div className={classes.carouselHeaderPosition}> */}
+          </div>
+          <div className={classes.carouselHeader}>
+            <Image src="/header.png" alt="header" width={400} height={274} />
+          </div>
+        </Grid>
+
+        <Grid
+          style={{
             backgroundColor: 'white',
           }}
         >
           <Grid
-            style={{
-              backgroundColor: '#F6F5FA',
-            }}
-          >
-            {/* <div className={classes.carouselPosition}> */}
-            <div className={classes.carousel}>
-              <Carousel
-                width={810}
-                infiniteLoop={true}
-                showStatus={false}
-                autoPlay={true}
-              >
-                <div>
-                  <Image src="/1.png" alt="1" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/2.png" alt="2" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/3.png" alt="3" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/4.png" alt="4" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/5.png" alt="5" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/6.png" alt="6" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/7.png" alt="7" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/8.png" alt="8" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/9.png" alt="9" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/10.png" alt="10" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/11.png" alt="11" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/12.png" alt="12" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/13.png" alt="13" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/14.png" alt="14" width={824} height={274} />
-                </div>
-                <div>
-                  <Image src="/15.png" alt="15" width={824} height={274} />
-                </div>
-              </Carousel>
-              {/* </div> */}
-              {/* </div> */}
-              {/* <div className={classes.carouselHeaderPosition}> */}
-            </div>
-            <div className={classes.carouselHeader}>
-              <Image src="/header.png" alt="header" width={400} height={274} />
-            </div>
-          </Grid>
-
-          <Grid
+            className={classes.gridBorder}
             style={{
               backgroundColor: '#FFFFFF',
               paddingTop: '10px',
@@ -219,7 +220,10 @@ export default function Home() {
             </div>
           </div>
         </Grid>
-        <Grid style={{ backgroundColor: '#FFFFFF' }}>
+        <Grid
+          className={classes.gridBorder}
+          style={{ backgroundColor: '#FFFFFF' }}
+        >
           <div className={classes.outerIcon}>
             <div className={classes.innerIcon}>
               <div>
@@ -411,7 +415,10 @@ export default function Home() {
             </div>
           </div>
         </Grid>
-        <Grid style={{ backgroundColor: '#FFFFFF' }}>
+        <Grid
+          className={classes.gridBorder}
+          style={{ backgroundColor: '#FFFFFF' }}
+        >
           <div className={classes.mainTitle}>
             <div className={classes.mainTitle2}>
               <Image
@@ -505,7 +512,10 @@ export default function Home() {
           </div>
         </Grid>
 
-        <Grid style={{ backgroundColor: '#FFFFFF' }}>
+        <Grid
+          className={classes.gridBorder}
+          style={{ backgroundColor: '#FFFFFF' }}
+        >
           <div className={classes.mainTitle}>
             <div className={classes.mainTitle2}>
               <div className={classes.mainTitleText}>Danh Mục Nổi Bật</div>
@@ -883,7 +893,10 @@ export default function Home() {
           </div>
         </div>
         <div className={classes.stickyTab}>
-          <Grid style={{ backgroundColor: '#FFFFFF' }}>
+          <Grid
+            className={classes.gridWidth}
+            style={{ backgroundColor: '#FFFFFF' }}
+          >
             <div className={classes.outerTab}>
               <div className={classes.innerTab}>
                 <div>Gợi Ý Hôm Nay</div>

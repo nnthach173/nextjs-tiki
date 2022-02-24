@@ -434,7 +434,8 @@ const useStyles = makeStyles({
   },
   dummyButton: {
     backgroundColor: 'white',
-    borderRadius: 5,
+    borderBottomRightRadius: 5,
+    borderBottomLeftRadius: 5,
     border: 'none',
     width: 151,
     height: 84,
@@ -640,6 +641,13 @@ const useStyles = makeStyles({
     '&:hover': {
       textDecoration: 'underline',
     },
+  },
+  gridBorder: {
+    borderRadius: 5,
+  },
+  gridWidth: {
+    width: 'auto',
+    marginLeft: 5,
   },
 });
 
