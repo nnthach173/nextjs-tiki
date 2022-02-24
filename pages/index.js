@@ -1005,7 +1005,10 @@ export default function Home() {
           </Grid>
         </div>
         <div>
-          <Grid style={{ backgroundColor: '#FFFFFF' }}>
+          <Grid
+            className={classes.gridBorder}
+            style={{ backgroundColor: '#FFFFFF' }}
+          >
             <div className={classes.mainTitle}>
               <div className={classes.mainTitle2}>
                 <Grid container spacing={3}>

@@ -485,12 +485,13 @@ const useStyles = makeStyles({
     padding: 0,
   },
   twoLines: {
-    whiteSpace: 'wrap',
-    width: '400px',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-
-    border: '1px solid #FFFFFF',
+    display: '-webkit-box',
+    /* autoprefixer: off */
+    WebkitBoxOrient: 'vertical',
+    /* autoprefixer: on */
+    WebkitLineClamp: 2,
   },
   block: {
     display: 'block',
