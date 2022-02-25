@@ -432,10 +432,7 @@ const useStyles = makeStyles({
     display: 'block',
   },
   cardActionsProducts: {
-    paddingTop: 1,
-    paddingBottom: 1,
-    paddingLeft: 1,
-    paddingRight: 1,
+    padding: 0,
   },
   footer: {
     color: 'black',
