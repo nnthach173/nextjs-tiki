@@ -1024,38 +1024,39 @@ export default function Home() {
                               image={product.image}
                               title={product.name}
                             ></CardMedia>
-                            <CardContent className={classes.cardNames}>
-                              <Typography className={classes.twoLines}>
-                                {product.name}
+                            {/* <CardContent className={classes.cardNames}> */}
+                            <Typography className={classes.twoLines}>
+                              {product.name}
+                            </Typography>
+                            {/* </CardContent> */}
+
+                            {/* <CardActions className={classes.cardActionsProducts}> */}
+                            <div style={{ textAlign: 'left ' }}>
+                              <Typography
+                                style={{
+                                  fontSize: '12px',
+                                  color: 'black',
+                                  fontWeight: 400,
+                                }}
+                              >
+                                {product.numReviews} reviews | sold{' '}
+                                {product.sold}
                               </Typography>
-                            </CardContent>
+                            </div>
+                            {/* </CardActions> */}
+                            {/* <CardActions className={classes.cardActionsProducts}> */}
+                            <Typography
+                              style={{
+                                fontWeight: 'bold',
+                                color: 'red',
+                                margin: '0px',
+                              }}
+                            >
+                              {product.price}đ
+                            </Typography>
+                            {/* </CardActions> */}
                           </CardActionArea>
                         </NextLink>
-
-                        {/* <CardActions className={classes.cardActionsProducts}> */}
-                        <div style={{ textAlign: 'left' }}>
-                          <Typography
-                            style={{
-                              fontSize: '12px',
-                              color: 'black',
-                              fontWeight: 400,
-                            }}
-                          >
-                            {product.numReviews} reviews | sold {product.sold}
-                          </Typography>
-                        </div>
-                        {/* </CardActions> */}
-                        {/* <CardActions className={classes.cardActionsProducts}> */}
-                        <Typography
-                          style={{
-                            fontWeight: 'bold',
-                            color: 'red',
-                            margin: '0px',
-                          }}
-                        >
-                          {product.price}đ
-                        </Typography>
-                        {/* </CardActions> */}
                       </Card>
                     </Grid>
                   ))}
