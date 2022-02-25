@@ -1,3 +1,4 @@
+/* autoprefixer grid: autoplace */
 import { makeStyles } from '@material-ui/core';
 import Column from 'antd/lib/table/Column';
 import { AiOutlineEllipsis } from 'react-icons/ai';
@@ -488,9 +489,9 @@ const useStyles = makeStyles({
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     display: '-webkit-box',
-    /* autoprefixer: off */
+
     WebkitBoxOrient: 'vertical',
-    /* autoprefixer: on */
+
     WebkitLineClamp: 2,
   },
   block: {
