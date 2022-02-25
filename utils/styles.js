@@ -469,11 +469,11 @@ const useStyles = makeStyles({
     padding: 0,
   },
   twoLines: {
-    // overflow: 'hidden',
-    // textOverflow: 'ellipsis',
-    // display: '-webkit-box',
-    // WebkitBoxOrient: 'vertical',
-    // WebkitLineClamp: 2,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    display: '-webkit-box',
+    WebkitBoxOrient: 'vertical',
+    WebkitLineClamp: 2,
   },
   block: {
     display: 'block',
