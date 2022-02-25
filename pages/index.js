@@ -1032,30 +1032,30 @@ export default function Home() {
                           </CardActionArea>
                         </NextLink>
 
-                        <CardActions className={classes.cardActionsProducts}>
-                          <div style={{ textAlign: 'center' }}>
-                            <Typography
-                              style={{
-                                fontSize: '12px',
-                                color: 'black',
-                                fontWeight: 400,
-                              }}
-                            >
-                              {product.numReviews} reviews | sold {product.sold}
-                            </Typography>
-                          </div>
-                        </CardActions>
-                        <CardActions className={classes.cardActionsProducts}>
+                        {/* <CardActions className={classes.cardActionsProducts}> */}
+                        <div style={{ textAlign: 'left' }}>
                           <Typography
                             style={{
-                              fontWeight: 'bold',
-                              color: 'red',
-                              margin: '0px',
+                              fontSize: '12px',
+                              color: 'black',
+                              fontWeight: 400,
                             }}
                           >
-                            {product.price}đ
+                            {product.numReviews} reviews | sold {product.sold}
                           </Typography>
-                        </CardActions>
+                        </div>
+                        {/* </CardActions> */}
+                        {/* <CardActions className={classes.cardActionsProducts}> */}
+                        <Typography
+                          style={{
+                            fontWeight: 'bold',
+                            color: 'red',
+                            margin: '0px',
+                          }}
+                        >
+                          {product.price}đ
+                        </Typography>
+                        {/* </CardActions> */}
                       </Card>
                     </Grid>
                   ))}
