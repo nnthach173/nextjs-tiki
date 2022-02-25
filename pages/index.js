@@ -229,7 +229,7 @@ export default function Home() {
           <div className={classes.outerIcon}>
             <div className={classes.innerIcon}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/button1.png"
                     alt="santhuong"
@@ -245,7 +245,7 @@ export default function Home() {
 
             <div className={classes.innerIcon}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/button2.png"
                     alt="dicho"
@@ -263,7 +263,7 @@ export default function Home() {
 
             <div className={classes.innerIcon}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/button3.png"
                     alt="magiamgia"
@@ -281,7 +281,7 @@ export default function Home() {
 
             <div className={classes.innerIcon}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/button4.png"
                     alt="baohiemtiki360"
@@ -296,7 +296,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/button5.png"
                     alt="dichvu&tienich"
@@ -312,7 +312,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/button6.png"
                     alt="goihoivien"
@@ -329,7 +329,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/button7.png"
                     alt="giamden50%"
@@ -345,7 +345,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/button8.png"
                     alt="hoantien15%"
@@ -361,7 +361,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/button9.png"
                     alt="uudaithanhtoan"
@@ -526,7 +526,7 @@ export default function Home() {
           <div className={classes.outerIcon2}>
             <div className={classes.innerIcon2}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/1.webp"
                     alt="santhuong"
@@ -544,7 +544,7 @@ export default function Home() {
 
             <div className={classes.innerIcon2}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/2.webp"
                     alt="tikingon"
@@ -561,7 +561,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/3.webp"
                     alt="balo"
@@ -578,7 +578,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/4.webp"
                     alt="taybamgame"
@@ -595,7 +595,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/5.webp"
                     alt="cap"
@@ -612,7 +612,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/6.webp"
                     alt="vga"
@@ -629,7 +629,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/7.webp"
                     alt="manhinhphothong"
@@ -646,7 +646,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/8.webp"
                     alt="manhinhgaming"
@@ -663,7 +663,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/9.webp"
                     alt="phone"
@@ -680,7 +680,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/10.webp"
                     alt="book"
@@ -697,7 +697,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/11.webp"
                     alt="tieuthuyet"
@@ -715,7 +715,7 @@ export default function Home() {
 
             <div className={classes.innerIcon3}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/12.webp"
                     alt="truyenngan"
@@ -732,7 +732,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/13.webp"
                     alt="manga"
@@ -749,7 +749,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/14.webp"
                     alt="banghe"
@@ -766,7 +766,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/15.webp"
                     alt="tu"
@@ -783,7 +783,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/16.webp"
                     alt="bhkinhdoanh"
@@ -800,7 +800,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/17.webp"
                     alt="duongda"
@@ -817,7 +817,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/18.webp"
                     alt="other"
@@ -834,7 +834,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/19.webp"
                     alt="phone"
@@ -851,7 +851,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
-                <Button>
+                <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/20.webp"
                     alt="book"
@@ -1039,7 +1039,7 @@ export default function Home() {
                                   fontWeight: 400,
                                 }}
                               >
-                                {product.numReviews} reviews | sold{' '}
+                                {product.numReviews} đánh giá | đã bán{' '}
                                 {product.sold}
                               </Typography>
                             </div>
