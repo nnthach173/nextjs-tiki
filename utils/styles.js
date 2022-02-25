@@ -20,17 +20,12 @@ const useStyles = makeStyles({
     position: 'relative',
     width: 55,
     height: 40,
-    // marginBottom: 30,
-    // marginLeft: 300,
   },
 
   logo2: {
     position: 'relative',
     width: 80,
     height: 12,
-
-    // marginTop: 35,
-    // marginLeft: 55,
   },
 
   customizeToolbar: {
@@ -474,13 +469,11 @@ const useStyles = makeStyles({
     padding: 0,
   },
   twoLines: {
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    display: '-webkit-box',
-
-    WebkitBoxOrient: 'vertical',
-
-    WebkitLineClamp: 2,
+    // overflow: 'hidden',
+    // textOverflow: 'ellipsis',
+    // display: '-webkit-box',
+    // WebkitBoxOrient: 'vertical',
+    // WebkitLineClamp: 2,
   },
   block: {
     display: 'block',
