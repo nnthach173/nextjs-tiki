@@ -1,4 +1,3 @@
-/* autoprefixer grid: autoplace */
 import { makeStyles } from '@material-ui/core';
 import Column from 'antd/lib/table/Column';
 import { AiOutlineEllipsis } from 'react-icons/ai';
@@ -145,6 +144,7 @@ const useStyles = makeStyles({
   carouselPosition: {
     position: 'relative',
     display: 'inline-block',
+    marginBottom: 20,
   },
 
   carousel: {
@@ -153,25 +153,13 @@ const useStyles = makeStyles({
     paddingTop: 20,
   },
   carouselHeader: {
-    position: 'absolute',
-    right: 350,
-    top: 150,
-    // top: 100,
-    // right: 335,
-    // position: 'relative',
-    // display: 'inline-block',
-
-    // paddingLeft: 10,
-    // paddingBottom: 10,
-    // marginBottom: 10,
+    position: 'relative',
+    display: 'inline-block',
   },
   carouselHeaderPosition: {
     position: 'relative',
     display: 'inline-block',
-
-    // position: 'absolute',
-    // top: 100,
-    // right: 335,
+    marginLeft: 10,
   },
 
   section: {
