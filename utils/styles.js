@@ -360,6 +360,7 @@ const useStyles = makeStyles({
     top: '0',
     width: '100%',
     zIndex: 998,
+    marginTop: 10,
   },
 
   outerTab: {
@@ -413,7 +414,7 @@ const useStyles = makeStyles({
   tabText: {
     position: 'relative',
     display: 'inline-block',
-    marginLeft: 5,
+    marginRight: 5,
     textAlign: 'center',
   },
   dummyButton: {
@@ -627,12 +628,25 @@ const useStyles = makeStyles({
   },
   gridWidth: {
     width: 'auto',
-    marginLeft: 5,
+    marginRight: 5,
   },
   buttonEffect: {
     '&:hover': {
       backgroundColor: 'white',
     },
+  },
+  tabButton: {
+    display: 'inline-block',
+
+    textAlign: 'center',
+    marginRight: 5,
+    backgroundColor: 'white',
+    borderBottomRightRadius: 5,
+    borderBottomLeftRadius: 5,
+    border: 'none',
+    width: 151,
+    height: 84,
+    cursor: 'pointer',
   },
 });
 
