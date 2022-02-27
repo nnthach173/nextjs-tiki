@@ -106,7 +106,7 @@ export default function Home() {
 
         <Grid
           style={{
-            backgroundColor: 'white',
+            backgroundColor: '#FFFFFF',
           }}
         >
           <Grid
@@ -898,176 +898,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div className={classes.stickyTab}>
-          <Grid
-            className={classes.gridWidth}
-            style={{ backgroundColor: '#FFFFFF' }}
-          >
-            <div className={classes.outerTab}>
-              <div className={classes.innerTab}>
-                <div>Gợi Ý Hôm Nay</div>
-              </div>
-            </div>
-          </Grid>
-
-          <Grid style={{ backgroundColor: '#F6F5FA' }}>
-            <div className={classes.outerTab2}>
-              <div className={classes.innerTab2}>
-                <div>
-                  <div className={classes.tabText}>
-                    <button className={classes.dummyButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage1.webp"
-                          alt="buttonimage1"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Dành cho bạn</span>
-                    </button>
-                  </div>
-                  <div className={classes.tabText}>
-                    <button className={classes.dummyButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage2.webp"
-                          alt="buttonimage2"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Deal Siêu Hot</span>
-                    </button>
-                  </div>
-                  <div className={classes.tabText}>
-                    <button className={classes.dummyButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage3.webp"
-                          alt="buttonimage3"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Rẻ Vô Đối</span>
-                    </button>
-                  </div>
-                  <div className={classes.tabText}>
-                    <button className={classes.dummyButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage4.webp"
-                          alt="buttonimage4"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Đi Chợ Siêu Sale</span>
-                    </button>
-                  </div>
-                  <div className={classes.tabText}>
-                    <button className={classes.dummyButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage5.webp"
-                          alt="buttonimage5"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Hàng Mới</span>
-                    </button>
-                  </div>
-                  <div className={classes.tabText}>
-                    <button className={classes.dummyButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage6.webp"
-                          alt="buttonimage6"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Không giới hạn</span>
-                    </button>
-                  </div>
-                  <div className={classes.tabText}>
-                    <button className={classes.dummyButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage7.webp"
-                          alt="buttonimage7"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Quà Tết 2022</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Grid>
-        </div>
-
-        <div>
-          <Grid
-            className={classes.gridBorder}
-            style={{ backgroundColor: '#FFFFFF' }}
-          >
-            <div className={classes.mainTitle}>
-              <div className={classes.mainTitle2}>
-                <Grid container spacing={3}>
-                  {data.products.map((product) => (
-                    <Grid item md={2} key={product.name}>
-                      <Card style={{ border: 'none', boxShadow: 'none' }}>
-                        <NextLink href={`/product/${product.slug}`} passHref>
-                          <CardActionArea>
-                            <CardMedia
-                              component="img"
-                              image={product.image}
-                              title={product.name}
-                            ></CardMedia>
-                         
-                            <Typography className={classes.twoLines}>
-                              {product.name}
-                            </Typography>
-                       
-                            <div style={{ textAlign: 'left ' }}>
-                              <Typography
-                                style={{
-                                  fontSize: '12px',
-                                  color: 'black',
-                                  fontWeight: 400,
-                                }}
-                              >
-                                {product.numReviews} đánh giá | đã bán{' '}
-                                {product.sold}
-                              </Typography>
-                            </div>
-                      
-                            <Typography
-                              style={{
-                                fontWeight: 'bold',
-                                color: 'red',
-                                margin: '0px',
-                              }}
-                            >
-                              {product.price}đ
-                            </Typography>
-                     
-                          </CardActionArea>
-                        </NextLink>
-                      </Card>
-                    </Grid>
-                  ))}
-                </Grid>
-              </div>
-            </div>
-          </Grid>
-        </div> */}
-
         <Tabs>
           <div className={classes.stickyTab}>
             <Grid
@@ -1084,84 +914,86 @@ export default function Home() {
               <div className={classes.outerTab2}>
                 <div className={classes.innerTab2}>
                   <div>
-                    <Tab className={classes.tabButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage1.webp"
-                          alt="buttonimage1"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Dành cho bạn</span>
-                    </Tab>
+                    <TabList>
+                      <Tab className={classes.tabButton}>
+                        <span className={classes.imageTags}>
+                          <Image
+                            src="/buttonImage1.webp"
+                            alt="buttonimage1"
+                            width={48}
+                            height={48}
+                          />
+                        </span>
+                        <span>Dành cho bạn</span>
+                      </Tab>
 
-                    <Tab className={classes.tabButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage2.webp"
-                          alt="buttonimage2"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Deal Siêu Hot</span>
-                    </Tab>
-                    <Tab className={classes.tabButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage3.webp"
-                          alt="buttonimage3"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Rẻ Vô Đối</span>
-                    </Tab>
-                    <Tab className={classes.tabButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage4.webp"
-                          alt="buttonimage4"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Đi Chợ Siêu Sale</span>
-                    </Tab>
-                    <Tab className={classes.tabButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage5.webp"
-                          alt="buttonimage5"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Hàng Mới</span>
-                    </Tab>
-                    <Tab className={classes.tabButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage6.webp"
-                          alt="buttonimage6"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Không giới hạn</span>
-                    </Tab>
-                    <Tab className={classes.tabButton}>
-                      <span className={classes.imageTags}>
-                        <Image
-                          src="/buttonImage7.webp"
-                          alt="buttonimage7"
-                          width={48}
-                          height={48}
-                        />
-                      </span>
-                      <span>Quà Tết 2022</span>
-                    </Tab>
+                      <Tab className={classes.tabButton}>
+                        <span className={classes.imageTags}>
+                          <Image
+                            src="/buttonImage2.webp"
+                            alt="buttonimage2"
+                            width={48}
+                            height={48}
+                          />
+                        </span>
+                        <span>Deal Siêu Hot</span>
+                      </Tab>
+                      <Tab className={classes.tabButton}>
+                        <span className={classes.imageTags}>
+                          <Image
+                            src="/buttonImage3.webp"
+                            alt="buttonimage3"
+                            width={48}
+                            height={48}
+                          />
+                        </span>
+                        <span>Rẻ Vô Đối</span>
+                      </Tab>
+                      <Tab className={classes.tabButton}>
+                        <span className={classes.imageTags}>
+                          <Image
+                            src="/buttonImage4.webp"
+                            alt="buttonimage4"
+                            width={48}
+                            height={48}
+                          />
+                        </span>
+                        <span>Đi Chợ Siêu Sale</span>
+                      </Tab>
+                      <Tab className={classes.tabButton}>
+                        <span className={classes.imageTags}>
+                          <Image
+                            src="/buttonImage5.webp"
+                            alt="buttonimage5"
+                            width={48}
+                            height={48}
+                          />
+                        </span>
+                        <span>Hàng Mới</span>
+                      </Tab>
+                      <Tab className={classes.tabButton}>
+                        <span className={classes.imageTags}>
+                          <Image
+                            src="/buttonImage6.webp"
+                            alt="buttonimage6"
+                            width={48}
+                            height={48}
+                          />
+                        </span>
+                        <span>Không giới hạn</span>
+                      </Tab>
+                      <Tab className={classes.tabButton}>
+                        <span className={classes.imageTags}>
+                          <Image
+                            src="/buttonImage7.webp"
+                            alt="buttonimage7"
+                            width={48}
+                            height={48}
+                          />
+                        </span>
+                        <span>Quà Tết 2022</span>
+                      </Tab>
+                    </TabList>
                   </div>
                 </div>
               </div>
@@ -1190,13 +1022,11 @@ export default function Home() {
                                   image={product.image}
                                   title={product.name}
                                 ></CardMedia>
-                                {/* <CardContent className={classes.cardNames}> */}
+
                                 <Typography className={classes.twoLines}>
                                   {product.name}
                                 </Typography>
-                                {/* </CardContent> */}
 
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
                                 <div style={{ textAlign: 'left ' }}>
                                   <Typography
                                     style={{
@@ -1209,8 +1039,7 @@ export default function Home() {
                                     {product.sold}
                                   </Typography>
                                 </div>
-                                {/* </CardActions> */}
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
+
                                 <Typography
                                   style={{
                                     fontWeight: 'bold',
@@ -1220,7 +1049,6 @@ export default function Home() {
                                 >
                                   {product.price}đ
                                 </Typography>
-                                {/* </CardActions> */}
                               </CardActionArea>
                             </NextLink>
                           </Card>
@@ -1254,13 +1082,11 @@ export default function Home() {
                                   image={product.image}
                                   title={product.name}
                                 ></CardMedia>
-                                {/* <CardContent className={classes.cardNames}> */}
+
                                 <Typography className={classes.twoLines}>
                                   {product.name}
                                 </Typography>
-                                {/* </CardContent> */}
 
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
                                 <div style={{ textAlign: 'left ' }}>
                                   <Typography
                                     style={{
@@ -1273,8 +1099,7 @@ export default function Home() {
                                     {product.sold}
                                   </Typography>
                                 </div>
-                                {/* </CardActions> */}
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
+
                                 <Typography
                                   style={{
                                     fontWeight: 'bold',
@@ -1284,7 +1109,6 @@ export default function Home() {
                                 >
                                   {product.price}đ
                                 </Typography>
-                                {/* </CardActions> */}
                               </CardActionArea>
                             </NextLink>
                           </Card>
@@ -1318,13 +1142,11 @@ export default function Home() {
                                   image={product.image}
                                   title={product.name}
                                 ></CardMedia>
-                                {/* <CardContent className={classes.cardNames}> */}
+
                                 <Typography className={classes.twoLines}>
                                   {product.name}
                                 </Typography>
-                                {/* </CardContent> */}
 
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
                                 <div style={{ textAlign: 'left ' }}>
                                   <Typography
                                     style={{
@@ -1337,8 +1159,7 @@ export default function Home() {
                                     {product.sold}
                                   </Typography>
                                 </div>
-                                {/* </CardActions> */}
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
+
                                 <Typography
                                   style={{
                                     fontWeight: 'bold',
@@ -1348,7 +1169,6 @@ export default function Home() {
                                 >
                                   {product.price}đ
                                 </Typography>
-                                {/* </CardActions> */}
                               </CardActionArea>
                             </NextLink>
                           </Card>
@@ -1382,13 +1202,11 @@ export default function Home() {
                                   image={product.image}
                                   title={product.name}
                                 ></CardMedia>
-                                {/* <CardContent className={classes.cardNames}> */}
+
                                 <Typography className={classes.twoLines}>
                                   {product.name}
                                 </Typography>
-                                {/* </CardContent> */}
 
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
                                 <div style={{ textAlign: 'left ' }}>
                                   <Typography
                                     style={{
@@ -1401,8 +1219,7 @@ export default function Home() {
                                     {product.sold}
                                   </Typography>
                                 </div>
-                                {/* </CardActions> */}
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
+
                                 <Typography
                                   style={{
                                     fontWeight: 'bold',
@@ -1412,7 +1229,6 @@ export default function Home() {
                                 >
                                   {product.price}đ
                                 </Typography>
-                                {/* </CardActions> */}
                               </CardActionArea>
                             </NextLink>
                           </Card>
@@ -1446,13 +1262,11 @@ export default function Home() {
                                   image={product.image}
                                   title={product.name}
                                 ></CardMedia>
-                                {/* <CardContent className={classes.cardNames}> */}
+
                                 <Typography className={classes.twoLines}>
                                   {product.name}
                                 </Typography>
-                                {/* </CardContent> */}
 
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
                                 <div style={{ textAlign: 'left ' }}>
                                   <Typography
                                     style={{
@@ -1465,8 +1279,7 @@ export default function Home() {
                                     {product.sold}
                                   </Typography>
                                 </div>
-                                {/* </CardActions> */}
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
+
                                 <Typography
                                   style={{
                                     fontWeight: 'bold',
@@ -1476,7 +1289,6 @@ export default function Home() {
                                 >
                                   {product.price}đ
                                 </Typography>
-                                {/* </CardActions> */}
                               </CardActionArea>
                             </NextLink>
                           </Card>
@@ -1510,13 +1322,11 @@ export default function Home() {
                                   image={product.image}
                                   title={product.name}
                                 ></CardMedia>
-                                {/* <CardContent className={classes.cardNames}> */}
+
                                 <Typography className={classes.twoLines}>
                                   {product.name}
                                 </Typography>
-                                {/* </CardContent> */}
 
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
                                 <div style={{ textAlign: 'left ' }}>
                                   <Typography
                                     style={{
@@ -1529,8 +1339,7 @@ export default function Home() {
                                     {product.sold}
                                   </Typography>
                                 </div>
-                                {/* </CardActions> */}
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
+
                                 <Typography
                                   style={{
                                     fontWeight: 'bold',
@@ -1540,7 +1349,6 @@ export default function Home() {
                                 >
                                   {product.price}đ
                                 </Typography>
-                                {/* </CardActions> */}
                               </CardActionArea>
                             </NextLink>
                           </Card>
@@ -1574,13 +1382,11 @@ export default function Home() {
                                   image={product.image}
                                   title={product.name}
                                 ></CardMedia>
-                                {/* <CardContent className={classes.cardNames}> */}
+
                                 <Typography className={classes.twoLines}>
                                   {product.name}
                                 </Typography>
-                                {/* </CardContent> */}
 
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
                                 <div style={{ textAlign: 'left ' }}>
                                   <Typography
                                     style={{
@@ -1593,8 +1399,7 @@ export default function Home() {
                                     {product.sold}
                                   </Typography>
                                 </div>
-                                {/* </CardActions> */}
-                                {/* <CardActions className={classes.cardActionsProducts}> */}
+
                                 <Typography
                                   style={{
                                     fontWeight: 'bold',
@@ -1604,7 +1409,6 @@ export default function Home() {
                                 >
                                   {product.price}đ
                                 </Typography>
-                                {/* </CardActions> */}
                               </CardActionArea>
                             </NextLink>
                           </Card>

@@ -71,12 +71,12 @@ export default function Layout({ title, children }) {
           <BsPerson size={30} className={classes.personIcon} />
           <div className={classes.loginButton}>
             <Link href="#" underline="none">
-              <div style={{ fontSize: '12px', color: 'white' }}>
+              <div style={{ fontSize: '12px', color: '#FFFFFF' }}>
                 Đăng nhập / Đăng ký
               </div>
             </Link>
             <Link href="#" underline="none">
-              <div style={{ fontSize: '12px', color: 'white' }}>
+              <div style={{ fontSize: '12px', color: '#FFFFFF' }}>
                 Tài khoản <AiFillCaretDown />
               </div>
             </Link>
@@ -84,10 +84,10 @@ export default function Layout({ title, children }) {
 
           <div
             className={classes.shoppingCart}
-            style={{ fontSize: '12px', color: 'white' }}
+            style={{ fontSize: '12px', color: '#FFFFFF' }}
           >
             <FiShoppingCart size={30} />
-            <Link href="#" underline="none" color="white">
+            <Link style={{ color: '#FFFFFF' }} href="#" underline="none">
               Giỏ Hàng
             </Link>
           </div>
@@ -103,11 +103,6 @@ export default function Layout({ title, children }) {
 
       <AppBar position="relative" className={classes.navbar2}>
         <Toolbar className={classes.customizeToolbar2}>
-          {/* <div
-            className={`${classes.menuWordsPosition} ${classes.menuWordsColor}`}
-          >
-            Thịt, rau củ
-          </div> */}
           <div className={classes.menuWordsPosition}>
             <div className={classes.menuWords}>Thịt, Rau Củ</div>
             <div className={classes.menuWords}>Bách Hóa</div>
@@ -122,10 +117,6 @@ export default function Layout({ title, children }) {
             <div className={classes.menuWords}>Giày nữ</div>
             <div className={classes.menuWords}>Túi nữ</div>
           </div>
-          {/* <div className={classes.menuWordsPosition}>
-            <div className={classes.menuWords}>test 1</div>
-            <div className={classes.menuWords}>test 1</div>
-          </div> */}
         </Toolbar>
       </AppBar>
 

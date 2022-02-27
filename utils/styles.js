@@ -77,7 +77,7 @@ const useStyles = makeStyles({
     backgroundColor: '#0D5CB8',
     height: '35px',
     width: '100px',
-    color: 'white',
+    color: '#FFFFFF',
     boxShadow: 'none',
     textTransform: 'none',
     borderRadius: 0,
@@ -94,10 +94,8 @@ const useStyles = makeStyles({
   suggestWords: {
     position: 'relative',
     display: 'inline-block',
-
     marginLeft: 15,
     fontSize: 11,
-    // marginTop: 55,
   },
 
   suggestWordsFinal: {
@@ -121,7 +119,7 @@ const useStyles = makeStyles({
     top: 30,
     right: 60,
     textTransform: 'none',
-    color: 'white',
+    color: '#FFFFFF',
     fontSize: 10,
 
     borderRadius: 50,
@@ -171,7 +169,7 @@ const useStyles = makeStyles({
     positon: 'relative',
     textTransform: 'none',
     size: 'small',
-    color: 'white',
+    color: '#FFFFFF',
     fontSize: 13,
     bottom: 5,
     borderRadius: 50,
@@ -195,7 +193,7 @@ const useStyles = makeStyles({
     right: 350,
     textTransform: 'none',
 
-    color: 'white',
+    color: '#FFFFFF',
     fontSize: 20,
     borderRadius: 3,
     backgroundColor: 'red',
@@ -389,9 +387,9 @@ const useStyles = makeStyles({
     border: '1px solid blue',
   },
   insideTabs: {
-    border: '1px solid white',
+    border: '1px solid #FFFFFF',
     display: 'flex',
-    backgroundColor: 'white',
+    backgroundColor: '#FFFFFF',
     flexDirection: 'column',
     WebkitBoxAlign: 'center',
     alignItems: 'center',
@@ -418,7 +416,7 @@ const useStyles = makeStyles({
     textAlign: 'center',
   },
   dummyButton: {
-    backgroundColor: 'white',
+    backgroundColor: '#FFFFFF',
     borderBottomRightRadius: 5,
     borderBottomLeftRadius: 5,
     border: 'none',
@@ -441,7 +439,7 @@ const useStyles = makeStyles({
     fontSize: '12px',
     lineHeight: '16px',
     fontWeight: 'normal',
-    backgroundColor: 'white',
+    backgroundColor: '#FFFFFF',
     display: 'block',
     boxSizing: 'border-box',
   },
@@ -632,7 +630,7 @@ const useStyles = makeStyles({
   },
   buttonEffect: {
     '&:hover': {
-      backgroundColor: 'white',
+      backgroundColor: '#FFFFFF',
     },
   },
   tabButton: {
@@ -640,10 +638,10 @@ const useStyles = makeStyles({
 
     textAlign: 'center',
     marginRight: 5,
-    backgroundColor: 'white',
+    backgroundColor: '#FFFFFF',
     borderBottomRightRadius: 5,
     borderBottomLeftRadius: 5,
-    border: 'none',
+
     width: 151,
     height: 84,
     cursor: 'pointer',
