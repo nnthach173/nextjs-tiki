@@ -646,6 +646,55 @@ const useStyles = makeStyles({
     height: 84,
     cursor: 'pointer',
   },
+  productOuterGrid: {
+    display: 'flex',
+    marginBottom: '5px',
+    borderRadius: 4,
+  },
+  productImageGrid: {
+    position: 'relative',
+    paddingTop: '16px',
+    paddingRight: '0px',
+    paddingLeft: '16px',
+    paddingBottom: '16px',
+  },
+  productSharing: {
+    display: 'flex',
+    alignItems: 'center',
+    marginTop: '24px',
+    WebkitBoxAlign: 'center',
+  },
+  productImageSharingLeft: {
+    marginLeft: '8px',
+    marginRight: '8px',
+    width: '28px',
+    height: '28px',
+    cursor: 'pointer',
+  },
+  productImageSharing: {
+    width: '28px',
+    height: '28px',
+    marginRight: '8px',
+    cursor: 'pointer',
+  },
+  productImageSharingLast: {
+    width: '28px',
+    height: '28px',
+    cursor: 'pointer',
+  },
+  like: {
+    display: 'flex',
+    WebkitBoxAlign: 'center',
+    alignItems: 'center',
+    cursor: 'pointer',
+  },
+  productSeparator: {
+    width: '1px',
+    backgroundColor: '#EBEBF0',
+    height: '20px',
+    marginLeft: '16px',
+    marginRight: '16px',
+  },
 });
 
 export default useStyles;

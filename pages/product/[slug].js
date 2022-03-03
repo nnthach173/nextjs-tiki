@@ -26,54 +26,112 @@ export default function ProductScreen() {
     return <div>Product Not Found</div>;
   }
   return (
-    <Layout title={product.name}>
-      <div className={classes.section}>
-        <NextLink href="/" passHref>
-          <Link>Trở về</Link>
-        </NextLink>
-      </div>
-      <Grid container spacing={1}>
-        <Grid item md={4} xs={12}>
-          <Image
-            src={product.image}
-            alt={product.name}
-            width={444}
-            height={444}
-          ></Image>
-        </Grid>
-        <Grid item md={8} xs={12}>
-          <List>
-            <ListItem style={{ fontSize: '50px' }}>{product.name}</ListItem>
-            <ListItem>
-              Đánh giá: {product.rating} sao (Xem {product.numReviews} đánh giá)
-              | Đã bán {product.sold}
-              <AppBar className={classes.priceTag}>
-                <Toolbar>
-                  <Typography
+    <Grid
+      style={{
+        backgroundColor: '#F6F5FA',
+      }}
+    >
+      <Layout title={product.name}>
+        <Grid
+          style={{
+            backgroundColor: '#FFFFFF',
+          }}
+          className={classes.productOuterGrid}
+        >
+          <Grid container spacing={2}>
+            <Grid item md={4} xs={12}>
+              <Grid className={classes.productImageGrid}>
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  width={444}
+                  height={444}
+                ></Image>
+                <div className={classes.productSharing}>
+                  <div
                     style={{
-                      fontWeight: 'bold',
-                      color: 'white',
-                      fontSize: '30px',
+                      fontSize: '15px',
+                      lineHeight: '24px',
+                      color: '#242424',
                     }}
                   >
-                    {product.price}
-                    <u>đ</u>
-                  </Typography>
-                </Toolbar>
-              </AppBar>
-              <div className={classes.quantitySelect}>
-                <TextField
-                  id="filled-number"
-                  label="Số lượng"
-                  type="number"
-                  variant="outlined"
-                />
-              </div>
-              <Button className={classes.buyButton}>Chọn Mua</Button>
-            </ListItem>
-          </List>
+                    Chia sẻ:
+                  </div>
+                  <div className={classes.productImageSharingLeft}>
+                    <Image
+                      src="/pdp-images/social-facebook.svg"
+                      alt=""
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <div className={classes.productImageSharing}>
+                    <Image
+                      src="/pdp-images/social-messenger.svg"
+                      alt=""
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <div className={classes.productImageSharing}>
+                    <Image
+                      src="/pdp-images/social-pinterest.svg"
+                      alt=""
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <div className={classes.productImageSharing}>
+                    <Image
+                      src="/pdp-images/social-twitter.svg"
+                      alt=""
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <div className={classes.productImageSharingLast}>
+                    <Image
+                      src="/pdp-images/social-copy.svg"
+                      alt=""
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <div className={classes.productSeparator}></div>
+                  <div className={classes.like}>
+                    <div className={classes.productImageSharing}>
+                      <Image
+                        src="/pdp-images/icons-like.svg"
+                        alt=""
+                        width={28}
+                        height={28}
+                      />
+                    </div>
+                    <div
+                      style={{
+                        fontSize: '15px',
+                        lineHeight: '24px',
+                        color: '#242424',
+                      }}
+                    >
+                      Thích
+                    </div>
+                  </div>
+                </div>
+              </Grid>
+            </Grid>
+            <Grid item md={8} xs={12}>
+              <List>
+                <ListItem style={{ fontSize: '50px' }}>{product.name}</ListItem>
+                <ListItem>
+                  Đánh giá: {product.rating} sao (Xem {product.numReviews} đánh
+                  giá) | Đã bán {product.sold}
+                </ListItem>
+              </List>
+            </Grid>
+          </Grid>
         </Grid>
-      </Grid>
-    </Layout>
+      </Layout>
+    </Grid>
   );
 }
