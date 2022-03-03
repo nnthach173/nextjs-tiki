@@ -33,7 +33,7 @@ export default function Home() {
         backgroundColor: '#F6F5FA',
       }}
     >
-      <Layout>
+      <Layout title="Tiki - Mua hàng online giá tốt, hàng chuẩn, ship nhanh">
         <Grid
           style={{
             backgroundColor: '#F6F5FA',
