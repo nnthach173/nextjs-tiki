@@ -267,12 +267,17 @@ export default function ProductScreen() {
                     <div className={classes.sellerInfo}>
                       <a className={classes.shopOverview}>
                         <div>
-                          <Image
+                          {/* <Image
                             className={classes.shopIcon}
-                            src="/pdp-images/tikitrading.png"
+                            src={product.shopIcon}
                             alt=""
                             width={44}
                             height={44}
+                          /> */}
+                          <img
+                            className={classes.shopIcon}
+                            src={product.shopIcon}
+                            style={{ width: '44px' }}
                           />
                         </div>
                         <div className={classes.shopName}>
