@@ -941,6 +941,43 @@ const useStyles = makeStyles({
     borderRadius: '4px',
     outline: 'none',
   },
+  sellerInfo: {
+    display: 'flex',
+    flexDirection: 'column',
+    padding: '8px 12px',
+  },
+  shopOverview: {
+    display: 'flex',
+    alignItems: 'flexStart',
+  },
+  shopIcon: {
+    width: '44px',
+    borderRadius: '50%',
+    overflow: 'hidden',
+  },
+  shopName: {
+    margin: '0px 0px 0px 12px',
+  },
+  sellerName: {
+    margin: '0px 0px 2px',
+    fontSize: '15px',
+    fontWeight: 500,
+    fontStretch: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 1.6,
+    letterSpacing: 'normal',
+    color: '#242424',
+  },
+  sellerNameDetail: {
+    display: '-webkit-box',
+    webkitBoxOrient: 'vertical',
+    webkitLineClamp: 1,
+    overflow: 'hidden',
+  },
+  officialIcon: {
+    width: '74px',
+    height: '18px',
+  },
 });
 
 export default useStyles;

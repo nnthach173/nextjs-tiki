@@ -263,17 +263,40 @@ export default function ProductScreen() {
 
               <div className={classes.productBodyGridRight}>
                 <div className={classes.productBodyGridRightDetail}>
-                  shop name here
+                  <div>
+                    <div className={classes.sellerInfo}>
+                      <a className={classes.shopOverview}>
+                        <div>
+                          <Image
+                            className={classes.shopIcon}
+                            src="/pdp-images/tikitrading.png"
+                            alt=""
+                            width={44}
+                            height={44}
+                          />
+                        </div>
+                        <div className={classes.shopName}>
+                          <span className={classes.sellerName}>
+                            <span className={classes.sellerNameDetail}>
+                              {product.shop}
+                            </span>
+                            <div>
+                              <Image
+                                className={classes.officialIcon}
+                                src="/pdp-images/official.webp"
+                                alt=""
+                                width={74}
+                                height={18}
+                              />
+                            </div>
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            {/* <List>
-              <ListItem style={{ fontSize: '25px' }}>{product.name}</ListItem>
-              <ListItem>
-                Đánh giá: {product.rating} sao (Xem {product.numReviews} đánh
-                giá) | Đã bán {product.sold}
-              </ListItem>
-            </List> */}
           </Grid>
         </Grid>
       </Layout>
