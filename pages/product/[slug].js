@@ -15,6 +15,7 @@ import { useRouter } from 'next/router';
 import data from '../../utils/data';
 import Layout from '../../components/Layout';
 import useStyles from '../../utils/styles';
+import { AiFillStar } from 'react-icons/ai';
 import { Typography } from '@mui/material';
 
 export default function ProductScreen() {
@@ -274,6 +275,7 @@ export default function ProductScreen() {
                             width={44}
                             height={44}
                           /> */}
+
                           <img
                             className={classes.shopIcon}
                             src={product.shopIcon}
@@ -297,6 +299,32 @@ export default function ProductScreen() {
                           </span>
                         </div>
                       </a>
+                    </div>
+                    <div className={classes.sellerDetail}>
+                      <div className={classes.itemReview}>
+                        <div className={classes.title}>
+                          <span className={classes.shopRating}>
+                            {product.shopRating} / 5
+                          </span>
+                          <AiFillStar
+                            style={{ marginLeft: '3px' }}
+                            size={14}
+                            color="#ffc120"
+                          />
+                        </div>
+                        <div className={classes.subTitle}>
+                          {product.shopReviewsNum}+
+                        </div>
+                      </div>
+                      <div className={classes.borderLeft}></div>
+                      <div className={classes.itemNormal}>
+                        <div className={classes.title}>
+                          <span className={classes.shopRating}>
+                            {product.shopFollows}
+                          </span>
+                        </div>
+                        <div className={classes.subTitle}>Theo dõi</div>
+                      </div>
                     </div>
                   </div>
                 </div>

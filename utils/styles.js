@@ -978,6 +978,52 @@ const useStyles = makeStyles({
     width: '74px',
     height: '18px',
   },
+  sellerDetail: {
+    display: 'flex',
+    minHeight: '39px',
+  },
+  itemReview: {
+    display: 'flex',
+    flexDirection: 'column',
+    flex: '1 1 0%',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+  },
+  title: {
+    display: 'flex',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+  },
+  shopRating: {
+    fontSize: '15px',
+    fontWeight: 500,
+    fontStretch: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 1.6,
+    letterSpacing: 'normal',
+  },
+  subTitle: {
+    fontSize: '11px',
+    fontWeight: 'normal',
+    fontStretch: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 1.45,
+    letterSpacing: 'normal',
+    color: '#787878',
+  },
+  borderLeft: {
+    alignSelf: 'center',
+    width: '1px',
+    height: '16px',
+    backgroundColor: '#f2f2f2',
+  },
+  itemNormal: {
+    display: 'flex',
+    flexDirection: 'column',
+    flex: '1 1 0%',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+  },
 });
 
 export default useStyles;
