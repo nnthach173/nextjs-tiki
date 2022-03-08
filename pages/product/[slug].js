@@ -334,6 +334,26 @@ export default function ProductScreen() {
                         <div className={classes.subTitle}>Theo dõi</div>
                       </div>
                     </div>
+                    <div className={classes.sellerAction}>
+                      <a className={classes.sellerShop}>
+                        <Image
+                          src="/pdp-images/shopMini.png"
+                          alt=""
+                          width={20}
+                          height={20}
+                        />
+                        <span className={classes.shopSpan}>Xem Shop</span>
+                      </a>
+                      <div className={classes.sellerShop2}>
+                        <Image
+                          src="/pdp-images/plusMini.png"
+                          alt=""
+                          width={20}
+                          height={20}
+                        />
+                        <span className={classes.shopSpan}>Theo Dõi</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

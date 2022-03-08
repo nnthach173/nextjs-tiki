@@ -1057,6 +1057,40 @@ const useStyles = makeStyles({
     textAlign: 'center',
     outline: 'none',
   },
+  sellerAction: {
+    display: 'flex',
+    padding: '12px',
+    WebkitBoxPack: 'justify',
+    justifyContent: 'space-between',
+  },
+  sellerShop: {
+    display: 'flex',
+    padding: '6px 9px',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+    borderRadius: '4px',
+    border: '1px solid #0d5cb6',
+    cursor: 'pointer',
+  },
+  shopSpan: {
+    fontSize: '13px',
+    fontWeight: 500,
+    fontStretch: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 1.54,
+    letterSpacing: 'normal',
+    color: '#0d5cb6',
+    marginLeft: '4px',
+  },
+  sellerShop2: {
+    padding: '6px 11.3px',
+    display: 'flex',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+    borderRadius: '4px',
+    border: '1px solid #0d5cb6',
+    cursor: 'pointer',
+  },
 });
 
 export default useStyles;
