@@ -16,6 +16,7 @@ import data from '../../utils/data';
 import Layout from '../../components/Layout';
 import useStyles from '../../utils/styles';
 import { AiFillStar } from 'react-icons/ai';
+import { AiOutlineMinus } from 'react-icons/ai';
 import { Typography } from '@mui/material';
 
 export default function ProductScreen() {
@@ -254,6 +255,21 @@ export default function ProductScreen() {
                   </div>
                 </div>
                 <div className={classes.buyGrid}>
+                  {/* <div className={classes.qtyAndMessage}>
+                    <div>
+                      <p className={classes.label}>Số lượng</p>
+                      <div className={classes.groupInput}>
+                        <button className={classes.groupInputFirstButton}>
+                          <AiOutlineMinus width={20} height={20} />
+                        </button>
+                        <input
+                          className={classes.input}
+                          type="text"
+                          value="1"
+                        />
+                      </div>
+                    </div>
+                  </div> */}{' '}
                   <div className={classes.groupButton}>
                     <button className={classes.productBuyButton}>
                       Chọn Mua
@@ -268,14 +284,6 @@ export default function ProductScreen() {
                     <div className={classes.sellerInfo}>
                       <a className={classes.shopOverview}>
                         <div>
-                          {/* <Image
-                            className={classes.shopIcon}
-                            src={product.shopIcon}
-                            alt=""
-                            width={44}
-                            height={44}
-                          /> */}
-
                           <img
                             className={classes.shopIcon}
                             src={product.shopIcon}

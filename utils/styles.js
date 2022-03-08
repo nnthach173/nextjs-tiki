@@ -1024,6 +1024,39 @@ const useStyles = makeStyles({
     webkitBoxAlign: 'center',
     alignItems: 'center',
   },
+  qtyAndMessage: {
+    display: 'flex',
+    alignItems: 'flex-end',
+  },
+  label: {
+    fontSize: '15px',
+    lineHeight: 1.6,
+    margin: '0px 0px 10px',
+  },
+  groupInput: {
+    display: 'flex',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+    marginTop: '8px',
+  },
+  groupInputFirstButton: {
+    borderRight: 'none',
+    borderRadius: '4px 0px 0px 4px',
+    padding: '4px',
+    cursor: 'pointer',
+    width: '30px',
+    backgroundColor: '#FFFFFF',
+    border: '1px solid #ececec',
+  },
+  input: {
+    width: '40px',
+    border: '1px solid #ececec',
+    height: '30px',
+    color: '#242424',
+    fontSize: '14px',
+    textAlign: 'center',
+    outline: 'none',
+  },
 });
 
 export default useStyles;
