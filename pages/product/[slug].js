@@ -355,6 +355,8 @@ export default function ProductScreen() {
                       </div>
                     </div>
                   </div>
+                  <div>Place holder, TBA</div>
+                  <div></div>
                 </div>
               </div>
             </div>
