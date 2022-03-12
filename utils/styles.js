@@ -11,6 +11,7 @@ const useStyles = makeStyles({
 
   navbar2: {
     backgroundColor: '#FFFFFF',
+    boxShadow: 'none',
   },
   logoPosition: {
     position: 'relative',
@@ -635,13 +636,11 @@ const useStyles = makeStyles({
   },
   tabButton: {
     display: 'inline-block',
-
     textAlign: 'center',
     marginRight: 5,
     backgroundColor: '#FFFFFF',
     borderBottomRightRadius: 5,
     borderBottomLeftRadius: 5,
-
     width: 151,
     height: 84,
     cursor: 'pointer',
@@ -1090,6 +1089,86 @@ const useStyles = makeStyles({
     borderRadius: '4px',
     border: '1px solid #0d5cb6',
     cursor: 'pointer',
+  },
+  warrantyDetails: {
+    fontSize: '13px',
+    lineHeight: '20px',
+    padding: '8px 12px',
+    borderTop: '1px solid #f2f2f2',
+  },
+  warrantyItem: {
+    padding: '0px',
+    display: 'flex',
+    WebkitBoxPack: 'justify',
+    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+  },
+  itemLeft: {
+    color: '#787878',
+    flexShrink: 0,
+    marginRight: '16px',
+  },
+  customerBenefits: {
+    display: 'flex',
+    padding: '8px',
+    borderTop: '1px solid #f2f2f2',
+  },
+  benefitItem: {
+    background: '#FFFFFF',
+    display: 'flex',
+    flexDirection: 'column',
+    flex: '1 0 30%',
+    webkitBoxFlex: 1,
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+  },
+  benefitItemSpan: {
+    textAlign: 'center',
+    fontSize: '13px',
+    lineHeight: '20px',
+    marginTop: '8px',
+  },
+  container: {
+    border: '1px solid #eeeeee',
+    display: 'flex',
+    borderRadius: '4px',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+    marginTop: '16px',
+    padding: '8px 12px',
+  },
+  trackingBrandAd: {
+    display: 'flex',
+    flexDirection: 'column',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+    webkitBoxPack: 'center',
+    justifyContent: 'center',
+    width: '360px',
+    height: '120px',
+    overflow: 'hidden',
+    margin: '24px auto 0px',
+    position: 'relative',
+  },
+  productSlideWrapper: {
+    marginBottom: '25px',
+    backgroundColor: '#FFFFFF',
+    borderRadius: '4px',
+    marginTop: '15px',
+  },
+  blockTitle: {
+    color: '#333333',
+    fontSize: '20px',
+    fontWeight: 400,
+    lineHeight: '32px',
+    padding: '8px 16px',
+    textTransform: 'capitalize',
+    display: 'flex',
+    webkitBoxPack: 'justify',
+    justifyContent: 'space-between',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+    margin: '0px',
   },
 });
 

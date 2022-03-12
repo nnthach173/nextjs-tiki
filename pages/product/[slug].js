@@ -1,22 +1,14 @@
 import React from 'react';
 import NextLink from 'next/link';
 import Image from 'next/image';
-import {
-  Grid,
-  Link,
-  List,
-  ListItem,
-  AppBar,
-  Toolbar,
-  TextField,
-  Button,
-} from '@material-ui/core';
+import { Grid, Card, CardActionArea, CardMedia } from '@material-ui/core';
 import { useRouter } from 'next/router';
 import data from '../../utils/data';
 import Layout from '../../components/Layout';
 import useStyles from '../../utils/styles';
 import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineMinus } from 'react-icons/ai';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Typography } from '@mui/material';
 
 export default function ProductScreen() {
@@ -37,6 +29,7 @@ export default function ProductScreen() {
         <Grid
           style={{
             backgroundColor: '#FFFFFF',
+            marginTop: '15px',
           }}
           className={classes.productOuterGrid}
         >
@@ -119,6 +112,16 @@ export default function ProductScreen() {
                   Thích
                 </div>
               </div>
+            </div>
+            <div className={classes.trackingBrandAd}>
+              <a style={{ color: '#0b74e5', textDecoration: 'none' }}>
+                <Image
+                  src="/pdp-images/trackingbrand.webp"
+                  alt=""
+                  width={360}
+                  height={120}
+                />
+              </a>
             </div>
           </Grid>
           <div className={classes.productSeparator2}></div>
@@ -230,7 +233,7 @@ export default function ProductScreen() {
                             </div>
                             <div className={classes.divider}></div>
                             <div className={classes.date1}>
-                              Trước 10:00 ngày mai
+                              Trước 10:00 hôm nay
                             </div>
                           </div>
                           <div className={classes.shippingPrice}>44.000đ</div>
@@ -246,7 +249,9 @@ export default function ProductScreen() {
                               />
                             </div>
                             <div className={classes.divider}></div>
-                            <div className={classes.date1}>Thứ 7</div>
+                            <div className={classes.date1}>
+                              Trước 11:00 ngày mai
+                            </div>
                           </div>
                           <div className={classes.shippingPrice}>0đ</div>
                         </div>
@@ -355,13 +360,462 @@ export default function ProductScreen() {
                       </div>
                     </div>
                   </div>
-                  <div>Place holder, TBA</div>
-                  <div></div>
+
+                  <div className={classes.warrantyDetails}>
+                    <div className={classes.warrantyItem}>
+                      <span className={classes.itemLeft}>
+                        Thời gian bảo hành
+                      </span>
+                      <span>12 tháng</span>
+                    </div>
+                  </div>
+                  <div className={classes.customerBenefits}>
+                    <div className={classes.benefitItem}>
+                      <Image
+                        src="/pdp-images/hoantien.png"
+                        alt=""
+                        width={32}
+                        height={32}
+                      />
+                      <span className={classes.benefitItemSpan}>
+                        Hoàn tiền
+                        <br />
+                        <b style={{ fontWeight: 500 }}>111%</b>
+                        <br />
+                        nếu hàng giả
+                      </span>
+                    </div>
+                    <div className={classes.benefitItem}>
+                      <Image
+                        src="/pdp-images/mohop.png"
+                        alt=""
+                        width={32}
+                        height={32}
+                      />
+                      <span className={classes.benefitItemSpan}>
+                        Mở hộp
+                        <br />
+                        kiểm tra
+                        <br />
+                        nhận hàng
+                      </span>
+                    </div>
+                    <div className={classes.benefitItem}>
+                      <Image
+                        src="/pdp-images/doitra.png"
+                        alt=""
+                        width={32}
+                        height={32}
+                      />
+                      <span className={classes.benefitItemSpan}>
+                        Đổi trả trong
+                        <br />
+                        <b style={{ fontWeight: 500 }}>7 ngày</b>
+                        <br />
+                        nếu sp lỗi
+                      </span>
+                    </div>
+                  </div>
+                  <div className={classes.container}>
+                    <div>
+                      <div
+                        style={{
+                          color: '#242424',
+                          fontSize: '15px',
+                          fontWeight: 500,
+                          lineHeight: '24px',
+                        }}
+                      >
+                        2 nhà bán khác
+                      </div>
+                      <div
+                        style={{
+                          color: '#787878',
+                          fontSize: '13px',
+                          lineHeight: '20px',
+                        }}
+                      >
+                        Giá từ {product.disc}
+                      </div>
+                    </div>
+                    <a
+                      style={{
+                        fontSize: '13px',
+                        lineHeight: '20px',
+                        fontWeight: 500,
+                        color: '#0d5cb6',
+                        border: '1px solid #0d5cb6',
+                        borderRadius: '4px',
+                        padding: '6px 12px',
+                        height: '34px',
+                        textAlign: 'center',
+                        display: 'block',
+                        marginLeft: 'auto',
+                        cursor: 'pointer',
+                      }}
+                    >
+                      So sánh
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </Grid>
         </Grid>
+        <Grid className={classes.productSlideWrapper}>
+          <h2 className={classes.blockTitle}>Sản Phẩm Tương Tự</h2>
+          <Grid container spacing={3}>
+            {data.recommend.map((product) => (
+              <Grid item md={2} key={product.name}>
+                <Card style={{ border: 'none', boxShadow: 'none' }}>
+                  <NextLink href={`/product/${product.slug}`} passHref>
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        image={product.image}
+                        title={product.name}
+                      ></CardMedia>
+
+                      <Typography className={classes.twoLines}>
+                        {product.name}
+                      </Typography>
+
+                      <div style={{ textAlign: 'left ' }}>
+                        <Typography
+                          style={{
+                            fontSize: '12px',
+                            color: 'black',
+                            fontWeight: 400,
+                          }}
+                        >
+                          {product.numReviews} đánh giá | đã bán {product.sold}
+                        </Typography>
+                      </div>
+
+                      <Typography
+                        style={{
+                          fontWeight: 'bold',
+                          color: 'red',
+                          margin: '0px',
+                        }}
+                      >
+                        {product.price}đ
+                      </Typography>
+                    </CardActionArea>
+                  </NextLink>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+        <Tabs>
+          <div className={classes.stickyTab}>
+            <Grid
+              className={classes.gridWidth}
+              style={{ backgroundColor: '#FFFFFF' }}
+            >
+              <div className={classes.outerTab}>
+                <div className={classes.innerTab}>
+                  <div>Gợi Ý Hôm Nay</div>
+                </div>
+              </div>
+            </Grid>
+            <Grid style={{ backgroundColor: '#F6F5FA' }}>
+              <div className={classes.outerTab2}>
+                <div className={classes.innerTab2}>
+                  <div>
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/pdp-images/danhchoban.webp"
+                          alt=""
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Dành cho bạn</span>
+                    </Tab>
+
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/pdp-images/dichosieusale.webp"
+                          alt=""
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Đi Chợ Siêu Sale</span>
+                    </Tab>
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/pdp-images/dealsieuhot.webp"
+                          alt="buttonimage3"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Deal Siêu Hot</span>
+                    </Tab>
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/pdp-images/trending.webp"
+                          alt=""
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Trending</span>
+                    </Tab>
+                  </div>
+                </div>
+              </div>
+            </Grid>
+          </div>
+
+          <TabPanel>
+            <div>
+              <Grid
+                className={classes.gridBorder}
+                style={{ backgroundColor: '#FFFFFF' }}
+              >
+                <div className={classes.mainTitle}>
+                  <div className={classes.mainTitle2}>
+                    <Grid container spacing={3}>
+                      {data.products.map((product) => (
+                        <Grid item md={2} key={product.name}>
+                          <Card style={{ border: 'none', boxShadow: 'none' }}>
+                            <NextLink
+                              href={`/product/${product.slug}`}
+                              passHref
+                            >
+                              <CardActionArea>
+                                <CardMedia
+                                  component="img"
+                                  image={product.image}
+                                  title={product.name}
+                                ></CardMedia>
+
+                                <Typography className={classes.twoLines}>
+                                  {product.name}
+                                </Typography>
+
+                                <div style={{ textAlign: 'left ' }}>
+                                  <Typography
+                                    style={{
+                                      fontSize: '12px',
+                                      color: 'black',
+                                      fontWeight: 400,
+                                    }}
+                                  >
+                                    {product.numReviews} đánh giá | đã bán{' '}
+                                    {product.sold}
+                                  </Typography>
+                                </div>
+
+                                <Typography
+                                  style={{
+                                    fontWeight: 'bold',
+                                    color: 'red',
+                                    margin: '0px',
+                                  }}
+                                >
+                                  {product.price}đ
+                                </Typography>
+                              </CardActionArea>
+                            </NextLink>
+                          </Card>
+                        </Grid>
+                      ))}
+                    </Grid>
+                  </div>
+                </div>
+              </Grid>
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div>
+              <Grid
+                className={classes.gridBorder}
+                style={{ backgroundColor: '#FFFFFF' }}
+              >
+                <div className={classes.mainTitle}>
+                  <div className={classes.mainTitle2}>
+                    <Grid container spacing={3}>
+                      {data.products1.map((product) => (
+                        <Grid item md={2} key={product.name}>
+                          <Card style={{ border: 'none', boxShadow: 'none' }}>
+                            <NextLink
+                              href={`/product/${product.slug}`}
+                              passHref
+                            >
+                              <CardActionArea>
+                                <CardMedia
+                                  component="img"
+                                  image={product.image}
+                                  title={product.name}
+                                ></CardMedia>
+
+                                <Typography className={classes.twoLines}>
+                                  {product.name}
+                                </Typography>
+
+                                <div style={{ textAlign: 'left ' }}>
+                                  <Typography
+                                    style={{
+                                      fontSize: '12px',
+                                      color: 'black',
+                                      fontWeight: 400,
+                                    }}
+                                  >
+                                    {product.numReviews} đánh giá | đã bán{' '}
+                                    {product.sold}
+                                  </Typography>
+                                </div>
+
+                                <Typography
+                                  style={{
+                                    fontWeight: 'bold',
+                                    color: 'red',
+                                    margin: '0px',
+                                  }}
+                                >
+                                  {product.price}đ
+                                </Typography>
+                              </CardActionArea>
+                            </NextLink>
+                          </Card>
+                        </Grid>
+                      ))}
+                    </Grid>
+                  </div>
+                </div>
+              </Grid>
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div>
+              <Grid
+                className={classes.gridBorder}
+                style={{ backgroundColor: '#FFFFFF' }}
+              >
+                <div className={classes.mainTitle}>
+                  <div className={classes.mainTitle2}>
+                    <Grid container spacing={3}>
+                      {data.products2.map((product) => (
+                        <Grid item md={2} key={product.name}>
+                          <Card style={{ border: 'none', boxShadow: 'none' }}>
+                            <NextLink
+                              href={`/product/${product.slug}`}
+                              passHref
+                            >
+                              <CardActionArea>
+                                <CardMedia
+                                  component="img"
+                                  image={product.image}
+                                  title={product.name}
+                                ></CardMedia>
+
+                                <Typography className={classes.twoLines}>
+                                  {product.name}
+                                </Typography>
+
+                                <div style={{ textAlign: 'left ' }}>
+                                  <Typography
+                                    style={{
+                                      fontSize: '12px',
+                                      color: 'black',
+                                      fontWeight: 400,
+                                    }}
+                                  >
+                                    {product.numReviews} đánh giá | đã bán{' '}
+                                    {product.sold}
+                                  </Typography>
+                                </div>
+
+                                <Typography
+                                  style={{
+                                    fontWeight: 'bold',
+                                    color: 'red',
+                                    margin: '0px',
+                                  }}
+                                >
+                                  {product.price}đ
+                                </Typography>
+                              </CardActionArea>
+                            </NextLink>
+                          </Card>
+                        </Grid>
+                      ))}
+                    </Grid>
+                  </div>
+                </div>
+              </Grid>
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div>
+              <Grid
+                className={classes.gridBorder}
+                style={{ backgroundColor: '#FFFFFF' }}
+              >
+                <div className={classes.mainTitle}>
+                  <div className={classes.mainTitle2}>
+                    <Grid container spacing={3}>
+                      {data.products3.map((product) => (
+                        <Grid item md={2} key={product.name}>
+                          <Card style={{ border: 'none', boxShadow: 'none' }}>
+                            <NextLink
+                              href={`/product/${product.slug}`}
+                              passHref
+                            >
+                              <CardActionArea>
+                                <CardMedia
+                                  component="img"
+                                  image={product.image}
+                                  title={product.name}
+                                ></CardMedia>
+
+                                <Typography className={classes.twoLines}>
+                                  {product.name}
+                                </Typography>
+
+                                <div style={{ textAlign: 'left ' }}>
+                                  <Typography
+                                    style={{
+                                      fontSize: '12px',
+                                      color: 'black',
+                                      fontWeight: 400,
+                                    }}
+                                  >
+                                    {product.numReviews} đánh giá | đã bán{' '}
+                                    {product.sold}
+                                  </Typography>
+                                </div>
+
+                                <Typography
+                                  style={{
+                                    fontWeight: 'bold',
+                                    color: 'red',
+                                    margin: '0px',
+                                  }}
+                                >
+                                  {product.price}đ
+                                </Typography>
+                              </CardActionArea>
+                            </NextLink>
+                          </Card>
+                        </Grid>
+                      ))}
+                    </Grid>
+                  </div>
+                </div>
+              </Grid>
+            </div>
+          </TabPanel>
+        </Tabs>
       </Layout>
     </Grid>
   );

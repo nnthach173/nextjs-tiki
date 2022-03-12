@@ -914,86 +914,84 @@ export default function Home() {
               <div className={classes.outerTab2}>
                 <div className={classes.innerTab2}>
                   <div>
-                    <TabList>
-                      <Tab className={classes.tabButton}>
-                        <span className={classes.imageTags}>
-                          <Image
-                            src="/buttonImage1.webp"
-                            alt="buttonimage1"
-                            width={48}
-                            height={48}
-                          />
-                        </span>
-                        <span>Dành cho bạn</span>
-                      </Tab>
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage1.webp"
+                          alt="buttonimage1"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Dành cho bạn</span>
+                    </Tab>
 
-                      <Tab className={classes.tabButton}>
-                        <span className={classes.imageTags}>
-                          <Image
-                            src="/buttonImage2.webp"
-                            alt="buttonimage2"
-                            width={48}
-                            height={48}
-                          />
-                        </span>
-                        <span>Deal Siêu Hot</span>
-                      </Tab>
-                      <Tab className={classes.tabButton}>
-                        <span className={classes.imageTags}>
-                          <Image
-                            src="/buttonImage3.webp"
-                            alt="buttonimage3"
-                            width={48}
-                            height={48}
-                          />
-                        </span>
-                        <span>Rẻ Vô Đối</span>
-                      </Tab>
-                      <Tab className={classes.tabButton}>
-                        <span className={classes.imageTags}>
-                          <Image
-                            src="/buttonImage4.webp"
-                            alt="buttonimage4"
-                            width={48}
-                            height={48}
-                          />
-                        </span>
-                        <span>Đi Chợ Siêu Sale</span>
-                      </Tab>
-                      <Tab className={classes.tabButton}>
-                        <span className={classes.imageTags}>
-                          <Image
-                            src="/buttonImage5.webp"
-                            alt="buttonimage5"
-                            width={48}
-                            height={48}
-                          />
-                        </span>
-                        <span>Hàng Mới</span>
-                      </Tab>
-                      <Tab className={classes.tabButton}>
-                        <span className={classes.imageTags}>
-                          <Image
-                            src="/buttonImage6.webp"
-                            alt="buttonimage6"
-                            width={48}
-                            height={48}
-                          />
-                        </span>
-                        <span>Không giới hạn</span>
-                      </Tab>
-                      <Tab className={classes.tabButton}>
-                        <span className={classes.imageTags}>
-                          <Image
-                            src="/buttonImage7.webp"
-                            alt="buttonimage7"
-                            width={48}
-                            height={48}
-                          />
-                        </span>
-                        <span>Quà Tết 2022</span>
-                      </Tab>
-                    </TabList>
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage2.webp"
+                          alt="buttonimage2"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Deal Siêu Hot</span>
+                    </Tab>
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage3.webp"
+                          alt="buttonimage3"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Rẻ Vô Đối</span>
+                    </Tab>
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage4.webp"
+                          alt="buttonimage4"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Đi Chợ Siêu Sale</span>
+                    </Tab>
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage5.webp"
+                          alt="buttonimage5"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Hàng Mới</span>
+                    </Tab>
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage6.webp"
+                          alt="buttonimage6"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Không giới hạn</span>
+                    </Tab>
+                    <Tab className={classes.tabButton}>
+                      <span className={classes.imageTags}>
+                        <Image
+                          src="/buttonImage7.webp"
+                          alt="buttonimage7"
+                          width={48}
+                          height={48}
+                        />
+                      </span>
+                      <span>Quà Tết 2022</span>
+                    </Tab>
                   </div>
                 </div>
               </div>
