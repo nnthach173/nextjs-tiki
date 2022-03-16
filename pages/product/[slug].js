@@ -435,7 +435,7 @@ export default function ProductScreen() {
                           lineHeight: '20px',
                         }}
                       >
-                        Giá từ {product.disc}
+                        Giá từ {product.discount}
                       </div>
                     </div>
                     <a
