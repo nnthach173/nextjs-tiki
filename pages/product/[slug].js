@@ -816,6 +816,9 @@ export default function ProductScreen() {
             </div>
           </TabPanel>
         </Tabs>
+        <Grid>
+          <div>work in progress</div>
+        </Grid>
       </Layout>
     </Grid>
   );
