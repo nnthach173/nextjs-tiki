@@ -1,4 +1,5 @@
 import { TextRotationAngleupSharp } from '@mui/icons-material';
+
 const data = {
   props: [
     {
@@ -2871,6 +2872,12 @@ const data = {
       rating: 5,
       numReviews: 2789,
       sold: '1000+',
+    },
+  ],
+
+  comments: [
+    {
+      commenter: 'Huy',
     },
   ],
 };

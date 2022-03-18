@@ -508,6 +508,33 @@ export default function ProductScreen() {
             ))}
           </Grid>
         </Grid>
+
+        <Grid className={classes.moTaSanPham}>
+          <div className={classes.moTaLeft}>
+            <div className={classes.group}>
+              <h2 className={classes.blockTitle}>Thông Tin Chi Tiết</h2>
+              <div className={classes.contentTable}>
+                <table className={classes.table}>
+                  <tbody>
+                    <tr className={classes.tr}>
+                      <td className={classes.td1}>Xuất xứ thương hiệu</td>
+                      <td className={classes.td2}>Việt Nam</td>
+                    </tr>
+                    <tr className={classes.tr2}>
+                      <td className={classes.td1}>Thương hiệu</td>
+                      <td className={classes.td2}>Tp</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div className={classes.group}>
+              <h2 className={classes.blockTitle}>Mô Tả Sản Phẩm</h2>
+            </div>
+          </div>
+          <div className={classes.moTaRight}></div>
+        </Grid>
+
         <Tabs>
           <div className={classes.stickyTab}>
             <Grid
@@ -816,9 +843,6 @@ export default function ProductScreen() {
             </div>
           </TabPanel>
         </Tabs>
-        <Grid>
-          <div>work in progress</div>
-        </Grid>
       </Layout>
     </Grid>
   );

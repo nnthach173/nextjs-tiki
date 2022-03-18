@@ -1170,6 +1170,74 @@ const useStyles = makeStyles({
     alignItems: 'center',
     margin: '0px',
   },
+  moTaSanPham: {
+    display: 'flex',
+  },
+  moTaLeft: {
+    flex: '1 1 0%',
+  },
+  moTaRight: {
+    width: '300px',
+    marginLeft: '20px',
+    marginRight: '30px',
+  },
+  group: {
+    marginBottom: '16px',
+    borderRadius: '4px',
+    backgroundColor: '#FFFFFF',
+  },
+  blockTitle: {
+    color: '#333333',
+    fontSize: '20px',
+    fontWeight: 400,
+    lineHeight: '32px',
+    padding: '8px 16px',
+    textTransform: 'capitalize',
+    display: 'flex',
+    webkitBoxPack: 'justify',
+    justifyContent: 'space-between',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+    margin: '0px',
+  },
+  contentTable: {
+    width: '920px',
+    padding: '0px 16px 16px',
+    display: 'inline-block',
+    color: '#242424',
+    lineHeight: '21px',
+    textAlign: 'justify',
+    borderRadius: '4px',
+  },
+  table: {
+    maxWidth: '100%',
+    borderCollapse: 'collapse',
+    borderSpacing: '0px',
+    width: '100% !important',
+  },
+  tr: {
+    fontSize: '13px',
+    borderBottom: '0px',
+  },
+  td1: {
+    width: '220px',
+    verticalAlign: 'top',
+    color: '#4f4f4f',
+    fontSize: '13px',
+    fontWeight: 500,
+    background: '#efefef',
+    padding: '10px 15px',
+  },
+  td2: {
+    flex: '1 1 0%',
+    borderRight: '0px',
+    padding: '10px 15px',
+  },
+  tr2: {
+    fontSize: '13px',
+    borderBottom: '0px',
+    backgroundColor: '#fafafa',
+  },
 });
 
 export default useStyles;
