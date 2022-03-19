@@ -6,8 +6,12 @@ import { useRouter } from 'next/router';
 import data from '../../utils/data';
 import Layout from '../../components/Layout';
 import useStyles from '../../utils/styles';
-import { AiFillStar } from 'react-icons/ai';
-import { AiOutlineMinus } from 'react-icons/ai';
+import {
+  AiFillStar,
+  AiOutlineStar,
+  AiFillCheckCircle,
+  AiOutlineLike,
+} from 'react-icons/ai';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Typography } from '@mui/material';
 
@@ -135,8 +139,9 @@ export default function ProductScreen() {
               <h1 className={classes.productNameDetail}>{product.name}</h1>
               <div className={classes.belowTitle}>
                 <div className={classes.belowTitleDetail}>
+                  <a>{product.starRating}</a>
                   <a className={classes.reviewsNumDetail}>
-                    Xem {product.numReviews} đánh giá
+                    (Xem {product.numReviews} đánh giá)
                   </a>
                   <div className={classes.productSeparator3}></div>
                 </div>
@@ -260,21 +265,6 @@ export default function ProductScreen() {
                   </div>
                 </div>
                 <div className={classes.buyGrid}>
-                  {/* <div className={classes.qtyAndMessage}>
-                    <div>
-                      <p className={classes.label}>Số lượng</p>
-                      <div className={classes.groupInput}>
-                        <button className={classes.groupInputFirstButton}>
-                          <AiOutlineMinus width={20} height={20} />
-                        </button>
-                        <input
-                          className={classes.input}
-                          type="text"
-                          value="1"
-                        />
-                      </div>
-                    </div>
-                  </div> */}{' '}
                   <div className={classes.groupButton}>
                     <button className={classes.productBuyButton}>
                       Chọn Mua
@@ -488,7 +478,7 @@ export default function ProductScreen() {
                             fontWeight: 400,
                           }}
                         >
-                          {product.numReviews} đánh giá | đã bán {product.sold}
+                          {product.starRating}| đã bán {product.sold}
                         </Typography>
                       </div>
 
@@ -518,11 +508,11 @@ export default function ProductScreen() {
                   <tbody>
                     <tr className={classes.tr}>
                       <td className={classes.td1}>Xuất xứ thương hiệu</td>
-                      <td className={classes.td2}>Việt Nam</td>
+                      <td className={classes.td2}>{product.origin}</td>
                     </tr>
                     <tr className={classes.tr2}>
                       <td className={classes.td1}>Thương hiệu</td>
-                      <td className={classes.td2}>Tp</td>
+                      <td className={classes.td2}>{product.brand}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -530,10 +520,340 @@ export default function ProductScreen() {
             </div>
             <div className={classes.group}>
               <h2 className={classes.blockTitle}>Mô Tả Sản Phẩm</h2>
+              <div className={classes.descriptionContent}>
+                <div>{product.description}</div>
+              </div>
             </div>
           </div>
           <div className={classes.moTaRight}></div>
         </Grid>
+
+        <div>
+          <Grid className={classes.commentOuterGrid}>
+            <div className={classes.customerReviewsHeading}>
+              Đánh Giá - Nhận Xét Từ Khách Hàng
+            </div>
+            <div style={{ paddingBottom: '16px' }}>
+              <div className={classes.customerReviewsTop}>
+                <div className={classes.reviewRating}>
+                  <div>
+                    <div className={classes.reviewRatingSummary}>
+                      <div className={classes.reviewRatingPoint}>
+                        {product.rating}
+                      </div>
+                      <div>
+                        <div className={classes.reviewRatingStars}>
+                          <span style={{ margin: '0px 2px 0px 0px' }}>
+                            {product.starReview}
+                          </span>
+                        </div>
+                        <div className={classes.reviewRatingTotal}>
+                          {product.numReviews} nhận xét
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className={classes.styledFilter}>
+                    <div className={classes.reviewLabel}>Lọc xem theo:</div>
+                    <div className={classes.filterReviewInner}>
+                      <div className={classes.reviewFilterItem}>
+                        <span>Mới nhất</span>
+                      </div>
+                      <div className={classes.reviewFilterItem}>
+                        <span>Có hình ảnh</span>
+                      </div>
+                      <div className={classes.reviewFilterItem}>
+                        <span>Đã mua hàng</span>
+                      </div>
+                      <div className={classes.reviewFilterItem}>
+                        <span>5</span>
+                        <AiOutlineStar
+                          size={20}
+                          style={{ marginLeft: '4px' }}
+                        />
+                      </div>
+                      <div className={classes.reviewFilterItem}>
+                        <span>4</span>
+                        <AiOutlineStar
+                          size={20}
+                          style={{ marginLeft: '4px' }}
+                        />
+                      </div>
+                      <div className={classes.reviewFilterItem}>
+                        <span>3</span>
+                        <AiOutlineStar
+                          size={20}
+                          style={{ marginLeft: '4px' }}
+                        />
+                      </div>
+                      <div className={classes.reviewFilterItem}>
+                        <span>2</span>
+                        <AiOutlineStar
+                          size={20}
+                          style={{ marginLeft: '4px' }}
+                        />
+                      </div>
+                      <div className={classes.reviewFilterItemLast}>
+                        <span>1</span>
+                        <AiOutlineStar
+                          size={20}
+                          style={{ marginLeft: '4px' }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+              <div className={classes.styledComment}>
+                <div className={classes.reviewCommentUser}>
+                  <div className={classes.reviewCommentUserInner}>
+                    <div className={classes.reviewCommentUserAvatar}>
+                      <div className={classes.styledAvatar}>
+                        <span className={classes.userShortenName}>
+                          {product.userShortenName}
+                        </span>
+                      </div>
+                    </div>
+                    <div style={{ wordBreak: 'break-word', color: '#242424' }}>
+                      <div className={classes.userName}>{product.userName}</div>
+                      <div className={classes.userDate}>
+                        Đã tham gia {product.userJoinDate}
+                      </div>
+                    </div>
+                  </div>
+                  <div className={classes.reviewCommentUserInfo}>
+                    <div className={classes.totalPost}>
+                      <Image
+                        src="/pdp-images/totalpost.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    Đã viết:
+                    <span className={classes.totalPost2}>
+                      {product.totalPost} Đánh giá
+                    </span>
+                  </div>
+                  <div className={classes.reviewCommentUserInfo}>
+                    <div className={classes.totalPost}>
+                      <Image
+                        src="/pdp-images/like.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    Đã nhận:
+                    <span className={classes.totalPost2}>
+                      {product.totalLikeReceived} Lượt cảm ơn
+                    </span>
+                  </div>
+                </div>
+                <div className={classes.flexGrow}>
+                  <div className={classes.reviewCommentRatingTitle}>
+                    {product.userStarRating}
+                    <div className={classes.reviewCommentTitle}>
+                      {product.userSatisfaction}
+                    </div>
+                  </div>
+                  <div className={classes.reviewCommentSellerNameAttributes}>
+                    <div className={classes.reviewCommentSellerName}>
+                      <span className={classes.reviewCommentCheckIcon}>
+                        <AiFillCheckCircle size={14} />
+                      </span>
+                      Đã mua hàng
+                    </div>
+                  </div>
+                  <div className={classes.reviewCommentContent}>
+                    {product.userComment}
+                  </div>
+                  <div className={classes.reviewCommentCreatedDate}>
+                    <span>Đánh giá vào {product.userCommentDate} trước</span>
+                    <span className={classes.spanTimeline}>
+                      <div className={classes.dot}></div>Đã dùng{' '}
+                      {product.userUseDate}
+                    </span>
+                  </div>
+                  <span className={classes.productReviewLikeButton}>
+                    <div className={classes.huuIch}>
+                      <AiOutlineLike size={20} />
+                    </div>
+                    <span>Hữu ích</span>
+                  </span>
+                  <span className={classes.binhLuan}>Bình luận</span>
+                </div>
+              </div>
+              <div className={classes.styledComment}>
+                <div className={classes.reviewCommentUser}>
+                  <div className={classes.reviewCommentUserInner}>
+                    <div className={classes.reviewCommentUserAvatar}>
+                      <div className={classes.styledAvatar}>
+                        <span className={classes.userShortenName}>
+                          {product.userShortenName2}
+                        </span>
+                      </div>
+                    </div>
+                    <div style={{ wordBreak: 'break-word', color: '#242424' }}>
+                      <div className={classes.userName}>
+                        {product.userName2}
+                      </div>
+                      <div className={classes.userDate}>
+                        Đã tham gia {product.userJoinDate2}
+                      </div>
+                    </div>
+                  </div>
+                  <div className={classes.reviewCommentUserInfo}>
+                    <div className={classes.totalPost}>
+                      <Image
+                        src="/pdp-images/totalpost.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    Đã viết:
+                    <span className={classes.totalPost2}>
+                      {product.totalPost2} Đánh giá
+                    </span>
+                  </div>
+                  <div className={classes.reviewCommentUserInfo}>
+                    <div className={classes.totalPost}>
+                      <Image
+                        src="/pdp-images/like.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    Đã nhận:
+                    <span className={classes.totalPost2}>
+                      {product.totalLikeReceived2} Lượt cảm ơn
+                    </span>
+                  </div>
+                </div>
+                <div className={classes.flexGrow}>
+                  <div className={classes.reviewCommentRatingTitle}>
+                    {product.userStarRating2}
+                    <div className={classes.reviewCommentTitle}>
+                      {product.userSatisfaction2}
+                    </div>
+                  </div>
+                  <div className={classes.reviewCommentSellerNameAttributes}>
+                    <div className={classes.reviewCommentSellerName}>
+                      <span className={classes.reviewCommentCheckIcon}>
+                        <AiFillCheckCircle size={14} />
+                      </span>
+                      Đã mua hàng
+                    </div>
+                  </div>
+                  <div className={classes.reviewCommentContent}>
+                    {product.userComment2}
+                  </div>
+                  <div className={classes.reviewCommentCreatedDate}>
+                    <span>Đánh giá vào {product.userCommentDate2} trước</span>
+                    <span className={classes.spanTimeline}>
+                      <div className={classes.dot}></div>Đã dùng{' '}
+                      {product.userUseDate2}
+                    </span>
+                  </div>
+                  <span className={classes.productReviewLikeButton}>
+                    <div className={classes.huuIch}>
+                      <AiOutlineLike size={20} />
+                    </div>
+                    <span>Hữu ích</span>
+                  </span>
+                  <span className={classes.binhLuan}>Bình luận</span>
+                </div>
+              </div>
+              <div className={classes.styledComment}>
+                <div className={classes.reviewCommentUser}>
+                  <div className={classes.reviewCommentUserInner}>
+                    <div className={classes.reviewCommentUserAvatar}>
+                      <div className={classes.styledAvatar}>
+                        <span className={classes.userShortenName}>
+                          {product.userShortenName3}
+                        </span>
+                      </div>
+                    </div>
+                    <div style={{ wordBreak: 'break-word', color: '#242424' }}>
+                      <div className={classes.userName}>
+                        {product.userName3}
+                      </div>
+                      <div className={classes.userDate}>
+                        Đã tham gia {product.userJoinDate3}
+                      </div>
+                    </div>
+                  </div>
+                  <div className={classes.reviewCommentUserInfo}>
+                    <div className={classes.totalPost}>
+                      <Image
+                        src="/pdp-images/totalpost.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    Đã viết:
+                    <span className={classes.totalPost2}>
+                      {product.totalPost3} Đánh giá
+                    </span>
+                  </div>
+                  <div className={classes.reviewCommentUserInfo}>
+                    <div className={classes.totalPost}>
+                      <Image
+                        src="/pdp-images/like.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    Đã nhận:
+                    <span className={classes.totalPost2}>
+                      {product.totalLikeReceived3} Lượt cảm ơn
+                    </span>
+                  </div>
+                </div>
+                <div className={classes.flexGrow}>
+                  <div className={classes.reviewCommentRatingTitle}>
+                    {product.userStarRating3}
+                    <div className={classes.reviewCommentTitle}>
+                      {product.userSatisfaction3}
+                    </div>
+                  </div>
+                  <div className={classes.reviewCommentSellerNameAttributes}>
+                    <div className={classes.reviewCommentSellerName}>
+                      <span className={classes.reviewCommentCheckIcon}>
+                        <AiFillCheckCircle size={14} />
+                      </span>
+                      Đã mua hàng
+                    </div>
+                  </div>
+                  <div className={classes.reviewCommentContent}>
+                    {product.userComment3}
+                  </div>
+                  <div className={classes.reviewCommentCreatedDate}>
+                    <span>Đánh giá vào {product.userCommentDate3} trước</span>
+                    <span className={classes.spanTimeline}>
+                      <div className={classes.dot}></div>Đã dùng{' '}
+                      {product.userUseDate3}
+                    </span>
+                  </div>
+                  <span className={classes.productReviewLikeButton}>
+                    <div className={classes.huuIch}>
+                      <AiOutlineLike size={20} />
+                    </div>
+                    <span>Hữu ích</span>
+                  </span>
+                  <span className={classes.binhLuan}>Bình luận</span>
+                </div>
+              </div>
+            </div>
+          </Grid>
+        </div>
 
         <Tabs>
           <div className={classes.stickyTab}>
@@ -543,7 +863,7 @@ export default function ProductScreen() {
             >
               <div className={classes.outerTab}>
                 <div className={classes.innerTab}>
-                  <div>Gợi Ý Hôm Nay</div>
+                  <div>Khám Phá Thêm</div>
                 </div>
               </div>
             </Grid>
@@ -637,8 +957,7 @@ export default function ProductScreen() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
@@ -697,8 +1016,7 @@ export default function ProductScreen() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
@@ -757,8 +1075,7 @@ export default function ProductScreen() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
@@ -817,8 +1134,7 @@ export default function ProductScreen() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 

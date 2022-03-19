@@ -1033,8 +1033,7 @@ export default function Home() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
@@ -1093,8 +1092,7 @@ export default function Home() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
@@ -1153,8 +1151,7 @@ export default function Home() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
@@ -1213,8 +1210,7 @@ export default function Home() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
@@ -1273,8 +1269,7 @@ export default function Home() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
@@ -1333,8 +1328,7 @@ export default function Home() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
@@ -1393,8 +1387,7 @@ export default function Home() {
                                       fontWeight: 400,
                                     }}
                                   >
-                                    {product.numReviews} đánh giá | đã bán{' '}
-                                    {product.sold}
+                                    {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
