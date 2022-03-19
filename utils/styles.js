@@ -912,7 +912,7 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     backgroundColor: '#FFFFFF',
     margin: '16px 0px 0px',
-    padding: '16px 0px',
+    padding: '50px 0px',
     borderTop: '1px solid #f2f2f2',
   },
   groupButton: {
@@ -1526,6 +1526,10 @@ const useStyles = makeStyles({
     cursor: 'pointer',
     display: 'inline-block',
     userSelect: 'none',
+  },
+  headTop: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
 });
 

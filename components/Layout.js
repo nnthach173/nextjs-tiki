@@ -24,6 +24,7 @@ export default function Layout({ title, children }) {
       <Head>
         <title>{title ? `${title} - Next Tiki` : 'Next Tiki'}</title>
       </Head>
+
       <AppBar position="static" className={classes.navbar}>
         <Toolbar className={classes.customizeToolbar}>
           <div className={classes.logoPosition}>

@@ -1158,8 +1158,8 @@ const data = {
       ),
       sold: 4,
       /////////////////
-      userName: 'Bao Banh Bao',
-      userShortenName: 'BB',
+      userName: 'Duy Duong',
+      userShortenName: 'DD',
       userJoinDate: '1 ngày',
       totalPost: '0',
       totalLikeReceived: '0',
@@ -1173,22 +1173,14 @@ const data = {
         </>
       ),
       userSatisfaction: 'Cực kì hài lòng',
-      userComment: (
-        <>
-          Đóng gói rất chắc chắn. Sản phẩm thì xịn xò. Ban đầu thấy nhận xét
-          cũng sợ bị lỗi chênh này nè. Nhưng may mắn nó đúng như mong đợi. Tui
-          rất tin tưởng tiki. Mua từ sách, kệ sách h là bàn. Mua cái bàn này tui
-          đã sử dụng 100k tiki xu. Quá tiết kiệm. 1 năm cày tiki live. H ko còn
-          nữa r. Hơi tiếc. ?
-        </>
-      ),
+      userComment: <>Hàng tốt, màn hình màu sắc đẹp.</>,
       userCommentDate: '9 tháng',
       userUseDate: '5 giờ',
       ////////////////////
 
       ///////////////////
-      userName2: 'Thùy Giang',
-      userShortenName2: 'TG',
+      userName2: 'Bảo Bảo',
+      userShortenName2: 'BB',
       userJoinDate2: '1 ngày',
       totalPost2: '1',
       totalLikeReceived2: '0',
@@ -1202,19 +1194,14 @@ const data = {
         </>
       ),
       userSatisfaction2: 'Cực kì hài lòng',
-      userComment2: (
-        <>
-          Bàn nhỏ gọn, chắc chắn, khá là nhẹ, mặt bàn nhẵn mịn ngồi học làm việc
-          thoải mái, dễ dàng xoay chuyển thành bàn ăn cũng được
-        </>
-      ),
+      userComment2: <>Hàng tốt</>,
       userCommentDate2: '1 năm',
       userUseDate2: '2 giờ',
       ////////////////
 
       ///////////////
-      userName3: 'Sương Mai',
-      userShortenName3: 'SM',
+      userName3: 'Ngọc Thành',
+      userShortenName3: 'NT',
       userJoinDate3: '2 tháng',
       totalPost3: '1',
       totalLikeReceived3: '0',
@@ -1228,12 +1215,7 @@ const data = {
         </>
       ),
       userSatisfaction3: 'Cực kì hài lòng',
-      userComment3: (
-        <>
-          hơi bị xước nhẹ nhưng ko sao nó vẫn rất rất ok nhìn trông hình trong
-          khá to nhưng ngoài đời thì nhỏ gọn lắm á
-        </>
-      ),
+      userComment3: <></>,
       userCommentDate3: '4 tháng',
       userUseDate3: '10 phút',
       ///////////////
@@ -1351,6 +1333,75 @@ const data = {
         </>
       ),
       sold: '1000+',
+      /////////////////
+      userName: 'Ngô Xuân Lâm',
+      userShortenName: 'XL',
+      userJoinDate: '1 ngày',
+      totalPost: '0',
+      totalLikeReceived: '0',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Chưa hài lòng cho lắm',
+      userComment: <>Tạm đc</>,
+      userCommentDate: '2 năm',
+      userUseDate: '1 tháng',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Hà Thắng',
+      userShortenName2: 'TG',
+      userJoinDate2: '1 ngày',
+      totalPost2: '0',
+      totalLikeReceived2: '0',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Không hài lòng',
+      userComment2: <>Đồ giả</>,
+      userCommentDate2: '1 năm',
+      userUseDate2: '1 tháng',
+      ////////////////
+
+      ///////////////
+      userName3: 'Trần Duy Đông',
+      userShortenName3: 'DĐ',
+      userJoinDate3: '2 tháng',
+      totalPost3: '5',
+      totalLikeReceived3: '1',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Chưa ưng',
+      userComment3: (
+        <>
+          Màn xem video khi video chuyển cảnh cứ giật giật. Chơi game cũng giật.
+          Còn mọi thứ đều ok. Đặt chiều hôm qua, sáng nay đã nhận được. Máy e
+          dùng card màn hình 1070ti, cpu 8700k. Màn này là 8 bit màu thực. Hình
+          ảnh rất đẹp, màu rất ok.
+        </>
+      ),
+      userCommentDate3: '2 năm',
+      userUseDate3: '2 giờ',
+      ///////////////
     },
     {
       name: 'Tai Nghe Bluetooth Chụp Tai Sony WH-1000XM4 Hi-Res Noise Canceling - Hàng Chính Hãng',
@@ -1431,6 +1482,95 @@ const data = {
         </>
       ),
       sold: 406,
+      /////////////////
+      userName: 'Nguyễn Hòa',
+      userShortenName: 'XL',
+      userJoinDate: '1 năm',
+      totalPost: '11',
+      totalLikeReceived: '10',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: (
+        <>
+          Hàng chính hãng, khả năng chống ồn chất lượng, mình mua về vừa nghe
+          nhạc vừa tập trung làm việc rất hiệu quả. Mua 11.11 đc giảm giá còn
+          5tr4 nên rất là ưng luôn, còn đc tặng kèm tui đeo sony vải tốt nữa.
+          5sao k bàn cãi.
+        </>
+      ),
+      userCommentDate: '4 tháng',
+      userUseDate: '8 ngày',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Trịnh Linh',
+      userShortenName2: 'TL',
+      userJoinDate2: '3 năm',
+      totalPost2: '15',
+      totalLikeReceived2: '22',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: (
+        <>
+          Quá nhanh. Mình lượn lờ sản phẩm vài lần. Trúng TIKI giảm 5tr790k. Áp
+          mã moca 300k. Còn 5tr5. Quá đẹp cho 1 cuộc tình khô máu 🥰🥰🥰 Chất
+          lượng nhạc hay. Mình mới đeo nên hơi đau đầu chút vì chưa quen. Chống
+          ồn cực tốt. nghe thấy tiếng quạt nhẹ thôi, ko rõ tẹo nào. Mình liên
+          kết dễ dàng với iphone nhưng laptop thì hơi mệt chút. Các bạn ấn giữ
+          nút nguồn tầm 7s thì sẽ hiện MX4 trên laptop nhé. Tai nghe sẽ kích
+          thích Bluetooth pairing. Mình mày mò cách này trên youtube :)))
+        </>
+      ),
+      userCommentDate2: '6 tháng',
+      userUseDate2: '7 giờ',
+      ////////////////
+
+      ///////////////
+      userName3: 'Nguyen Van Tu',
+      userShortenName3: 'VT',
+      userJoinDate3: '1 năm',
+      totalPost3: '2',
+      totalLikeReceived3: '5',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: (
+        <>
+          Hàng chính hãng, nguyên seal, đáng tin cậy, tiki giao hàng nhanh trong
+          1h đã nhận được. Tai nghe build cứng cáp đẹp, chống ồn khá tốt 75%,
+          tiếng người nói và âm thanh cao vẫn nghe được. Đeo lâu nhưng vẫn êm
+          tai, thoải mái, có điều đeo lúc trời nóng sẽ đồ mồ hôi khó chịu, trời
+          mát thì không thành vấn đề. Chất âm hay, có thể tự điều chỉnh cho phù
+          hợp, thêm chống ồn nữa thì như thế giới xung quanh chỉ còn mình và âm
+          nhạc, rất thích.
+        </>
+      ),
+      userCommentDate3: '5 tháng',
+      userUseDate3: '2 ngày',
+      ///////////////
     },
     {
       name: 'Bảng Treo Đồ Nghề Pegboard Cơ Khí SMLIFE WB3 Lưu Trữ Trưng Bày Dụng Cụ Sửa Chữa Thông Minh Dễ Tìm Kiếm',
@@ -1494,6 +1634,68 @@ const data = {
         </>
       ),
       sold: 5,
+      /////////////////
+      userName: 'Vu Ngoc Ha',
+      userShortenName: 'NH',
+      userJoinDate: '7 năm',
+      totalPost: '11',
+      totalLikeReceived: '0',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: <>Shop gửi thiếu hàng nhưng đã hỗ trợ gửi thanks</>,
+      userCommentDate: '3 tháng',
+      userUseDate: '9 ngày',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Phan Đức Chính',
+      userShortenName2: 'ĐC',
+      userJoinDate2: '2 tháng',
+      totalPost2: '1',
+      totalLikeReceived2: '0',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: <>Hàng tốt</>,
+      userCommentDate2: '2 tháng',
+      userUseDate2: '4 ngày',
+      ////////////////
+
+      ///////////////
+      userName3: 'Nguyen Van Tu',
+      userShortenName3: 'VT',
+      userJoinDate3: '1 năm',
+      totalPost3: '2',
+      totalLikeReceived3: '5',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: <>Hàng tốt</>,
+      userCommentDate3: '5 tháng',
+      userUseDate3: '2 ngày',
+      ///////////////
     },
     {
       name: 'Cây Cam Ngọt Của Tôi',
@@ -1591,6 +1793,106 @@ const data = {
         </>
       ),
       sold: '1000+',
+      /////////////////
+      userName: 'Vân Anh',
+      userShortenName: 'VA',
+      userJoinDate: '1 ngày',
+      totalPost: '0',
+      totalLikeReceived: '0',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: (
+        <>
+          Có những người bước đến, họ lấp đầy hạnh phúc vào từng vết nứt trong
+          tim, khiến chúng được an ủi và chữa lành. Nhưng rồi họ lại ra đi, làm
+          tan vỡ trái tim người ở lại…. Câu chuyện bắt đầu bằng sự vui vẻ,
+          nghịch ngợm của một cậu bé mang tên Zezé và kết thúc là một nỗi đau
+          tột cùng khi mất đi hai người bạn quý giá nhất đời mình. Khi đọc cuốn
+          tiểu thuyết này, các bạn hẳn sẽ nhiều lần đau xót vì thương cảm cho
+          cậu bé chỉ mới 5 tuổi với một tuổi thơ nhiều rạn vỡ. Nhưng các bạn
+          cũng sẽ mỉm cười và cảm thấy yêu thương sự sống từ trong sâu thẳm tim
+          mình. Bởi trong suốt cuốn tiểu thuyết, người với người đối xử với nhau
+          vẫn rất đỗi dịu dàng, yêu thương và trìu mến. Cho đến khi khép lại
+          cuốn sách, thì trái tim chúng ta lại thổn thức với một nỗi buồn vương
+          vấn, buồn cho sự mất mát từ những yêu thương và buồn cho sự trưởng
+          thành từ những nỗi đau, sự trưởng thành quá sớm mà không ai mong muốn…
+          Một cuốn tự truyện đầy cảm động, tuy đau đớn nhưng vẫn ngập tràn tình
+          yêu thương!!! Cảm ơn Tiki 🧡
+        </>
+      ),
+      userCommentDate: '5 tháng',
+      userUseDate: '1 tháng',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Trần Thị Trang',
+      userShortenName2: 'TT',
+      userJoinDate2: '1 ngày',
+      totalPost2: '0',
+      totalLikeReceived2: '0',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: (
+        <>
+          Bìa cực xinh, tiki giao hàng nhanh, sách không bị nhăn góc, gãy cạnh
+          hay bẩn j hết. Cuốn này quá nổi rồi nên mình sẽ không nhận xét về nội
+          dung mà chỉ chia sẻ cảm nhận của bản thân. Khi mới đọc nửa đầu, mk vừa
+          buồn cười vừa giận những trò nghịch ngợm của cậu bé, ngưỡng mộ tài
+          năng cũng như yêu quý tính cách dễ thương của cậu. Nhưng đến khoảng
+          nửa phần sau mk thì khóc sướt mướt luôn:((. Mk giận cuộc đời sao đối
+          xử bất công với cậu bé như thế!! Cậu vẫn còn quá nhỏ để hiểu đời, hiểu
+          thế sự, hiểu sự "chết" là gì!!
+        </>
+      ),
+      userCommentDate2: '3 tháng',
+      userUseDate2: '5 ngày',
+      ////////////////
+
+      ///////////////
+      userName3: 'Khánh Ly',
+      userShortenName3: 'KL',
+      userJoinDate3: '1 ngày',
+      totalPost3: '0',
+      totalLikeReceived3: '0',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: (
+        <>
+          Nội dung của sách thì không phải bàn đến rồi, đây là 1 tác phẩm văn
+          học kinh điển mọi người đều biết tới. Vậy nên mình sẽ nói về dịch vụ
+          của Tiki - Giao hàng siêu nhanh luôn, tối hôm trước mình đặt chiều hôm
+          sau đã có hàng trên tay rồi - Đóng gói chắc chắn như mọi lần, sách
+          không móp méo, không bị bẩn, nói chung ngoại quan không vấn đề. Sách
+          in không bị lỗi mực in hay phông chữ
+        </>
+      ),
+      userCommentDate3: '6 tháng',
+      userUseDate3: '5 giờ',
+      ///////////////
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Cotton Select Affinity gồm 5 món',
@@ -1658,6 +1960,68 @@ const data = {
         </>
       ),
       sold: 17,
+      /////////////////
+      userName: 'Nguyn Diu',
+      userShortenName: 'ND',
+      userJoinDate: '0 ngày',
+      totalPost: '0',
+      totalLikeReceived: '0',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: <>Giao hàng nhanh</>,
+      userCommentDate: '1 tháng',
+      userUseDate: '1 tháng',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Thanhdung',
+      userShortenName2: 'T',
+      userJoinDate2: '1 ngày',
+      totalPost2: '0',
+      totalLikeReceived2: '0',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: <></>,
+      userCommentDate2: '1 tháng',
+      userUseDate2: '1 tháng',
+      ////////////////
+
+      ///////////////
+      userName3: 'Lưu Vĩnh Phú',
+      userShortenName3: 'KL',
+      userJoinDate3: '1 ngày',
+      totalPost3: '0',
+      totalLikeReceived3: '0',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: <></>,
+      userCommentDate3: '2 tháng',
+      userUseDate3: '7 ngày',
+      ///////////////
     },
     {
       name: 'Nồi áp suất điện đa năng Tefal CY601868 - 6 Lít - 15 chức năng - Hàng chính hãng',
@@ -1731,6 +2095,117 @@ const data = {
         </>
       ),
       sold: 3,
+      /////////////////
+      userName: 'Nguyễn Thu Thảo',
+      userShortenName: 'TT',
+      userJoinDate: '1 ngày',
+      totalPost: '0',
+      totalLikeReceived: '0',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: (
+        <>
+          Đặt hàng vào thời gian đang giãn cách nhưng tiki giao hàng nhanh một
+          cách bất ngờ. Điểm cộng: Nồi rất đẹp. Các nút điều khiển đều là tiếng
+          Việt nên khá thân thiện với người dùng. Mới lần đầu dùng thử còn thấy
+          hơi phức tạp nhưng chắc dùng quen sẽ tiện hơn. Nhà mình mới hầm thử
+          thịt lợn theo chế độ mặc định là 30' và thành phẩm rất ổn. Shop tư vấn
+          qua chat tại Tiki rất nhanh. Thắc mắc về bảo hành đều được giải đáp
+          nhanh chóng. Nồi có kèm sách nấu ăn khá hữu ích. Điểm trừ: Các nút bấm
+          của nồi không được nhạy lắm, phải bấm vài lần. Sách hướng dẫn sử dụng
+          thì được dịch sang tiếng Việt khá ẩu, đọc nhiều chỗ thấy khó chịu.
+          Tefal nên cải thiện hơn vấn đề này. Còn 1 điểm trừ nữa là của Tiki,
+          gần đây việc giải đáp thắc mắc của khách gần như bị bỏ bê. Khi tôi
+          phản ánh về việc không thấy có phiếu bảo hành, chỉ nhận được mail tự
+          động của tiki sẽ giải đáp trong 24h. Nhưng cuối cùng không có gì. Nếu
+          không phải chat trực tiếp với Tefal và được giải đáp thì chắc lại phải
+          vật vã gọi điện. Tóm lại mình vẫn cho sản phẩm 5 sao vì đẹp, chất
+          lượng dùng thử rất ổn. Tefal cũng rất nhiệt tình với khác hàng.
+        </>
+      ),
+      userCommentDate: '7 tháng',
+      userUseDate: '1 ngày',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Nguyễn Nhật Linh',
+      userShortenName2: 'NL',
+      userJoinDate2: '1 ngày',
+      totalPost2: '0',
+      totalLikeReceived2: '0',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: (
+        <>
+          Sử dụng nồi được vài ngày và chờ có quà tặng về mình mới đánh giá cho
+          khách quan. Khi mua bạn phải thấy phần quà tặng ở bên dưới phần mô tả
+          thì mới là có quà nhé. Thêm cả 2 vào giỏ rồi bấm tick cả 2, đặt thành
+          công thì sẽ được tách làm 2 đơn với mã khác nhau. Nồi giao trước thành
+          công thì quà tặng mới bắt đầu được gửi đi cơ. Đóng gói và giao hàng
+          của Tiki thì không chê gì rồi. Mỗi cái là nồi giao cho mình bị 1 nốt
+          lõm bên trong nồi như hình, haiz, hơi buồn. Có bạn trước đó yêu cầu có
+          dán tiếng Việt vào bảng điều khiển thì đến mình mua thấy bảng điều
+          khiển đã có sẵn tiếng Việt rồi nên khi dùng khỏi lăn tăn nữa. Nhà sản
+          xuất có vẻ rất lắng nghe đánh giá khách hàng. Về các chế độ thì okie,
+          cài đặt sẵn nấu rất tiện và nhanh, hương vị được giữ trọn vẹn hơn.
+          Mình đã thử vài món hầm thì okie lắm nha. Có báo khi khoá nồi hay rút
+          điện nữa. Cái nồi quánh thì mình chưa dùng,nhưng nhìn khá đẹp, ngoại
+          quan không vấn đề gì.
+        </>
+      ),
+      userCommentDate2: '8 tháng',
+      userUseDate2: '6 ngày',
+      ////////////////
+
+      ///////////////
+      userName3: 'Thanh Hiền',
+      userShortenName3: 'KL',
+      userJoinDate3: '1 ngày',
+      totalPost3: '0',
+      totalLikeReceived3: '0',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: (
+        <>
+          Nồi mua giá hơn 1.4tr, còn đc tặng quánh chống dính của Tefal. nồi này
+          giá rẻ, chức năng tốt, phù hợp với như cầu nấu nướng của mình, nình
+          xương, kho cá, nấu cháo, bò kho... đều rất ngon. Lúc trước mình xài
+          nồi cơ, sử dụng trên bếp gas, phải canh thời gian để tắt, nay chỉ cần
+          nhấn nút rồi đi làm việc khác Khuyết điểm: lòng nồi quả thật mỏng như
+          review của mọi người, lúc đầu mình nghĩ mỏng cũng đc, cho dễ rửa,
+          nhưng cầm lòng nồi trong tay mình cảm giác nó mỏng manh, dễ móp méo,
+          lúc rửa phải hết sức nâng niu để k rớt và trầy lớp chống dính của nồi.
+          Tóm lại, với giá này mình cảm thấy cực kì hài lòng với chiếc nồi này,
+          và đã giới thiệu bạn mình mua thêm 1 chiếc.
+        </>
+      ),
+      userCommentDate3: '9 tháng',
+      userUseDate3: '1 ngày',
+      ///////////////
     },
     {
       name: 'Smart Tivi Sony Full HD 50 inch KDL-50W660G/Z',
@@ -1836,6 +2311,81 @@ const data = {
         </>
       ),
       sold: 229,
+      /////////////////
+      userName: 'Mai Tram',
+      userShortenName: 'MT',
+      userJoinDate: '1 ngày',
+      totalPost: '0',
+      totalLikeReceived: '0',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: (
+        <>
+          Hàng chất lượng tốt. Giá tốt, rẻ hơn cửa hàng điện máy gần 2tr. Tiki
+          đóng gói cẩn thận.Mình mua hàng từ đợt Tết mà chờ đến giờ để xem chất
+          lượng thế nào mới đánh giá. Cực kỳ tốt mọi người ạ. Nên mua nha!
+        </>
+      ),
+      userCommentDate: '10 tháng',
+      userUseDate: '1 tháng',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Quỳnh Lê',
+      userShortenName2: 'L',
+      userJoinDate2: '1 ngày',
+      totalPost2: '0',
+      totalLikeReceived2: '0',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: (
+        <>
+          Hàng nhận sớm, nguyên đai, kiện, nhân viên nhiệt tình. Mình chỉ hơi
+          bất ngờ khì nhân viên lắp đặt thu thêm tiền giá treo tivi là 300k. Chi
+          phí này không được báo trước dù mình đã trả 170K gói lắp đặt khi mua
+          cùng tivi. Tivi lắp xong đã nghiệm thu, chạy ngon, dễ sử dụng.
+        </>
+      ),
+      userCommentDate2: '15 ngày',
+      userUseDate2: '1 ngày',
+      ////////////////
+
+      ///////////////
+      userName3: 'Lê Thị Hiếu',
+      userShortenName3: 'KL',
+      userJoinDate3: '1 ngày',
+      totalPost3: '0',
+      totalLikeReceived3: '0',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: <>Màu chuẩn kiểu dáng sang trọng</>,
+      userCommentDate3: '9 tháng',
+      userUseDate3: '2 ngày',
+      ///////////////
     },
     {
       name: 'Combo Chảo chiên Tefal Natura B2260295 20cm & Chảo chiên sâu lòng Tefal Natura B2266495 24cm - Dùng được trên bếp gas/ bếp hồng ngoại - Công nghệ báo nhiệt thông minh - Hàng chính hãng',
@@ -1902,6 +2452,96 @@ const data = {
         </>
       ),
       sold: '1000+',
+      /////////////////
+      userName: 'Lien Nguyen',
+      userShortenName: 'LN',
+      userJoinDate: '1 ngày',
+      totalPost: '0',
+      totalLikeReceived: '0',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: (
+        <>
+          nhìn đẹp, cưng xỉu. mua dc giá km chưa tới 300k 2 chảo. chảo có vân
+          như chảo vân đá. cầm khá chắc tay. nhưng chảo 20cm ngoài bé lắm. tầm
+          hơn 16 thôi. chắc đo ra chỗ cán. hi vọng xài bền.
+        </>
+      ),
+      userCommentDate: '7 tháng',
+      userUseDate: '5 giờ',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Lê Hà',
+      userShortenName2: 'LH',
+      userJoinDate2: '9 năm',
+      totalPost2: '9',
+      totalLikeReceived2: '8',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: (
+        <>
+          đóng gói cẩn thận, chắc chắn. chảo cầm nhẹ nhàng, nhưng vẫn dày dặn.
+          sản phẩm chính hãng của Tefal thì vẫn yên tâm chất lượng rồi, nhưng
+          mong là hàng sản xuất ở VN thì chất lượng cũng không xuống nhiều. giao
+          hàng siêu nhanh.
+        </>
+      ),
+      userCommentDate2: '7 tháng',
+      userUseDate2: '11 phút',
+      ////////////////
+
+      ///////////////
+      userName3: 'Ron Do TV Quang',
+      userShortenName3: 'TQ',
+      userJoinDate3: '3 năm',
+      totalPost3: '63',
+      totalLikeReceived3: '60',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: (
+        <>
+          Hàng đúng như thông tin mô tả. Đóng gói kỹ càng, đag trong mùa dịch mà
+          cũg có đc hàng để xài. Mình chân thành xin cảm ơn đội ngũ tiki đã hỗ
+          trợ mang đến sản phẩm cho mình. Chảo nhìn khá nhỏ so với hình ảnh minh
+          họa, nhưng bù lại chảo xài khá là ok nhen. Mình xài bếp hồng ngoại nên
+          k bị kén chảo, chiên đồ thì k bị dính như mấy cái chảo cùng loại khác
+          có mặt sơn chống dính. Cái chấm đỏ đỏ ở giữa khi chảo đủ độ nóng phù
+          hợp nó sẽ chuyển sang màu đỏ lè nguyên cả vòng tròn. Điểm trừ là giá
+          thành hơi cao, và k có kèm nắp đậy, mình phải kiếm nắp đậy phù hợp để
+          lúc chiên k bị bắn dầu. Tổng kết: 90/100. Ai đọc lướt quá bình luận
+          thì cho mình xin 1 subcribe cho kênh youtube AIOChannel (logo với
+          phông nền xanh nhạt, chữ O tròn đỏ có chữ A màu xanh đi kèm) Mình xin
+          thành cảm ơn nhiều nhiều.
+        </>
+      ),
+      userCommentDate3: '7 tháng',
+      userUseDate3: '12 ngày',
+      ///////////////
     },
     {
       name: 'Bộ Cây Lau Nhà Tự Vắt Thông Minh 2 Ngăn Parroti Pro PR01 Cao Cấp - Lau Sạch Khô Nhanh – 3 Miếng Lau Microfiber',
@@ -1971,6 +2611,91 @@ const data = {
         </>
       ),
       sold: '1000+',
+      /////////////////
+      userName: 'Mai Van Thuan',
+      userShortenName: 'VT',
+      userJoinDate: '1 ngày',
+      totalPost: '0',
+      totalLikeReceived: '0',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: (
+        <>
+          Sản phẩm rất ok, đáng tiền. Được kèm 3 miếng lau, có thể dùng lau kính
+          cửa, sàn nhà riêng. Vắt khô lau cực sạch bụi bẩn, đi mát chân hẳn. Cán
+          lắp dễ dàng. Tay nắm đệm cao su mềm cho cảm giác cầm nắm em tay. Bàn
+          lau gấp lại rất nhạy và chuẩn giúp dễ đặt vô thùng kéo lên xuống. Vắt
+          bên ngăn khô nước chảy về ngăn chưa luôn. Thích ?
+        </>
+      ),
+      userCommentDate: '8 tháng',
+      userUseDate: '14 ngày',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Hoàng Thị Phượng',
+      userShortenName2: 'TP',
+      userJoinDate2: '2 năm',
+      totalPost2: '4',
+      totalLikeReceived2: '2',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: (
+        <>
+          Rất đáng để mua các bạn nhé Có tặng kèm 3 miếng lau riêng nên lau nhà
+          lau kính thoải mái mà ko sợ bẩn Tháo lắp rất dễ dàng Thùng đựng nước
+          cũng nhỏ gọn nên xách nhẹ lắm luôn Mìh mua 1 bộ xong dùng rất phù hợp
+          nên mua tiếp bộ nữa đi tặng
+        </>
+      ),
+      userCommentDate2: '7 tháng',
+      userUseDate2: '4 giờ',
+      ////////////////
+
+      ///////////////
+      userName3: 'Hoàng Linh',
+      userShortenName3: 'HL',
+      userJoinDate3: '2 năm',
+      totalPost3: '5',
+      totalLikeReceived3: '2',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: (
+        <>
+          Mình đã mua 1 bộ không rõ nguồn gốc sài khá dỏm, miếng lau dễ bị bung
+          ra khi giặt và xả, bộ này của Parroti tuyệt vời, khắc phục được nhược
+          điểm đó do có nam châm hít tấm lau vào đế, bao giặt xả các kiểu, cây
+          lau cũng êm tay và nhẹ, đầu chổi xoay linh động, dễ kiểm soát, không
+          cần dùng sức
+        </>
+      ),
+      userCommentDate3: '7 tháng',
+      userUseDate3: '1 tháng',
+      ///////////////
     },
     {
       name: 'Đồng hồ thể thao nam nữ AT111',
@@ -2029,6 +2754,73 @@ const data = {
         </>
       ),
       sold: 13,
+      /////////////////
+      userName: 'Danny Trn',
+      userShortenName: 'DT',
+      userJoinDate: '1 ngày',
+      totalPost: '0',
+      totalLikeReceived: '0',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Bình thường',
+      userComment: (
+        <>
+          Mới bóc hàng ra. Có vết trầy xướt bên phải đồng hồ như bị cạo vậy. Đề
+          nghị Tiki check lại với nhà cung cấp
+        </>
+      ),
+      userCommentDate: '10 tháng',
+      userUseDate: '11 phút',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Nguyễn Ngọc Nữ',
+      userShortenName2: 'NN',
+      userJoinDate2: '1 năm',
+      totalPost2: '0',
+      totalLikeReceived2: '0',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Rất không hài lòng',
+      userComment2: <>Đồng hồ k chạy shop giao hàng k chất lượng</>,
+      userCommentDate2: '9 tháng',
+      userUseDate2: '1 ngày',
+      ////////////////
+
+      ///////////////
+      userName3: 'Phong Gió',
+      userShortenName3: 'PG',
+      userJoinDate3: '2 năm',
+      totalPost3: '5',
+      totalLikeReceived3: '2',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: <>hài lòng</>,
+      userCommentDate3: '17 ngày',
+      userUseDate3: '2 ngày',
+      ///////////////
     },
     {
       name: 'Chú Thuật Hồi Chiến: Trường Chuyên Chú Thuật Tokyo - Tập 0',
@@ -2102,6 +2894,85 @@ const data = {
         </>
       ),
       sold: '1000+',
+      /////////////////
+      userName: 'Nguyễn Nguyên',
+      userShortenName: 'NN',
+      userJoinDate: '3 năm',
+      totalPost: '2',
+      totalLikeReceived: '0',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Bình thường',
+      userComment: (
+        <>
+          Hình trong ảnh thì có bookmark mà nhận 3 cuốn thì chỉ có 1 cuốn có
+          book mark, may mà truyện ko bị hư hại gì
+        </>
+      ),
+      userCommentDate: '1 tháng',
+      userUseDate: '9 phút',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Phan Puong',
+      userShortenName2: 'PP',
+      userJoinDate2: '4 tháng',
+      totalPost2: '3',
+      totalLikeReceived2: '5',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Rất không hài lòng',
+      userComment2: (
+        <>
+          Mình xin phép đc đánh nhá 1 sao ạ vì mình đặt 6 quyển mà chỉ có 1
+          quyển còn nguyên seal, mà shop vẫn bán với giá niêm yết:) bản thân
+          mình sẵn sàng chấp nhận và bỏ qua nhưng với những người mua hàng khác
+          thì sao ạ? Những bạn nhỏ thì sao? Mình sẽ k mua lại lần 2
+        </>
+      ),
+      userCommentDate2: '1 tháng',
+      userUseDate2: '11 phút',
+      ////////////////
+
+      ///////////////
+      userName3: 'Lê Quang Bình',
+      userShortenName3: 'QB',
+      userJoinDate3: '3 năm',
+      totalPost3: '1',
+      totalLikeReceived3: '1',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+          <AiFillStar color="#c7c7c7" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Rất không hài lòng',
+      userComment3: (
+        <>
+          lúc nhận hàng không có tag đi kèm không có bọc li lông sách có dấy
+          hiệu bị bẻ gáy rồi thật sự rất tệ
+        </>
+      ),
+      userCommentDate3: '1 tháng',
+      userUseDate3: '11 phút',
+      ///////////////
     },
     {
       name: 'Cho Tôi Xin Một Vé Đi Tuổi Thơ (Phiên Bản Đặc Biệt)',
@@ -2178,6 +3049,95 @@ const data = {
         </>
       ),
       sold: 375,
+      /////////////////
+      userName: '如 如',
+      userShortenName: '如 如',
+      userJoinDate: '9 năm',
+      totalPost: '40',
+      totalLikeReceived: '14',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: (
+        <>
+          Nhìn hình tham khảo tưởng sách cỡ vừa như quyển “Cảm ơn người lớn”, ai
+          dè nó to hơn cả quyển “Đảo mộng mơ” tái bản bìa cứng. Sách đến an
+          toàn, sách còn được bọc bookcare rất đẹp, bên trong còn có hình màu và
+          các trang màu, cuối truyện còn có một số doanh truyện tranh ngắn. Mình
+          mua lúc giảm giá bất ngờ nên thấy rất đáng tiền.
+        </>
+      ),
+      userCommentDate: '1 năm',
+      userUseDate: '1 giờ',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Nguyễn Lê Phương Thảo',
+      userShortenName2: 'PT',
+      userJoinDate2: '1 năm',
+      totalPost2: '140',
+      totalLikeReceived2: '88',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: (
+        <>
+          - Tiki giao hàng nhanh chóng tuy nhiên đóng gói chưa được cẩn thận
+          (hầu như đơn hàng nào cũng không chèn thêm giấy vào hộp mặc dù hộp khá
+          to so với kích thước sách) - Phiên bản đặc biệt nên rất chỉnh chu về
+          mặt hình thức, khổ sách to, bìa cứng, cầm chắc chắn. Chất lượng giấy
+          tốt, minh họa màu đẹp. Tựa sách & hình minh họa trên áo sách được in
+          nổi rất lạ mắt ?? - Kết thúc truyện còn có thêm phần truyện tranh khá
+          dễ thương, cảm giác đây là sản phẩm 2 trong 1 vừa truyện chữ vừa
+          truyện tranh. Sản phẩm cũng rất phù hợp cho các bạn thích sưu tầm sách
+          đẹp ???
+        </>
+      ),
+      userCommentDate2: '1 năm',
+      userUseDate2: '1 ngày',
+      ////////////////
+
+      ///////////////
+      userName3: 'Trần Quỳnh',
+      userShortenName3: 'TQ',
+      userJoinDate3: '4 năm',
+      totalPost3: '141',
+      totalLikeReceived3: '107',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: (
+        <>
+          Giao hàng siêu siêu nhanh luôn ạ, vừa đặt tối htrc mà sáng sớm hsau đã
+          thấy anh shipper gọi lấy hàng? Không cần nói thêm về chất lượng vì quá
+          xuất sắc. Chỉ có điều Tiki thêm 1 lớp bọc cho sách trc khi đóng hộp
+          thì tốt biết bao.:((
+        </>
+      ),
+      userCommentDate3: '9 tháng',
+      userUseDate3: '2 ngày',
+      ///////////////
     },
     {
       name: 'Pin Panasonic CR 2032 - Hàng chính hãng',
@@ -2240,6 +3200,74 @@ const data = {
         </>
       ),
       sold: 624,
+      /////////////////
+      userName: 'Đỗ Chín',
+      userShortenName: 'ĐC',
+      userJoinDate: '8 năm',
+      totalPost: '113',
+      totalLikeReceived: '70',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: (
+        <>
+          Sản phẩm chuẩn hàng ,đúng với mô tả về mẫu mã và xuất xứ.Nói chung về
+          hình thức rất hài lòng . Còn độ bền của Pin thế nào thì phải qua thời
+          gian sử dụng mới biết .
+        </>
+      ),
+      userCommentDate: '5 tháng',
+      userUseDate: '4 ngày',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Franz',
+      userShortenName2: 'F',
+      userJoinDate2: '2 năm',
+      totalPost2: '11',
+      totalLikeReceived2: '0',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: <>👍👍☺</>,
+      userCommentDate2: '2 tháng',
+      userUseDate2: '3 ngày',
+      ////////////////
+
+      ///////////////
+      userName3: 'Linh Nguyen',
+      userShortenName3: 'LN',
+      userJoinDate3: '2 năm',
+      totalPost3: '18',
+      totalLikeReceived3: '0',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: <>vv</>,
+      userCommentDate3: '3 tháng',
+      userUseDate3: '4 giờ',
+      ///////////////
     },
     {
       name: 'Máy Tính Bảng Samsung Galaxy Tab S7 FE LTE T735 (4GB/64GB) - Hàng Chính Hãng',
@@ -2317,6 +3345,84 @@ const data = {
         </>
       ),
       sold: 112,
+      /////////////////
+      userName: 'Abc Xyz',
+      userShortenName: 'AX',
+      userJoinDate: '1 năm',
+      totalPost: '12',
+      totalLikeReceived: '7',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: (
+        <>
+          Hàng xịn sò. Đúng chuẩn của samsung. Vừa nhận hàng hôm trước thì hôm
+          sau thấy samsung gửi tin nhắn báo kích hoạt bảo hành. Điểm 10 cho uy
+          tín.
+        </>
+      ),
+      userCommentDate: '3 tháng',
+      userUseDate: '11 ngày',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Hoàng Chí Hiếu',
+      userShortenName2: 'CH',
+      userJoinDate2: '2 năm',
+      totalPost2: '11',
+      totalLikeReceived2: '0',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: (
+        <>
+          Ok, máy sử dụng tốt, pin cũng tạm ổn, cần thêm thời gian trải nghiệm!
+        </>
+      ),
+      userCommentDate2: '1 tháng',
+      userUseDate2: '2 tháng',
+      ////////////////
+
+      ///////////////
+      userName3: 'Trần Hương',
+      userShortenName3: 'TH',
+      userJoinDate3: '2 tuần',
+      totalPost3: '2',
+      totalLikeReceived3: '1',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: (
+        <>
+          cùng trong HCM giao hàng 5 ngày mới nhận hàng, tiki giảm giá mua dc
+          giá tốt, mở máy và vài ngày sau samsung gửi kích hoạt bảo hành, sản
+          phẩm chính hãng
+        </>
+      ),
+      userCommentDate3: '1 tháng',
+      userUseDate3: '1 tháng',
+      ///////////////
     },
     {
       name: 'Máy Xay Thịt 2 Lưỡi Kép Nonostyle (2L) - Hàng Chính Hãng',
@@ -2392,6 +3498,89 @@ const data = {
         </>
       ),
       sold: '1000+',
+      /////////////////
+      userName: 'Lê Thị Kim Khánh',
+      userShortenName: 'KK',
+      userJoinDate: '2 năm',
+      totalPost: '156',
+      totalLikeReceived: '32',
+      userStarRating: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction: 'Cực kì hài lòng',
+      userComment: (
+        <>
+          Máy bền chắc, máy loại 2L nhìn rất to, có 2 chế độ xay , vừa mới mua
+          về mình *** thử ngay, máy xay rất êm nhìn thông tin máy có công suất
+          300W khá là mạnh. Bên cạnh đó khi mua về mình hỏi cách sử dụng shop
+          cũng tư vấn rất nhiệt tình. 5 sao cho shop nhé
+        </>
+      ),
+      userCommentDate: '2 tháng',
+      userUseDate: '1 ngày',
+      ////////////////////
+
+      ///////////////////
+      userName2: 'Voi Con Đi Học',
+      userShortenName2: 'ĐH',
+      userJoinDate2: '8 năm',
+      totalPost2: '23',
+      totalLikeReceived2: '8',
+      userStarRating2: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction2: 'Cực kì hài lòng',
+      userComment2: (
+        <>
+          mình thích làm chả giò nên em xay thịt này rất tiện. nếu thịt có da
+          thì sẽ lâu hơn một chút. còn thịt nạc thì hai lần ấn là em ấy ngon
+          ngay. xay lá lốt, nấm mèo, hành tây đều ok hết. giá vầy mà cối 2l mình
+          thấy rẻ và tiện.
+        </>
+      ),
+      userCommentDate2: '2 tháng',
+      userUseDate2: '1 ngày',
+      ////////////////
+
+      ///////////////
+      userName3: 'Gia Linh',
+      userShortenName3: 'GL',
+      userJoinDate3: '1 năm',
+      totalPost3: '4',
+      totalLikeReceived3: '38',
+      userStarRating3: (
+        <>
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+          <AiFillStar color="#ffd52e" size={20} />
+        </>
+      ),
+      userSatisfaction3: 'Cực kì hài lòng',
+      userComment3: (
+        <>
+          Lúc nhận hàng mình hơi bất ngờ vì ko ngờ nó to như vậy hihi, thố thuỷ
+          tinh rất chắc và đẹp, đóng gói hàng rất kĩ nên mình rất ưng về khoản
+          này, chưa sử dụng nên chưa biết máy hoạt động ntn nhưng vẫn đánh giá 5
+          sao cho shop trước ạ
+        </>
+      ),
+      userCommentDate3: '6 tháng',
+      userUseDate3: '14 phút',
+      ///////////////
     },
   ],
   products1: [

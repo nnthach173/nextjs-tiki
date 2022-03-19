@@ -218,11 +218,11 @@ export default function ProductScreen() {
                 </div>
 
                 <div className={classes.addressGrid}>
-                  <div className={classes.mainChangeAddress}>
+                  {/* <div className={classes.mainChangeAddress}>
                     <span>Giao đến</span>
 
                     <span className={classes.changeAddress}>Đổi địa chỉ</span>
-                  </div>
+                  </div> */}
                   <div>
                     <div className={classes.shippingInfoGrid}>
                       <div className={classes.shippingInfoGridInner}>
