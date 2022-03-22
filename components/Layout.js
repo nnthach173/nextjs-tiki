@@ -20,6 +20,7 @@ import { MdOutlineStorefront } from 'react-icons/md';
 export default function Layout({ title, children }) {
   const classes = useStyles();
   return (
+    ///////header///////
     <div>
       <Head>
         <title>{title ? `${title} - Next Tiki` : 'Next Tiki'}</title>
