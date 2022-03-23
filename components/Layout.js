@@ -70,6 +70,7 @@ export default function Layout({ title, children }) {
             </div>
           </div>
 
+          {/* log in buttons */}
           <BsPerson size={30} className={classes.personIcon} />
           <div className={classes.loginButton}>
             <Link href="#" underline="none">
