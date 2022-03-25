@@ -85,6 +85,7 @@ export default function Layout({ title, children }) {
             </Link>
           </div>
 
+          {/* cart here */}
           <div
             className={classes.shoppingCart}
             style={{ fontSize: '12px', color: '#FFFFFF' }}
