@@ -33,14 +33,21 @@ export default function Home() {
         backgroundColor: '#F6F5FA',
       }}
     >
+      {/* Page title */}
       <Layout title="Tiki - Mua hàng online giá tốt, hàng chuẩn, ship nhanh">
+        {/* gray background cover whole page */}
         <Grid
           style={{
             backgroundColor: '#F6F5FA',
           }}
         >
+          {/* carousel, taken from Responsive Carousel */}
           <div className={classes.carouselPosition}>
             <div className={classes.carousel}>
+              {/* IMPORTANT! need showThumbs={false} to avoid white bar bug */}
+              {/* infiniteLoop: image looping
+              autoPlay: change images automatically
+              */}
               <Carousel
                 width={810}
                 infiniteLoop={true}
@@ -48,6 +55,7 @@ export default function Home() {
                 autoPlay={true}
                 showThumbs={false}
               >
+                {/* carousel images */}
                 <div>
                   <Image src="/1.png" alt="1" width={824} height={274} />
                 </div>
@@ -97,6 +105,7 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Mini image next to carousel, check styling */}
           <div className={classes.carouselHeaderPosition}>
             <div className={classes.carouselHeader}>
               <Image src="/header.png" alt="header" width={400} height={274} />
@@ -104,11 +113,13 @@ export default function Home() {
           </div>
         </Grid>
 
+        {/* background color */}
         <Grid
           style={{
             backgroundColor: '#FFFFFF',
           }}
         >
+          {/* Mini product listing, container spacing = spaces between items (grids) */}
           <Grid
             className={classes.gridBorder}
             style={{
@@ -118,6 +129,7 @@ export default function Home() {
             container
             spacing={3}
           >
+            {/* Banner icons, check styling */}
             <Grid>
               <div className={classes.mainTitle}>
                 <div className={classes.mainTitle2}>
@@ -151,6 +163,7 @@ export default function Home() {
                 </div>
               </div>
             </Grid>
+            {/* display data from data.js */}
             <div className={classes.hangHoa}>
               {data.props.map((product) => (
                 <Grid
@@ -159,6 +172,7 @@ export default function Home() {
                   md={2}
                   key={product.name}
                 >
+                  {/* data, might use something else other than Grid */}
                   <Card>
                     <NextLink href={`/product/${product.slug}`} passHref>
                       <CardActionArea>
@@ -170,6 +184,7 @@ export default function Home() {
                       </CardActionArea>
                     </NextLink>
 
+                    {/* products' prices */}
                     <CardActions>
                       <Typography
                         style={{
@@ -182,6 +197,7 @@ export default function Home() {
                       </Typography>
                     </CardActions>
 
+                    {/* product sold numbers */}
                     <Box textAlign="center">
                       <Button className={classes.soldButton}>
                         Đã bán {product.sold}
@@ -198,6 +214,7 @@ export default function Home() {
             backgroundColor: '#F6F5FA',
           }}
         >
+          {/* Mini banners, use in-line styling to make them appear in 1-line */}
           <div className={classes.bannerMini1}>
             <div className={classes.bannerMini2}>
               <Image
@@ -225,6 +242,8 @@ export default function Home() {
             </div>
           </div>
         </Grid>
+
+        {/* Multiple buttons, need to re-check 1 line buttons */}
         <Grid
           className={classes.gridBorder}
           style={{ backgroundColor: '#FFFFFF' }}
@@ -241,6 +260,8 @@ export default function Home() {
                   />
                 </Button>
               </div>
+
+              {/* skip a line, need changing, looks weird */}
               <span className={classes.span}>
                 Săn thưởng <br /> mỗi ngày
               </span>
@@ -380,6 +401,8 @@ export default function Home() {
             </div>
           </div>
         </Grid>
+
+        {/* Multiple mini banners, use in-line styling */}
         <Grid
           style={{
             backgroundColor: '#F6F5FA',
@@ -420,6 +443,7 @@ export default function Home() {
             </div>
           </div>
         </Grid>
+        {/* Mini tag icon */}
         <Grid
           className={classes.gridBorder}
           style={{ backgroundColor: '#FFFFFF' }}
@@ -517,6 +541,7 @@ export default function Home() {
           </div>
         </Grid>
 
+        {/* Mini catalouge list - inactive */}
         <Grid
           className={classes.gridBorder}
           style={{ backgroundColor: '#FFFFFF' }}
@@ -564,6 +589,7 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
+                {/* disableRipple = no effect when hover over */}
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/3.webp"
@@ -581,6 +607,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/4.webp"
@@ -598,6 +626,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/5.webp"
@@ -615,6 +645,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/6.webp"
@@ -632,6 +664,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/7.webp"
@@ -649,6 +683,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/8.webp"
@@ -666,6 +702,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/9.webp"
@@ -683,6 +721,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon2}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/10.webp"
@@ -700,6 +740,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/11.webp"
@@ -718,6 +760,8 @@ export default function Home() {
 
             <div className={classes.innerIcon3}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/12.webp"
@@ -735,6 +779,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/13.webp"
@@ -752,6 +798,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/14.webp"
@@ -769,6 +817,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/15.webp"
@@ -786,6 +836,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/16.webp"
@@ -803,6 +855,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/17.webp"
@@ -820,6 +874,8 @@ export default function Home() {
             </div>
             <div className={classes.innerIcon3}>
               <div>
+                {/* disableRipple = no effect when hover over */}
+
                 <Button disableRipple={true} className={classes.buttonEffect}>
                   <Image
                     src="/featured-categories/18.webp"
@@ -871,6 +927,7 @@ export default function Home() {
             </div>
           </div>
         </Grid>
+        {/* catalouge banner, simple */}
         <div className={classes.cataBanner}>
           <div className={classes.cataBanner2}>
             <Image
@@ -897,9 +954,12 @@ export default function Home() {
             />
           </div>
         </div>
-
+        {/* sticky tab, use position: sticky to make the tab follows you when you scroll
+Check styling for more info
+*/}
         <Tabs>
           <div className={classes.stickyTab}>
+            {/* Mini icon - use padding to format positions */}
             <Grid
               className={classes.gridWidth}
               style={{ backgroundColor: '#FFFFFF' }}
@@ -910,10 +970,12 @@ export default function Home() {
                 </div>
               </div>
             </Grid>
+            {/* Tab list */}
             <Grid style={{ backgroundColor: '#F6F5FA' }}>
               <div className={classes.outerTab2}>
                 <div className={classes.innerTab2}>
                   <div>
+                    {/* Tab 1 */}
                     <Tab className={classes.tabButton}>
                       <span className={classes.imageTags}>
                         <Image
@@ -926,6 +988,8 @@ export default function Home() {
                       <span>Dành cho bạn</span>
                     </Tab>
 
+                    {/* Tab 2 */}
+
                     <Tab className={classes.tabButton}>
                       <span className={classes.imageTags}>
                         <Image
@@ -937,6 +1001,8 @@ export default function Home() {
                       </span>
                       <span>Deal Siêu Hot</span>
                     </Tab>
+                    {/* Tab 2 */}
+
                     <Tab className={classes.tabButton}>
                       <span className={classes.imageTags}>
                         <Image
@@ -948,6 +1014,9 @@ export default function Home() {
                       </span>
                       <span>Rẻ Vô Đối</span>
                     </Tab>
+
+                    {/* Tab 3 */}
+
                     <Tab className={classes.tabButton}>
                       <span className={classes.imageTags}>
                         <Image
@@ -959,6 +1028,9 @@ export default function Home() {
                       </span>
                       <span>Đi Chợ Siêu Sale</span>
                     </Tab>
+
+                    {/* Tab 4 */}
+
                     <Tab className={classes.tabButton}>
                       <span className={classes.imageTags}>
                         <Image
@@ -970,6 +1042,9 @@ export default function Home() {
                       </span>
                       <span>Hàng Mới</span>
                     </Tab>
+
+                    {/* Tab 5 */}
+
                     <Tab className={classes.tabButton}>
                       <span className={classes.imageTags}>
                         <Image
@@ -981,6 +1056,9 @@ export default function Home() {
                       </span>
                       <span>Không giới hạn</span>
                     </Tab>
+
+                    {/* Tab 6 */}
+
                     <Tab className={classes.tabButton}>
                       <span className={classes.imageTags}>
                         <Image
@@ -998,29 +1076,37 @@ export default function Home() {
             </Grid>
           </div>
 
+          {/* Tab 1 content, repeat for other tabs */}
           <TabPanel>
             <div>
               <Grid
                 className={classes.gridBorder}
                 style={{ backgroundColor: '#FFFFFF' }}
               >
+                {/* listing products */}
                 <div className={classes.mainTitle}>
                   <div className={classes.mainTitle2}>
                     <Grid container spacing={3}>
+                      {/* take data from "products" array in data.js */}
                       {data.products.map((product) => (
                         <Grid item md={2} key={product.name}>
                           <Card style={{ border: 'none', boxShadow: 'none' }}>
+                            {/* open a new page */}
                             <NextLink
                               href={`/product/${product.slug}`}
                               passHref
                             >
+                              {/* content */}
+
                               <CardActionArea>
+                                {/* image and title of product */}
                                 <CardMedia
                                   component="img"
                                   image={product.image}
                                   title={product.name}
                                 ></CardMedia>
 
+                                {/* IMPORTANT, display product's names in 2 line and dots (...), check Styling for more. Very important */}
                                 <Typography className={classes.twoLines}>
                                   {product.name}
                                 </Typography>
@@ -1033,10 +1119,13 @@ export default function Home() {
                                       fontWeight: 400,
                                     }}
                                   >
+                                    {/* products sold */}
+                                    {/* Star rating, check data.js */}
                                     {product.starRating} | đã bán {product.sold}
                                   </Typography>
                                 </div>
 
+                                {/* Product price, simple */}
                                 <Typography
                                   style={{
                                     fontWeight: 'bold',
@@ -1057,6 +1146,11 @@ export default function Home() {
               </Grid>
             </div>
           </TabPanel>
+
+          {/* ***************** */}
+          {/* FROM THEN ON, this is the content of other tabs, identical to the previous tab */}
+          {/* ***************** */}
+
           <TabPanel>
             <div>
               <Grid

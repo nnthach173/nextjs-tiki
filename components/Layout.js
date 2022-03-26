@@ -20,7 +20,9 @@ import { MdOutlineStorefront } from 'react-icons/md';
 export default function Layout({ title, children }) {
   const classes = useStyles();
   return (
-    ///////header///////
+    // Header - might need to redo //
+
+    // Page icon //
     <div>
       <Head>
         <title>{title ? `${title} - Next Tiki` : 'Next Tiki'}</title>
@@ -41,6 +43,9 @@ export default function Layout({ title, children }) {
               />
             </div>
           </div>
+
+          {/* Search bar */}
+
           <div className={classes.searchBarPosition}>
             <div className={classes.searchBar}>
               <input
@@ -48,6 +53,8 @@ export default function Layout({ title, children }) {
                 style={{ height: '35px', width: '600px' }}
               />
             </div>
+
+            {/* search button */}
 
             <div className={classes.buttonPosition}>
               <Typography>
@@ -58,6 +65,7 @@ export default function Layout({ title, children }) {
               </Typography>
             </div>
 
+            {/* suggest tag */}
             <div className={classes.suggestWordsFinal}>
               <div className={classes.suggestWords}>trái cây</div>
               <div className={classes.suggestWords}>thịt trứng</div>
@@ -90,12 +98,14 @@ export default function Layout({ title, children }) {
             className={classes.shoppingCart}
             style={{ fontSize: '12px', color: '#FFFFFF' }}
           >
+            {/* icon from React Icons */}
             <FiShoppingCart size={30} />
             <Link style={{ color: '#FFFFFF' }} href="#" underline="none">
               Giỏ Hàng
             </Link>
           </div>
 
+          {/* Mini button */}
           <div>
             <Button className={classes.shoppingButton} variant="contained">
               <MdOutlineStorefront />
@@ -105,6 +115,8 @@ export default function Layout({ title, children }) {
         </Toolbar>
       </AppBar>
 
+      {/* list of tag lines, inactive */}
+      {/* use in-line styling to make them appear in 1-line */}
       <AppBar position="relative" className={classes.navbar2}>
         <Toolbar className={classes.customizeToolbar2}>
           <div className={classes.menuWordsPosition}>
@@ -124,10 +136,15 @@ export default function Layout({ title, children }) {
         </Toolbar>
       </AppBar>
 
+      {/* footer */}
+      {/* styling copied from tiki.vn, very easy but takes alot of time */}
       <Container className={classes.main}>{children}</Container>
       <Grid style={{ backgroundColor: '#FFFFFF' }}>
+        {/* main block */}
         <footer className={classes.footer}>
+          {/* first section */}
           <div className={classes.footerPadding}>
+            {/* multiple block */}
             <div className={classes.footerBlock}>
               <div className={classes.block}>
                 <h4 className={classes.customerSupport}>Hỗ trợ khách hàng</h4>
@@ -210,9 +227,12 @@ export default function Layout({ title, children }) {
               </div>
             </div>
           </div>
+
+          {/* line separator */}
           <div className={classes.separator}></div>
           <div className={classes.footerPadding}>
             <div className={classes.footerBlock}>
+              {/* 3rd block */}
               <div className={classes.block3}>
                 <a className={classes.smallText}>
                   Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành
@@ -233,8 +253,10 @@ export default function Layout({ title, children }) {
               </div>
             </div>
           </div>
+          {/* line separator */}
           <div className={classes.separator}></div>
           <div className={classes.footerBlock}>
+            {/* 4th block */}
             <div className={classes.block4}>
               <h1 className={classes.h1}>
                 Tiki - Thật nhanh, thật chất lượng, thật rẻ
@@ -297,6 +319,7 @@ export default function Layout({ title, children }) {
             <h1 className={classes.h1}>Danh mục sản phẩm</h1>
           </div>
           <div className={classes.footerBlock}>
+            {/* 5th block */}
             <div className={classes.block}>
               <h2 className={classes.h2}>Đồ Chơi - Mẹ & Bé</h2>
               <a className={classes.smallText}>
