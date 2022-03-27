@@ -20,14 +20,14 @@ import { MdOutlineStorefront } from 'react-icons/md';
 export default function Layout({ title, children }) {
   const classes = useStyles();
   return (
-    // Header - might need to redo //
-
-    // Page icon //
+    // page title //
     <div>
       <Head>
-        <title>{title ? `${title} - Next Tiki` : 'Next Tiki'}</title>
+        {/* {product's name} - tiki.vn. If there is no product's name, then just tiki.vn */}
+        <title>{title ? `${title} - tiki.vn` : 'Tiki.vn'}</title>
       </Head>
 
+      {/* position static positioned the bar according to the normal flow of the page */}
       <AppBar position="static" className={classes.navbar}>
         <Toolbar className={classes.customizeToolbar}>
           <div className={classes.logoPosition}>
@@ -44,21 +44,20 @@ export default function Layout({ title, children }) {
             </div>
           </div>
 
-          {/* Search bar */}
-
           <div className={classes.searchBarPosition}>
             <div className={classes.searchBar}>
+              {/* place holder = words that appear inside the search bar */}
               <input
                 placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn..."
                 style={{ height: '35px', width: '600px' }}
               />
             </div>
 
-            {/* search button */}
-
             <div className={classes.buttonPosition}>
               <Typography>
+                {/* Icon imported from: https://react-icons.github.io/react-icons/ */}
                 <Button className={classes.button}>
+                  {/* size: icon size (in px) */}
                   <BiSearchAlt size={20} />
                   Tìm kiếm
                 </Button>
@@ -66,7 +65,9 @@ export default function Layout({ title, children }) {
             </div>
 
             {/* suggest tag */}
+            {/* outer div (suggestWordsFinal) has relative position */}
             <div className={classes.suggestWordsFinal}>
+              {/* inner divs (suggestWords) has display: inline-block. To make them appear in a single line */}
               <div className={classes.suggestWords}>trái cây</div>
               <div className={classes.suggestWords}>thịt trứng</div>
               <div className={classes.suggestWords}>rau củ quả</div>
@@ -81,6 +82,7 @@ export default function Layout({ title, children }) {
           {/* log in buttons */}
           <BsPerson size={30} className={classes.personIcon} />
           <div className={classes.loginButton}>
+            {/* #: mainpage */}
             <Link href="#" underline="none">
               <div style={{ fontSize: '12px', color: '#FFFFFF' }}>
                 Đăng nhập / Đăng ký
@@ -93,19 +95,17 @@ export default function Layout({ title, children }) {
             </Link>
           </div>
 
-          {/* cart here */}
           <div
             className={classes.shoppingCart}
             style={{ fontSize: '12px', color: '#FFFFFF' }}
           >
-            {/* icon from React Icons */}
+            {/* icon from https://react-icons.github.io/react-icons/ */}
             <FiShoppingCart size={30} />
             <Link style={{ color: '#FFFFFF' }} href="#" underline="none">
               Giỏ Hàng
             </Link>
           </div>
 
-          {/* Mini button */}
           <div>
             <Button className={classes.shoppingButton} variant="contained">
               <MdOutlineStorefront />
@@ -115,11 +115,11 @@ export default function Layout({ title, children }) {
         </Toolbar>
       </AppBar>
 
-      {/* list of tag lines, inactive */}
       {/* use in-line styling to make them appear in 1-line */}
       <AppBar position="relative" className={classes.navbar2}>
         <Toolbar className={classes.customizeToolbar2}>
           <div className={classes.menuWordsPosition}>
+            {/* inner divs has display: inline-block to display them in a single line */}
             <div className={classes.menuWords}>Thịt, Rau Củ</div>
             <div className={classes.menuWords}>Bách Hóa</div>
             <div className={classes.menuWords}>Nhà Cửa</div>
@@ -142,10 +142,14 @@ export default function Layout({ title, children }) {
       <Grid style={{ backgroundColor: '#FFFFFF' }}>
         {/* main block */}
         <footer className={classes.footer}>
-          {/* first section */}
+          {/* outer div */}
           <div className={classes.footerPadding}>
-            {/* multiple block */}
+            {/* footerBlock has "display: flex". class block & block2 are mini block inside outer div
+            (footerPadding & footerBlock)  */}
+
+            {/* First section */}
             <div className={classes.footerBlock}>
+              {/* First section Mini block #1 */}
               <div className={classes.block}>
                 <h4 className={classes.customerSupport}>Hỗ trợ khách hàng</h4>
                 <p className={classes.hotline}>
@@ -168,6 +172,8 @@ export default function Layout({ title, children }) {
                   Báo lỗi bảo mật: security@tiki.vn
                 </a>
               </div>
+
+              {/* First section Mini block #2 */}
               <div className={classes.block2}>
                 <h4 className={classes.customerSupport}>Về Tiki</h4>
                 <a className={classes.smallText}>Giới thiệu về tiki</a>
@@ -186,6 +192,8 @@ export default function Layout({ title, children }) {
                 <a className={classes.smallText}>Tiếp thị liên kết cùng Tiki</a>
                 <a className={classes.smallText}>Bán hàng doanh nghiệp</a>
               </div>
+
+              {/* First section Mini block #3 */}
               <div className={classes.block2}>
                 <h4 className={classes.customerSupport}>Hợp tác và liên kết</h4>
                 <a className={classes.smallText}>
@@ -203,6 +211,8 @@ export default function Layout({ title, children }) {
                   />
                 </div>
               </div>
+
+              {/* First section Mini block #4 */}
               <div className={classes.block2}>
                 <h4 className={classes.customerSupport}>Dịch vụ giao hàng</h4>
                 <Image src="/tikinow.webp" alt="" width={68} height={33} />
@@ -228,11 +238,11 @@ export default function Layout({ title, children }) {
             </div>
           </div>
 
-          {/* line separator */}
+          {/* line separator, a grey thin line used to separate sections */}
           <div className={classes.separator}></div>
+          {/* outer div of the 2nd Section */}
           <div className={classes.footerPadding}>
             <div className={classes.footerBlock}>
-              {/* 3rd block */}
               <div className={classes.block3}>
                 <a className={classes.smallText}>
                   Địa chỉ văn phòng: 52 Út Tịch, phường 4, quận Tân Bình, thành
@@ -256,7 +266,6 @@ export default function Layout({ title, children }) {
           {/* line separator */}
           <div className={classes.separator}></div>
           <div className={classes.footerBlock}>
-            {/* 4th block */}
             <div className={classes.block4}>
               <h1 className={classes.h1}>
                 Tiki - Thật nhanh, thật chất lượng, thật rẻ
@@ -319,7 +328,6 @@ export default function Layout({ title, children }) {
             <h1 className={classes.h1}>Danh mục sản phẩm</h1>
           </div>
           <div className={classes.footerBlock}>
-            {/* 5th block */}
             <div className={classes.block}>
               <h2 className={classes.h2}>Đồ Chơi - Mẹ & Bé</h2>
               <a className={classes.smallText}>
