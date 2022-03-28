@@ -324,7 +324,6 @@ const useStyles = makeStyles({
     position: 'relative',
     display: 'inline-block',
     marginLeft: 40,
-
     marginTop: 2,
     textAlign: 'center',
   },
