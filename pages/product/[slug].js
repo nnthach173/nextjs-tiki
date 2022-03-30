@@ -18,8 +18,12 @@ import { Typography } from '@mui/material';
 export default function ProductScreen() {
   const classes = useStyles();
   const router = useRouter();
+  //get data from data.js via {slug}
   const { slug } = router.query;
+  //find product from data.
+  // For each elements, search for element that its slug equal to current slug. ((a) => a.slug === slug)
   const product = data.products.find((a) => a.slug === slug);
+  //if there is no slug to be found (!product) then it will open a new page that says "Product not found"
   if (!product) {
     return <div>Product Not Found</div>;
   }
@@ -40,7 +44,7 @@ export default function ProductScreen() {
           <Grid className={classes.productImageGrid}>
             <div className={classes.productImage}>
               <Image
-                src={product.image}
+                src={product.image} //get product image straight from data.js
                 alt={product.name}
                 width={444}
                 height={444}
@@ -128,6 +132,9 @@ export default function ProductScreen() {
               </a>
             </div>
           </Grid>
+          {/* used a separator to creata a line
+          IMPORTANT: pay attention to the color, it may blend in with the background
+          */}
           <div className={classes.productSeparator2}></div>
           <Grid className={classes.productDetailGrid}>
             <div className={classes.productHeader}>
@@ -151,7 +158,14 @@ export default function ProductScreen() {
               </div>
             </div>
 
+            {/* outer div productBodyGrid makes shop and product details stay next to each other */}
+            {/* REMEMBER: use flex display to avoid stacking divs on top of eachother */}
             <div className={classes.productBodyGrid}>
+              {/* the left side of PDP (product name, price, rating etc) use FLEXGROW and FLEXSHRINK */}
+              {/* flex-grow property specifies how much the item will grow relative
+               to the rest of the flexible items inside the same container */}
+              {/*  flex-shrink property specifies how much the item will shrink 
+               compared to others item inside that container. */}
               <div className={classes.productBodyGridLeft}>
                 <div className={classes.priceAndIcons}>
                   <div className={classes.productPrice}>{product.price} ₫</div>
@@ -268,12 +282,16 @@ export default function ProductScreen() {
                 </div>
               </div>
 
+              {/* right section (Shop), use flex display to avoid stacking on top of Left section */}
               <div className={classes.productBodyGridRight}>
+                {/* use boxshadow to create outline surrounding the Shop details page */}
                 <div className={classes.productBodyGridRightDetail}>
                   <div>
                     <div className={classes.sellerInfo}>
                       <a className={classes.shopOverview}>
                         <div>
+                          {/* NEED to use <img/> instead of <Image/>
+                          it's easier to src a picture using <img/> tag */}
                           <img
                             className={classes.shopIcon}
                             src={product.shopIcon}
@@ -448,6 +466,7 @@ export default function ProductScreen() {
           </Grid>
         </Grid>
         <Grid className={classes.productSlideWrapper}>
+          {/* Similar products, use the same data from data.js */}
           <h2 className={classes.blockTitle}>Sản Phẩm Tương Tự</h2>
           <Grid container spacing={3}>
             {data.recommend.map((product) => (
@@ -523,6 +542,7 @@ export default function ProductScreen() {
           <div className={classes.moTaRight}></div>
         </Grid>
 
+        {/* CUSTOMER REVIEWS */}
         <div>
           <Grid className={classes.commentOuterGrid}>
             <div className={classes.customerReviewsHeading}>
@@ -538,6 +558,7 @@ export default function ProductScreen() {
                       </div>
                       <div>
                         <div className={classes.reviewRatingStars}>
+                          {/* Used multiple stars icon (taken from React Icon) to make star rating  */}
                           <span style={{ margin: '0px 2px 0px 0px' }}>
                             {product.starReview}
                           </span>
@@ -602,6 +623,9 @@ export default function ProductScreen() {
                 </div>
               </div>
               <div></div>
+              {/* CUSTOMER REVIEWs, each product has 3 different reviews
+              all reviews data are stored inside data.js
+              */}
               <div className={classes.styledComment}>
                 <div className={classes.reviewCommentUser}>
                   <div className={classes.reviewCommentUserInner}>
