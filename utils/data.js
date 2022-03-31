@@ -3,88 +3,56 @@ import { TextRotationAngleupSharp } from '@mui/icons-material';
 import { AiFillStar } from 'react-icons/ai';
 
 const data = {
+  // each array is a list of products in homepage
+  // ex: array props are 6 products in "gia soc hom nay"
+  // Product list has 7 different tabs.
+  // 7 tabs equal to 7 arrays of products (from products, products2.... to products6)
   props: [
     {
       name: 'Găng tay da nam',
       slug: 'gang-tay-da-nam',
-      category: 'Quần áo',
       image: '/images/gloves.png',
       price: '157.000',
-      shop: 'Viewshop36',
-      rating: 5,
-      starRating: (
-        <>
-          <AiFillStar color="#ffd52e" />
-          <AiFillStar color="#ffd52e" />
-          <AiFillStar color="#ffd52e" />
-          <AiFillStar color="#ffd52e" />
-          <AiFillStar color="#ffd52e" />
-        </>
-      ),
-      numReviews: 7,
       sold: 17,
     },
     {
       name: 'Điện thoại Iphone 11',
       slug: 'dien-thoai-iphone-11',
-      category: 'Điện tử',
       image: '/images/phone.png',
       price: '13.650.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      rating: 5,
-      numReviews: 353,
       sold: '1000+',
     },
     {
       name: 'Găng tay đi xe máy giữ ấm mùa đông cảm ứng điện thoại dành cho nam',
       slug: 'gang-tay-di-xe-may-giu-am-mua-dong-cam-ung-dien-thoai-danh-cho-nam',
-      category: 'Quần áo',
       image: '/images/gloves2.png',
       price: '192.000',
-      shop: 'Winshop36',
-      rating: 5,
-      numReviews: 1,
       sold: 11,
     },
     {
       name: 'iPad 10.2 Inch WiFi 64GB (Gen 9) New 2021',
       slug: 'ipad-10-2-inch-wifi-65gb-new-2021',
-      category: 'Điện tử',
       image: '/images/ipad.png',
       price: '9.450.000',
-      shop: 'TikiTrading',
-      rating: 5,
-      numReviews: 46,
       sold: 165,
     },
     {
       name: 'Hộp cơm thủy tinh kèm muỗng đũa LocknLock LLG991CL 930ml',
       slug: 'hop-com-thuy-tinh-kem-muong-dua-locknlock-llg991cl-930ml',
-      category: 'stuff',
       image: '/images/lunchbox.png',
       price: '157.000',
-      shop: 'TikiTrading',
-      rating: 5,
-      numReviews: 742,
       sold: '1000+',
     },
     {
       name: 'Nước dưỡng làm mềm và trắng da Senka White Beauty Lotion',
       slug: 'nuoc-duong-lam-mem-va-trang-da-senka-white-beauty-lotion',
-      category: 'stuff',
       image: '/images/skincare.png',
       price: '189.000',
-      shop: 'Senka Official Store',
-      rating: 5,
-      numReviews: 39,
       sold: 130,
     },
   ],
 
+  //First product list array, include customer reviews
   products: [
     {
       name: 'Balo công sở, đi làm nam nữ GuBag, dòng balo doanh nhân cao cấp, đẹp xịn, chống nước, chống sốc',
@@ -3587,16 +3555,8 @@ const data = {
     {
       name: 'Đồng hồ thể thao nam nữ AT111',
       slug: 'dong-ho-the-thao',
-      category: 'Điện tử',
       image: '/product-images/donghothethao.webp',
       price: '18.000',
-      shop: 'Thien Hoang Store',
-      shopRating: '4.1',
-      shopFollows: '341',
-      shopIcon: '/pdp-images/thienhoang.png',
-      shopReviewsNum: '256',
-      discount: '15.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3606,22 +3566,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 4,
       sold: 13,
     },
     {
       name: 'Chú Thuật Hồi Chiến: Trường Chuyên Chú Thuật Tokyo - Tập 0',
       slug: 'chu-thuat-hoi-chien',
-      category: 'Sách',
       image: '/product-images/chuthuat.webp',
       price: '27.300',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '25.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3631,22 +3582,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 617,
       sold: '1000+',
     },
     {
       name: 'Cho Tôi Xin Một Vé Đi Tuổi Thơ (Phiên Bản Đặc Biệt)',
       slug: 'cho-toi-xin-mot-ve-di-tuoi-tho',
-      category: 'Sách',
       image: '/product-images/chotoimotve.webp',
       price: '278.500',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '260.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3656,22 +3598,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 112,
       sold: 375,
     },
     {
       name: 'Pin Panasonic CR 2032 - Hàng chính hãng',
       slug: 'pin-panasonic-cr-2032',
-      category: 'Điện tử',
       image: '/product-images/pin.webp',
       price: '50.000',
-      shop: 'Thegioipin88',
-      shopRating: '4.7',
-      shopFollows: '133',
-      shopIcon: '/pdp-images/thegioipin.png',
-      shopReviewsNum: '2.3k',
-      discount: '45.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3681,22 +3614,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 40,
       sold: 624,
     },
     {
       name: 'Máy Tính Bảng Samsung Galaxy Tab S7 FE LTE T735 (4GB/64GB) - Hàng Chính Hãng',
       slug: 'may-tinh-bang',
-      category: 'Điện tử',
       image: '/product-images/tablet.webp',
       price: '10.390.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '10.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3706,22 +3630,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: 112,
     },
     {
       name: 'Máy Xay Thịt 2 Lưỡi Kép Nonostyle (2L) - Hàng Chính Hãng',
       slug: 'may-xay-tinh',
-      category: 'Điện tử',
       image: '/product-images/mayxaythit.webp',
       price: '275.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3731,22 +3646,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: '1000+',
     },
     {
       name: 'Balo công sở, đi làm nam nữ GuBag, dòng balo doanh nhân cao cấp, đẹp xịn, chống nước, chống sốc',
       slug: 'balo-cong-so-di-lam-nam-nu-gubag-dong-balo-doanh-nhanh-cao-cap-dep-xin-chong-nuoc-chong-soc',
-      category: 'Balo, túi sách',
       image: '/product-images/balo.webp',
       price: '439.000',
-      shop: 'GuBag Official Store',
-      shopRating: '4.6',
-      shopFollows: '261',
-      shopIcon: '/pdp-images/gubag.png',
-      shopReviewsNum: '1k',
-      discount: '430.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3756,22 +3662,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 95,
       sold: 210,
     },
     {
       name: 'Dây nịch Huy Hoàng da bò vân cá sấu nhiều màu sắc',
       slug: 'day-nich-huy-hoang-da-bo-van-ca-sau-nhieu-mau-sac',
-      category: 'Quần áo',
       image: '/product-images/daynich.webp',
       price: '559.000',
-      shop: 'HuyHoang Shop',
-      shopRating: '4.5',
-      shopFollows: '93',
-      shopIcon: '/pdp-images/huyhoang.png',
-      shopReviewsNum: '908',
-      discount: '540.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3781,22 +3678,14 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 20,
     },
     {
       name: 'NHẬP KHẨU USA CHÍNH HÃNG - Viên uống ngừa loãng xương, hỗ trợ sức khỏe xương khớp Solgar Vitamin D3 1000 IU',
       slug: 'nhap-khau-usa-chinh-hang-vien-uong-ngua-loang-xuong',
-      category: 'Thực phẩm chức năng',
       image: '/product-images/nhansam.webp',
       price: '461.000',
       shop: 'Solgar Official Store',
-      shopRating: '4.7',
-      shopFollows: '313',
-      shopIcon: '/pdp-images/solgar.png',
-      shopReviewsNum: '190',
-      discount: '450.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3806,22 +3695,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 13,
       sold: 47,
     },
     {
       name: 'Tay Cầm PlayStation PS4 Sony Dualshock 4 (Màu Xanh Đen) - Hàng Chính Hãng',
       slug: 'tay-cam-playstation-ps4-sony-dualshock-4-mau-xanh-den-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/ps4.webp',
       price: '1.189.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '1.150.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3831,22 +3711,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 7,
       sold: 15,
     },
     {
       name: 'VGA GIGABYTE GTX 1050 Ti Windforce OC 4G -Hàng chính hãng',
       slug: 'vga-gigabyte-gtx-1050-ti-windforce-oc-4g-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/vga.webp',
       price: '5.500.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '5.450.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3856,22 +3727,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 11,
     },
     {
       name: 'Khẩu Trang 3D (10 chiếc), Khẩu Trang 4D KF94 Họa Tiết Thời Trang, Khung Vòm 4D Chống Trôi Son, Dùng Một Lần',
       slug: 'khau-trang-3d-10-chiec-khau-trang-4d-kf94-hoa-tiet-thoi-trang-khung-vom-4d-chong-troi-son-dung-mot-lan',
-      category: 'Quần áo',
       image: '/product-images/khautrang.webp',
       price: '9000',
-      shop: 'VSeat',
-      shopRating: '4.8',
-      shopFollows: '279',
-      shopIcon: '/pdp-images/vseat.jpg',
-      shopReviewsNum: '481',
-      discount: '8000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3881,22 +3743,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 101,
       sold: '1000+',
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Uchi Tencel Melville Mont, 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-uchi-tencel-melville-mont-5-mon',
-      category: 'stuff',
       image: '/product-images/gagiuong.webp',
       price: '2.006.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '2.000.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3906,22 +3759,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 2,
       sold: 11,
     },
     {
       name: 'Bàn Gấp Học Sinh Thông Minh Gấp Gọn, Bàn Xếp Laptop Đa Năng Có Thể Gấp Gọn Tùy Chỉnh Nhiều Góc Độ. Chất Liệu Trúc Siêu Nhẹ - Hàng Chính Hãng Tamayoko TM02',
       slug: 'ban-gap-hoc-sinh',
-      category: 'stuff',
       image: '/product-images/bangap.webp',
       price: '399.000',
-      shop: 'Future Store',
-      shopRating: '4.6',
-      shopFollows: '2.2k',
-      shopIcon: '/pdp-images/future.png',
-      shopReviewsNum: '19k',
-      discount: '300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3931,22 +3775,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 301,
       sold: 908,
     },
     {
       name: 'Màn Hình Cong 1500R Gaming Gigabyte G27FC 27" FullHD (1920x1080) 1ms 165Hz VA Cong Stereo Speaker (2W x 2) - Hàng Chính Hãng',
       slug: 'man-hinh-cong-1550r-gaming-gigabyte',
-      category: 'Điện tử',
       image: '/product-images/manhinh.webp',
       price: '5.390.000',
-      shop: 'Vi Tinh Chi Cuong',
-      shopRating: '4.7',
-      shopFollows: '511',
-      shopIcon: '/pdp-images/vitinhchicuong.png',
-      shopReviewsNum: '2.1k',
-      discount: '5.300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3956,22 +3791,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 4,
     },
     {
       name: 'Điện Thoại iPhone 13 Pro Max 128GB - Hàng Chính Hãng',
       slug: 'dien-thoai-iphone-13-pro-max-128gb-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/iphone13.webp',
       price: '29.990.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '29.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -3981,22 +3807,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 514,
       sold: '1000+',
     },
     {
       name: 'Tai Nghe Bluetooth Chụp Tai Sony WH-1000XM4 Hi-Res Noise Canceling - Hàng Chính Hãng',
       slug: 'tai-nghe-bluetooth',
-      category: 'Điện tử',
       image: '/product-images/tainghe.webp',
       price: '5.790.000',
-      shop: 'Happystores',
-      shopRating: '4.6',
-      shopFollows: '798',
-      shopIcon: '/pdp-images/happystores.png',
-      shopReviewsNum: '3.1k',
-      discount: '5.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4006,22 +3823,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 211,
       sold: 406,
     },
     {
       name: 'Bảng Treo Đồ Nghề Pegboard Cơ Khí SMLIFE WB3 Lưu Trữ Trưng Bày Dụng Cụ Sửa Chữa Thông Minh Dễ Tìm Kiếm',
       slug: 'bang-treo-do-nghe',
-      category: 'Dụng cụ cơ khí',
       image: '/product-images/donghe.webp',
       price: '2.169.000',
-      shop: 'SMLIFE',
-      shopRating: '4.5',
-      shopFollows: '850',
-      shopIcon: '/pdp-images/smlife.jpg',
-      shopReviewsNum: '708',
-      discount: '2.100.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4031,22 +3839,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2,
       sold: 5,
     },
     {
       name: 'Cây Cam Ngọt Của Tôi',
       slug: 'cay-cam-ngot-cua-toi',
-      category: 'Sách',
       image: '/product-images/caycamngot.webp',
       price: '77.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4056,22 +3855,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 8352,
       sold: '1000+',
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Cotton Select Affinity gồm 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-cotton',
-      category: 'Nhà cửa',
       image: '/product-images/gagiuong2.webp',
       price: '1.526.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '1.500.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4081,22 +3871,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 5,
       sold: 17,
     },
     {
       name: 'Nồi áp suất điện đa năng Tefal CY601868 - 6 Lít - 15 chức năng - Hàng chính hãng',
       slug: 'noi-ap-suat-dien-da-nang-tefal',
-      category: 'Điện tử',
       image: '/product-images/noiapsuat.webp',
       price: '1.667.000',
-      shop: 'Mỏ Vàng HCM',
-      shopRating: '4.6',
-      shopFollows: '1k+',
-      shopIcon: '/pdp-images/movang.png',
-      shopReviewsNum: '1k',
-      discount: '1.640.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4106,22 +3887,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 3,
     },
     {
       name: 'Smart Tivi Sony Full HD 50 inch KDL-50W660G/Z',
       slug: 'smart-tivi-sony',
-      category: 'Điện tử',
       image: '/product-images/smarttivi.webp',
       price: '12.288.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '12.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4131,22 +3903,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 68,
       sold: 229,
     },
     {
       name: 'Combo Chảo chiên Tefal Natura B2260295 20cm & Chảo chiên sâu lòng Tefal Natura B2266495 24cm - Dùng được trên bếp gas/ bếp hồng ngoại - Công nghệ báo nhiệt thông minh - Hàng chính hãng',
       slug: 'combo-chao-choen',
-      category: 'Gia dụng',
       image: '/product-images/combochao.webp',
       price: '399.000',
-      shop: 'Tefal Official Store',
-      shopRating: '4.6',
-      shopFollows: '19k+',
-      shopIcon: '/pdp-images/tefal.png',
-      shopReviewsNum: '20k',
-      discount: '359.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4156,21 +3919,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 844,
       sold: '1000+',
     },
     {
       name: 'Bộ Cây Lau Nhà Tự Vắt Thông Minh 2 Ngăn Parroti Pro PR01 Cao Cấp - Lau Sạch Khô Nhanh – 3 Miếng Lau Microfiber',
       slug: 'cay-lau-nha',
-      category: 'Gia dụng',
       image: '/product-images/caylaunha.webp',
       price: '499.000',
-      shop: 'Parroti Store',
-      shopRating: '4.8',
-      shopFollows: '4.6k+',
-      shopIcon: '/pdp-images/parroti.png',
-      shopReviewsNum: '10k',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4180,7 +3935,6 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2789,
       sold: '1000+',
     },
   ],
@@ -4188,16 +3942,8 @@ const data = {
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Uchi Tencel Melville Mont, 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-uchi-tencel-melville-mont-5-mon',
-      category: 'stuff',
       image: '/product-images/gagiuong.webp',
       price: '2.006.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '2.000.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4207,22 +3953,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 2,
       sold: 11,
     },
     {
       name: 'Bàn Gấp Học Sinh Thông Minh Gấp Gọn, Bàn Xếp Laptop Đa Năng Có Thể Gấp Gọn Tùy Chỉnh Nhiều Góc Độ. Chất Liệu Trúc Siêu Nhẹ - Hàng Chính Hãng Tamayoko TM02',
       slug: 'ban-gap-hoc-sinh',
-      category: 'stuff',
       image: '/product-images/bangap.webp',
       price: '399.000',
-      shop: 'Future Store',
-      shopRating: '4.6',
-      shopFollows: '2.2k',
-      shopIcon: '/pdp-images/future.png',
-      shopReviewsNum: '19k',
-      discount: '300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4232,22 +3969,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 301,
       sold: 908,
     },
     {
       name: 'Màn Hình Cong 1500R Gaming Gigabyte G27FC 27" FullHD (1920x1080) 1ms 165Hz VA Cong Stereo Speaker (2W x 2) - Hàng Chính Hãng',
       slug: 'man-hinh-cong-1550r-gaming-gigabyte',
-      category: 'Điện tử',
       image: '/product-images/manhinh.webp',
       price: '5.390.000',
-      shop: 'Vi Tinh Chi Cuong',
-      shopRating: '4.7',
-      shopFollows: '511',
-      shopIcon: '/pdp-images/vitinhchicuong.png',
-      shopReviewsNum: '2.1k',
-      discount: '5.300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4257,22 +3985,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 4,
     },
     {
       name: 'Điện Thoại iPhone 13 Pro Max 128GB - Hàng Chính Hãng',
       slug: 'dien-thoai-iphone-13-pro-max-128gb-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/iphone13.webp',
       price: '29.990.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '29.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4282,22 +4001,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 514,
       sold: '1000+',
     },
     {
       name: 'Tai Nghe Bluetooth Chụp Tai Sony WH-1000XM4 Hi-Res Noise Canceling - Hàng Chính Hãng',
       slug: 'tai-nghe-bluetooth',
-      category: 'Điện tử',
       image: '/product-images/tainghe.webp',
       price: '5.790.000',
-      shop: 'Happystores',
-      shopRating: '4.6',
-      shopFollows: '798',
-      shopIcon: '/pdp-images/happystores.png',
-      shopReviewsNum: '3.1k',
-      discount: '5.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4307,22 +4017,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 211,
       sold: 406,
     },
     {
       name: 'Bảng Treo Đồ Nghề Pegboard Cơ Khí SMLIFE WB3 Lưu Trữ Trưng Bày Dụng Cụ Sửa Chữa Thông Minh Dễ Tìm Kiếm',
       slug: 'bang-treo-do-nghe',
-      category: 'Dụng cụ cơ khí',
       image: '/product-images/donghe.webp',
       price: '2.169.000',
-      shop: 'SMLIFE',
-      shopRating: '4.5',
-      shopFollows: '850',
-      shopIcon: '/pdp-images/smlife.jpg',
-      shopReviewsNum: '708',
-      discount: '2.100.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4332,22 +4033,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2,
       sold: 5,
     },
     {
       name: 'Balo công sở, đi làm nam nữ GuBag, dòng balo doanh nhân cao cấp, đẹp xịn, chống nước, chống sốc',
       slug: 'balo-cong-so-di-lam-nam-nu-gubag-dong-balo-doanh-nhanh-cao-cap-dep-xin-chong-nuoc-chong-soc',
-      category: 'Balo, túi sách',
       image: '/product-images/balo.webp',
       price: '439.000',
-      shop: 'GuBag Official Store',
-      shopRating: '4.6',
-      shopFollows: '261',
-      shopIcon: '/pdp-images/gubag.png',
-      shopReviewsNum: '1k',
-      discount: '430.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4357,22 +4049,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 95,
       sold: 210,
     },
     {
       name: 'Dây nịch Huy Hoàng da bò vân cá sấu nhiều màu sắc',
       slug: 'day-nich-huy-hoang-da-bo-van-ca-sau-nhieu-mau-sac',
-      category: 'Quần áo',
       image: '/product-images/daynich.webp',
       price: '559.000',
-      shop: 'HuyHoang Shop',
-      shopRating: '4.5',
-      shopFollows: '93',
-      shopIcon: '/pdp-images/huyhoang.png',
-      shopReviewsNum: '908',
-      discount: '540.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4382,22 +4065,14 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 20,
     },
     {
       name: 'NHẬP KHẨU USA CHÍNH HÃNG - Viên uống ngừa loãng xương, hỗ trợ sức khỏe xương khớp Solgar Vitamin D3 1000 IU',
       slug: 'nhap-khau-usa-chinh-hang-vien-uong-ngua-loang-xuong',
-      category: 'Thực phẩm chức năng',
       image: '/product-images/nhansam.webp',
       price: '461.000',
       shop: 'Solgar Official Store',
-      shopRating: '4.7',
-      shopFollows: '313',
-      shopIcon: '/pdp-images/solgar.png',
-      shopReviewsNum: '190',
-      discount: '450.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4407,22 +4082,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 13,
       sold: 47,
     },
     {
       name: 'Tay Cầm PlayStation PS4 Sony Dualshock 4 (Màu Xanh Đen) - Hàng Chính Hãng',
       slug: 'tay-cam-playstation-ps4-sony-dualshock-4-mau-xanh-den-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/ps4.webp',
       price: '1.189.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '1.150.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4432,22 +4098,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 7,
       sold: 15,
     },
     {
       name: 'VGA GIGABYTE GTX 1050 Ti Windforce OC 4G -Hàng chính hãng',
       slug: 'vga-gigabyte-gtx-1050-ti-windforce-oc-4g-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/vga.webp',
       price: '5.500.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '5.450.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4457,22 +4114,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 11,
     },
     {
       name: 'Khẩu Trang 3D (10 chiếc), Khẩu Trang 4D KF94 Họa Tiết Thời Trang, Khung Vòm 4D Chống Trôi Son, Dùng Một Lần',
       slug: 'khau-trang-3d-10-chiec-khau-trang-4d-kf94-hoa-tiet-thoi-trang-khung-vom-4d-chong-troi-son-dung-mot-lan',
-      category: 'Quần áo',
       image: '/product-images/khautrang.webp',
       price: '9000',
-      shop: 'VSeat',
-      shopRating: '4.8',
-      shopFollows: '279',
-      shopIcon: '/pdp-images/vseat.jpg',
-      shopReviewsNum: '481',
-      discount: '8000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4482,22 +4130,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 101,
       sold: '1000+',
     },
     {
       name: 'Đồng hồ thể thao nam nữ AT111',
       slug: 'dong-ho-the-thao',
-      category: 'Điện tử',
       image: '/product-images/donghothethao.webp',
       price: '18.000',
-      shop: 'Thien Hoang Store',
-      shopRating: '4.1',
-      shopFollows: '341',
-      shopIcon: '/pdp-images/thienhoang.png',
-      shopReviewsNum: '256',
-      discount: '15.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4507,22 +4146,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 4,
       sold: 13,
     },
     {
       name: 'Chú Thuật Hồi Chiến: Trường Chuyên Chú Thuật Tokyo - Tập 0',
       slug: 'chu-thuat-hoi-chien',
-      category: 'Sách',
       image: '/product-images/chuthuat.webp',
       price: '27.300',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '25.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4532,22 +4162,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 617,
       sold: '1000+',
     },
     {
       name: 'Cho Tôi Xin Một Vé Đi Tuổi Thơ (Phiên Bản Đặc Biệt)',
       slug: 'cho-toi-xin-mot-ve-di-tuoi-tho',
-      category: 'Sách',
       image: '/product-images/chotoimotve.webp',
       price: '278.500',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '260.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4557,22 +4178,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 112,
       sold: 375,
     },
     {
       name: 'Pin Panasonic CR 2032 - Hàng chính hãng',
       slug: 'pin-panasonic-cr-2032',
-      category: 'Điện tử',
       image: '/product-images/pin.webp',
       price: '50.000',
-      shop: 'Thegioipin88',
-      shopRating: '4.7',
-      shopFollows: '133',
-      shopIcon: '/pdp-images/thegioipin.png',
-      shopReviewsNum: '2.3k',
-      discount: '45.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4582,22 +4194,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 40,
       sold: 624,
     },
     {
       name: 'Máy Tính Bảng Samsung Galaxy Tab S7 FE LTE T735 (4GB/64GB) - Hàng Chính Hãng',
       slug: 'may-tinh-bang',
-      category: 'Điện tử',
       image: '/product-images/tablet.webp',
       price: '10.390.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '10.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4607,22 +4210,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: 112,
     },
     {
       name: 'Máy Xay Thịt 2 Lưỡi Kép Nonostyle (2L) - Hàng Chính Hãng',
       slug: 'may-xay-tinh',
-      category: 'Điện tử',
       image: '/product-images/mayxaythit.webp',
       price: '275.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4632,22 +4226,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: '1000+',
     },
     {
       name: 'Cây Cam Ngọt Của Tôi',
       slug: 'cay-cam-ngot-cua-toi',
-      category: 'Sách',
       image: '/product-images/caycamngot.webp',
       price: '77.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4657,22 +4242,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 8352,
       sold: '1000+',
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Cotton Select Affinity gồm 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-cotton',
-      category: 'Nhà cửa',
       image: '/product-images/gagiuong2.webp',
       price: '1.526.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '1.500.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4682,22 +4258,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 5,
       sold: 17,
     },
     {
       name: 'Nồi áp suất điện đa năng Tefal CY601868 - 6 Lít - 15 chức năng - Hàng chính hãng',
       slug: 'noi-ap-suat-dien-da-nang-tefal',
-      category: 'Điện tử',
       image: '/product-images/noiapsuat.webp',
       price: '1.667.000',
-      shop: 'Mỏ Vàng HCM',
-      shopRating: '4.6',
-      shopFollows: '1k+',
-      shopIcon: '/pdp-images/movang.png',
-      shopReviewsNum: '1k',
-      discount: '1.640.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4707,22 +4274,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 3,
     },
     {
       name: 'Smart Tivi Sony Full HD 50 inch KDL-50W660G/Z',
       slug: 'smart-tivi-sony',
-      category: 'Điện tử',
       image: '/product-images/smarttivi.webp',
       price: '12.288.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '12.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4732,22 +4290,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 68,
       sold: 229,
     },
     {
       name: 'Combo Chảo chiên Tefal Natura B2260295 20cm & Chảo chiên sâu lòng Tefal Natura B2266495 24cm - Dùng được trên bếp gas/ bếp hồng ngoại - Công nghệ báo nhiệt thông minh - Hàng chính hãng',
       slug: 'combo-chao-choen',
-      category: 'Gia dụng',
       image: '/product-images/combochao.webp',
       price: '399.000',
-      shop: 'Tefal Official Store',
-      shopRating: '4.6',
-      shopFollows: '19k+',
-      shopIcon: '/pdp-images/tefal.png',
-      shopReviewsNum: '20k',
-      discount: '359.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4757,22 +4306,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 844,
       sold: '1000+',
     },
     {
       name: 'Bộ Cây Lau Nhà Tự Vắt Thông Minh 2 Ngăn Parroti Pro PR01 Cao Cấp - Lau Sạch Khô Nhanh – 3 Miếng Lau Microfiber',
       slug: 'cay-lau-nha',
-      category: 'Gia dụng',
       image: '/product-images/caylaunha.webp',
       price: '499.000',
-      shop: 'Parroti Store',
-      shopRating: '4.8',
-      shopFollows: '4.6k+',
-      shopIcon: '/pdp-images/parroti.png',
-      shopReviewsNum: '10k',
-
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4782,7 +4322,6 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2789,
       sold: '1000+',
     },
   ],
@@ -4790,16 +4329,8 @@ const data = {
     {
       name: 'Cây Cam Ngọt Của Tôi',
       slug: 'cay-cam-ngot-cua-toi',
-      category: 'Sách',
       image: '/product-images/caycamngot.webp',
       price: '77.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4809,22 +4340,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 8352,
       sold: '1000+',
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Cotton Select Affinity gồm 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-cotton',
-      category: 'Nhà cửa',
       image: '/product-images/gagiuong2.webp',
       price: '1.526.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '1.500.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4834,22 +4356,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 5,
       sold: 17,
     },
     {
       name: 'Nồi áp suất điện đa năng Tefal CY601868 - 6 Lít - 15 chức năng - Hàng chính hãng',
       slug: 'noi-ap-suat-dien-da-nang-tefal',
-      category: 'Điện tử',
       image: '/product-images/noiapsuat.webp',
       price: '1.667.000',
-      shop: 'Mỏ Vàng HCM',
-      shopRating: '4.6',
-      shopFollows: '1k+',
-      shopIcon: '/pdp-images/movang.png',
-      shopReviewsNum: '1k',
-      discount: '1.640.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4859,22 +4372,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 3,
     },
     {
       name: 'Smart Tivi Sony Full HD 50 inch KDL-50W660G/Z',
       slug: 'smart-tivi-sony',
-      category: 'Điện tử',
       image: '/product-images/smarttivi.webp',
       price: '12.288.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '12.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4884,22 +4388,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 68,
       sold: 229,
     },
     {
       name: 'Combo Chảo chiên Tefal Natura B2260295 20cm & Chảo chiên sâu lòng Tefal Natura B2266495 24cm - Dùng được trên bếp gas/ bếp hồng ngoại - Công nghệ báo nhiệt thông minh - Hàng chính hãng',
       slug: 'combo-chao-choen',
-      category: 'Gia dụng',
       image: '/product-images/combochao.webp',
       price: '399.000',
-      shop: 'Tefal Official Store',
-      shopRating: '4.6',
-      shopFollows: '19k+',
-      shopIcon: '/pdp-images/tefal.png',
-      shopReviewsNum: '20k',
-      discount: '359.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4909,22 +4404,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 844,
       sold: '1000+',
     },
     {
       name: 'Bộ Cây Lau Nhà Tự Vắt Thông Minh 2 Ngăn Parroti Pro PR01 Cao Cấp - Lau Sạch Khô Nhanh – 3 Miếng Lau Microfiber',
       slug: 'cay-lau-nha',
-      category: 'Gia dụng',
       image: '/product-images/caylaunha.webp',
       price: '499.000',
-      shop: 'Parroti Store',
-      shopRating: '4.8',
-      shopFollows: '4.6k+',
-      shopIcon: '/pdp-images/parroti.png',
-      shopReviewsNum: '10k',
-
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4934,22 +4420,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2789,
       sold: '1000+',
     },
     {
       name: 'Đồng hồ thể thao nam nữ AT111',
       slug: 'dong-ho-the-thao',
-      category: 'Điện tử',
       image: '/product-images/donghothethao.webp',
       price: '18.000',
-      shop: 'Thien Hoang Store',
-      shopRating: '4.1',
-      shopFollows: '341',
-      shopIcon: '/pdp-images/thienhoang.png',
-      shopReviewsNum: '256',
-      discount: '15.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4959,22 +4436,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 4,
       sold: 13,
     },
     {
       name: 'Chú Thuật Hồi Chiến: Trường Chuyên Chú Thuật Tokyo - Tập 0',
       slug: 'chu-thuat-hoi-chien',
-      category: 'Sách',
       image: '/product-images/chuthuat.webp',
       price: '27.300',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '25.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -4984,22 +4452,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 617,
       sold: '1000+',
     },
     {
       name: 'Cho Tôi Xin Một Vé Đi Tuổi Thơ (Phiên Bản Đặc Biệt)',
       slug: 'cho-toi-xin-mot-ve-di-tuoi-tho',
-      category: 'Sách',
       image: '/product-images/chotoimotve.webp',
       price: '278.500',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '260.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5009,22 +4468,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 112,
       sold: 375,
     },
     {
       name: 'Pin Panasonic CR 2032 - Hàng chính hãng',
       slug: 'pin-panasonic-cr-2032',
-      category: 'Điện tử',
       image: '/product-images/pin.webp',
       price: '50.000',
-      shop: 'Thegioipin88',
-      shopRating: '4.7',
-      shopFollows: '133',
-      shopIcon: '/pdp-images/thegioipin.png',
-      shopReviewsNum: '2.3k',
-      discount: '45.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5034,22 +4484,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 40,
       sold: 624,
     },
     {
       name: 'Máy Tính Bảng Samsung Galaxy Tab S7 FE LTE T735 (4GB/64GB) - Hàng Chính Hãng',
       slug: 'may-tinh-bang',
-      category: 'Điện tử',
       image: '/product-images/tablet.webp',
       price: '10.390.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '10.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5059,22 +4500,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: 112,
     },
     {
       name: 'Máy Xay Thịt 2 Lưỡi Kép Nonostyle (2L) - Hàng Chính Hãng',
       slug: 'may-xay-tinh',
-      category: 'Điện tử',
       image: '/product-images/mayxaythit.webp',
       price: '275.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5084,22 +4516,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: '1000+',
     },
     {
       name: 'Balo công sở, đi làm nam nữ GuBag, dòng balo doanh nhân cao cấp, đẹp xịn, chống nước, chống sốc',
       slug: 'balo-cong-so-di-lam-nam-nu-gubag-dong-balo-doanh-nhanh-cao-cap-dep-xin-chong-nuoc-chong-soc',
-      category: 'Balo, túi sách',
       image: '/product-images/balo.webp',
       price: '439.000',
-      shop: 'GuBag Official Store',
-      shopRating: '4.6',
-      shopFollows: '261',
-      shopIcon: '/pdp-images/gubag.png',
-      shopReviewsNum: '1k',
-      discount: '430.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5109,22 +4532,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 95,
       sold: 210,
     },
     {
       name: 'Dây nịch Huy Hoàng da bò vân cá sấu nhiều màu sắc',
       slug: 'day-nich-huy-hoang-da-bo-van-ca-sau-nhieu-mau-sac',
-      category: 'Quần áo',
       image: '/product-images/daynich.webp',
       price: '559.000',
-      shop: 'HuyHoang Shop',
-      shopRating: '4.5',
-      shopFollows: '93',
-      shopIcon: '/pdp-images/huyhoang.png',
-      shopReviewsNum: '908',
-      discount: '540.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5134,22 +4548,14 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 20,
     },
     {
       name: 'NHẬP KHẨU USA CHÍNH HÃNG - Viên uống ngừa loãng xương, hỗ trợ sức khỏe xương khớp Solgar Vitamin D3 1000 IU',
       slug: 'nhap-khau-usa-chinh-hang-vien-uong-ngua-loang-xuong',
-      category: 'Thực phẩm chức năng',
       image: '/product-images/nhansam.webp',
       price: '461.000',
       shop: 'Solgar Official Store',
-      shopRating: '4.7',
-      shopFollows: '313',
-      shopIcon: '/pdp-images/solgar.png',
-      shopReviewsNum: '190',
-      discount: '450.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5159,22 +4565,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 13,
       sold: 47,
     },
     {
       name: 'Tay Cầm PlayStation PS4 Sony Dualshock 4 (Màu Xanh Đen) - Hàng Chính Hãng',
       slug: 'tay-cam-playstation-ps4-sony-dualshock-4-mau-xanh-den-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/ps4.webp',
       price: '1.189.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '1.150.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5184,22 +4581,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 7,
       sold: 15,
     },
     {
       name: 'VGA GIGABYTE GTX 1050 Ti Windforce OC 4G -Hàng chính hãng',
       slug: 'vga-gigabyte-gtx-1050-ti-windforce-oc-4g-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/vga.webp',
       price: '5.500.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '5.450.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5209,22 +4597,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 11,
     },
     {
       name: 'Khẩu Trang 3D (10 chiếc), Khẩu Trang 4D KF94 Họa Tiết Thời Trang, Khung Vòm 4D Chống Trôi Son, Dùng Một Lần',
       slug: 'khau-trang-3d-10-chiec-khau-trang-4d-kf94-hoa-tiet-thoi-trang-khung-vom-4d-chong-troi-son-dung-mot-lan',
-      category: 'Quần áo',
       image: '/product-images/khautrang.webp',
       price: '9000',
-      shop: 'VSeat',
-      shopRating: '4.8',
-      shopFollows: '279',
-      shopIcon: '/pdp-images/vseat.jpg',
-      shopReviewsNum: '481',
-      discount: '8000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5234,22 +4613,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 101,
       sold: '1000+',
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Uchi Tencel Melville Mont, 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-uchi-tencel-melville-mont-5-mon',
-      category: 'stuff',
       image: '/product-images/gagiuong.webp',
       price: '2.006.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '2.000.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5259,22 +4629,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 2,
       sold: 11,
     },
     {
       name: 'Bàn Gấp Học Sinh Thông Minh Gấp Gọn, Bàn Xếp Laptop Đa Năng Có Thể Gấp Gọn Tùy Chỉnh Nhiều Góc Độ. Chất Liệu Trúc Siêu Nhẹ - Hàng Chính Hãng Tamayoko TM02',
       slug: 'ban-gap-hoc-sinh',
-      category: 'stuff',
       image: '/product-images/bangap.webp',
       price: '399.000',
-      shop: 'Future Store',
-      shopRating: '4.6',
-      shopFollows: '2.2k',
-      shopIcon: '/pdp-images/future.png',
-      shopReviewsNum: '19k',
-      discount: '300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5284,22 +4645,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 301,
       sold: 908,
     },
     {
       name: 'Màn Hình Cong 1500R Gaming Gigabyte G27FC 27" FullHD (1920x1080) 1ms 165Hz VA Cong Stereo Speaker (2W x 2) - Hàng Chính Hãng',
       slug: 'man-hinh-cong-1550r-gaming-gigabyte',
-      category: 'Điện tử',
       image: '/product-images/manhinh.webp',
       price: '5.390.000',
-      shop: 'Vi Tinh Chi Cuong',
-      shopRating: '4.7',
-      shopFollows: '511',
-      shopIcon: '/pdp-images/vitinhchicuong.png',
-      shopReviewsNum: '2.1k',
-      discount: '5.300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5309,22 +4661,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 4,
     },
     {
       name: 'Điện Thoại iPhone 13 Pro Max 128GB - Hàng Chính Hãng',
       slug: 'dien-thoai-iphone-13-pro-max-128gb-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/iphone13.webp',
       price: '29.990.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '29.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5334,22 +4677,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 514,
       sold: '1000+',
     },
     {
       name: 'Tai Nghe Bluetooth Chụp Tai Sony WH-1000XM4 Hi-Res Noise Canceling - Hàng Chính Hãng',
       slug: 'tai-nghe-bluetooth',
-      category: 'Điện tử',
       image: '/product-images/tainghe.webp',
       price: '5.790.000',
-      shop: 'Happystores',
-      shopRating: '4.6',
-      shopFollows: '798',
-      shopIcon: '/pdp-images/happystores.png',
-      shopReviewsNum: '3.1k',
-      discount: '5.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5359,22 +4693,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 211,
       sold: 406,
     },
     {
       name: 'Bảng Treo Đồ Nghề Pegboard Cơ Khí SMLIFE WB3 Lưu Trữ Trưng Bày Dụng Cụ Sửa Chữa Thông Minh Dễ Tìm Kiếm',
       slug: 'bang-treo-do-nghe',
-      category: 'Dụng cụ cơ khí',
       image: '/product-images/donghe.webp',
       price: '2.169.000',
-      shop: 'SMLIFE',
-      shopRating: '4.5',
-      shopFollows: '850',
-      shopIcon: '/pdp-images/smlife.jpg',
-      shopReviewsNum: '708',
-      discount: '2.100.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5384,7 +4709,6 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2,
       sold: 5,
     },
   ],
@@ -5392,16 +4716,8 @@ const data = {
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Uchi Tencel Melville Mont, 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-uchi-tencel-melville-mont-5-mon',
-      category: 'stuff',
       image: '/product-images/gagiuong.webp',
       price: '2.006.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '2.000.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5411,22 +4727,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 2,
       sold: 11,
     },
     {
       name: 'Bàn Gấp Học Sinh Thông Minh Gấp Gọn, Bàn Xếp Laptop Đa Năng Có Thể Gấp Gọn Tùy Chỉnh Nhiều Góc Độ. Chất Liệu Trúc Siêu Nhẹ - Hàng Chính Hãng Tamayoko TM02',
       slug: 'ban-gap-hoc-sinh',
-      category: 'stuff',
       image: '/product-images/bangap.webp',
       price: '399.000',
-      shop: 'Future Store',
-      shopRating: '4.6',
-      shopFollows: '2.2k',
-      shopIcon: '/pdp-images/future.png',
-      shopReviewsNum: '19k',
-      discount: '300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5436,22 +4743,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 301,
       sold: 908,
     },
     {
       name: 'Màn Hình Cong 1500R Gaming Gigabyte G27FC 27" FullHD (1920x1080) 1ms 165Hz VA Cong Stereo Speaker (2W x 2) - Hàng Chính Hãng',
       slug: 'man-hinh-cong-1550r-gaming-gigabyte',
-      category: 'Điện tử',
       image: '/product-images/manhinh.webp',
       price: '5.390.000',
-      shop: 'Vi Tinh Chi Cuong',
-      shopRating: '4.7',
-      shopFollows: '511',
-      shopIcon: '/pdp-images/vitinhchicuong.png',
-      shopReviewsNum: '2.1k',
-      discount: '5.300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5461,22 +4759,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 4,
     },
     {
       name: 'Điện Thoại iPhone 13 Pro Max 128GB - Hàng Chính Hãng',
       slug: 'dien-thoai-iphone-13-pro-max-128gb-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/iphone13.webp',
       price: '29.990.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '29.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5486,22 +4775,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 514,
       sold: '1000+',
     },
     {
       name: 'Tai Nghe Bluetooth Chụp Tai Sony WH-1000XM4 Hi-Res Noise Canceling - Hàng Chính Hãng',
       slug: 'tai-nghe-bluetooth',
-      category: 'Điện tử',
       image: '/product-images/tainghe.webp',
       price: '5.790.000',
-      shop: 'Happystores',
-      shopRating: '4.6',
-      shopFollows: '798',
-      shopIcon: '/pdp-images/happystores.png',
-      shopReviewsNum: '3.1k',
-      discount: '5.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5511,22 +4791,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 211,
       sold: 406,
     },
     {
       name: 'Bảng Treo Đồ Nghề Pegboard Cơ Khí SMLIFE WB3 Lưu Trữ Trưng Bày Dụng Cụ Sửa Chữa Thông Minh Dễ Tìm Kiếm',
       slug: 'bang-treo-do-nghe',
-      category: 'Dụng cụ cơ khí',
       image: '/product-images/donghe.webp',
       price: '2.169.000',
-      shop: 'SMLIFE',
-      shopRating: '4.5',
-      shopFollows: '850',
-      shopIcon: '/pdp-images/smlife.jpg',
-      shopReviewsNum: '708',
-      discount: '2.100.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5536,22 +4807,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2,
       sold: 5,
     },
     {
       name: 'Cây Cam Ngọt Của Tôi',
       slug: 'cay-cam-ngot-cua-toi',
-      category: 'Sách',
       image: '/product-images/caycamngot.webp',
       price: '77.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5561,22 +4823,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 8352,
       sold: '1000+',
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Cotton Select Affinity gồm 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-cotton',
-      category: 'Nhà cửa',
       image: '/product-images/gagiuong2.webp',
       price: '1.526.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '1.500.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5586,22 +4839,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 5,
       sold: 17,
     },
     {
       name: 'Nồi áp suất điện đa năng Tefal CY601868 - 6 Lít - 15 chức năng - Hàng chính hãng',
       slug: 'noi-ap-suat-dien-da-nang-tefal',
-      category: 'Điện tử',
       image: '/product-images/noiapsuat.webp',
       price: '1.667.000',
-      shop: 'Mỏ Vàng HCM',
-      shopRating: '4.6',
-      shopFollows: '1k+',
-      shopIcon: '/pdp-images/movang.png',
-      shopReviewsNum: '1k',
-      discount: '1.640.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5611,22 +4855,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 3,
     },
     {
       name: 'Smart Tivi Sony Full HD 50 inch KDL-50W660G/Z',
       slug: 'smart-tivi-sony',
-      category: 'Điện tử',
       image: '/product-images/smarttivi.webp',
       price: '12.288.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '12.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5636,22 +4871,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 68,
       sold: 229,
     },
     {
       name: 'Combo Chảo chiên Tefal Natura B2260295 20cm & Chảo chiên sâu lòng Tefal Natura B2266495 24cm - Dùng được trên bếp gas/ bếp hồng ngoại - Công nghệ báo nhiệt thông minh - Hàng chính hãng',
       slug: 'combo-chao-choen',
-      category: 'Gia dụng',
       image: '/product-images/combochao.webp',
       price: '399.000',
-      shop: 'Tefal Official Store',
-      shopRating: '4.6',
-      shopFollows: '19k+',
-      shopIcon: '/pdp-images/tefal.png',
-      shopReviewsNum: '20k',
-      discount: '359.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5661,22 +4887,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 844,
       sold: '1000+',
     },
     {
       name: 'Bộ Cây Lau Nhà Tự Vắt Thông Minh 2 Ngăn Parroti Pro PR01 Cao Cấp - Lau Sạch Khô Nhanh – 3 Miếng Lau Microfiber',
       slug: 'cay-lau-nha',
-      category: 'Gia dụng',
       image: '/product-images/caylaunha.webp',
       price: '499.000',
-      shop: 'Parroti Store',
-      shopRating: '4.8',
-      shopFollows: '4.6k+',
-      shopIcon: '/pdp-images/parroti.png',
-      shopReviewsNum: '10k',
-
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5686,22 +4903,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2789,
       sold: '1000+',
     },
     {
       name: 'Đồng hồ thể thao nam nữ AT111',
       slug: 'dong-ho-the-thao',
-      category: 'Điện tử',
       image: '/product-images/donghothethao.webp',
       price: '18.000',
-      shop: 'Thien Hoang Store',
-      shopRating: '4.1',
-      shopFollows: '341',
-      shopIcon: '/pdp-images/thienhoang.png',
-      shopReviewsNum: '256',
-      discount: '15.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5711,22 +4919,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 4,
       sold: 13,
     },
     {
       name: 'Chú Thuật Hồi Chiến: Trường Chuyên Chú Thuật Tokyo - Tập 0',
       slug: 'chu-thuat-hoi-chien',
-      category: 'Sách',
       image: '/product-images/chuthuat.webp',
       price: '27.300',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '25.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5736,22 +4935,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 617,
       sold: '1000+',
     },
     {
       name: 'Cho Tôi Xin Một Vé Đi Tuổi Thơ (Phiên Bản Đặc Biệt)',
       slug: 'cho-toi-xin-mot-ve-di-tuoi-tho',
-      category: 'Sách',
       image: '/product-images/chotoimotve.webp',
       price: '278.500',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '260.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5761,22 +4951,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 112,
       sold: 375,
     },
     {
       name: 'Pin Panasonic CR 2032 - Hàng chính hãng',
       slug: 'pin-panasonic-cr-2032',
-      category: 'Điện tử',
       image: '/product-images/pin.webp',
       price: '50.000',
-      shop: 'Thegioipin88',
-      shopRating: '4.7',
-      shopFollows: '133',
-      shopIcon: '/pdp-images/thegioipin.png',
-      shopReviewsNum: '2.3k',
-      discount: '45.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5786,22 +4967,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 40,
       sold: 624,
     },
     {
       name: 'Máy Tính Bảng Samsung Galaxy Tab S7 FE LTE T735 (4GB/64GB) - Hàng Chính Hãng',
       slug: 'may-tinh-bang',
-      category: 'Điện tử',
       image: '/product-images/tablet.webp',
       price: '10.390.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '10.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5811,22 +4983,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: 112,
     },
     {
       name: 'Máy Xay Thịt 2 Lưỡi Kép Nonostyle (2L) - Hàng Chính Hãng',
       slug: 'may-xay-tinh',
-      category: 'Điện tử',
       image: '/product-images/mayxaythit.webp',
       price: '275.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5836,22 +4999,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: '1000+',
     },
     {
       name: 'Balo công sở, đi làm nam nữ GuBag, dòng balo doanh nhân cao cấp, đẹp xịn, chống nước, chống sốc',
       slug: 'balo-cong-so-di-lam-nam-nu-gubag-dong-balo-doanh-nhanh-cao-cap-dep-xin-chong-nuoc-chong-soc',
-      category: 'Balo, túi sách',
       image: '/product-images/balo.webp',
       price: '439.000',
-      shop: 'GuBag Official Store',
-      shopRating: '4.6',
-      shopFollows: '261',
-      shopIcon: '/pdp-images/gubag.png',
-      shopReviewsNum: '1k',
-      discount: '430.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5861,22 +5015,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 95,
       sold: 210,
     },
     {
       name: 'Dây nịch Huy Hoàng da bò vân cá sấu nhiều màu sắc',
       slug: 'day-nich-huy-hoang-da-bo-van-ca-sau-nhieu-mau-sac',
-      category: 'Quần áo',
       image: '/product-images/daynich.webp',
       price: '559.000',
-      shop: 'HuyHoang Shop',
-      shopRating: '4.5',
-      shopFollows: '93',
-      shopIcon: '/pdp-images/huyhoang.png',
-      shopReviewsNum: '908',
-      discount: '540.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5886,22 +5031,14 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 20,
     },
     {
       name: 'NHẬP KHẨU USA CHÍNH HÃNG - Viên uống ngừa loãng xương, hỗ trợ sức khỏe xương khớp Solgar Vitamin D3 1000 IU',
       slug: 'nhap-khau-usa-chinh-hang-vien-uong-ngua-loang-xuong',
-      category: 'Thực phẩm chức năng',
       image: '/product-images/nhansam.webp',
       price: '461.000',
       shop: 'Solgar Official Store',
-      shopRating: '4.7',
-      shopFollows: '313',
-      shopIcon: '/pdp-images/solgar.png',
-      shopReviewsNum: '190',
-      discount: '450.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5911,22 +5048,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 13,
       sold: 47,
     },
     {
       name: 'Tay Cầm PlayStation PS4 Sony Dualshock 4 (Màu Xanh Đen) - Hàng Chính Hãng',
       slug: 'tay-cam-playstation-ps4-sony-dualshock-4-mau-xanh-den-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/ps4.webp',
       price: '1.189.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '1.150.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5936,22 +5064,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 7,
       sold: 15,
     },
     {
       name: 'VGA GIGABYTE GTX 1050 Ti Windforce OC 4G -Hàng chính hãng',
       slug: 'vga-gigabyte-gtx-1050-ti-windforce-oc-4g-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/vga.webp',
       price: '5.500.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '5.450.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5961,22 +5080,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 11,
     },
     {
       name: 'Khẩu Trang 3D (10 chiếc), Khẩu Trang 4D KF94 Họa Tiết Thời Trang, Khung Vòm 4D Chống Trôi Son, Dùng Một Lần',
       slug: 'khau-trang-3d-10-chiec-khau-trang-4d-kf94-hoa-tiet-thoi-trang-khung-vom-4d-chong-troi-son-dung-mot-lan',
-      category: 'Quần áo',
       image: '/product-images/khautrang.webp',
       price: '9000',
-      shop: 'VSeat',
-      shopRating: '4.8',
-      shopFollows: '279',
-      shopIcon: '/pdp-images/vseat.jpg',
-      shopReviewsNum: '481',
-      discount: '8000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -5986,7 +5096,6 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 101,
       sold: '1000+',
     },
   ],
@@ -5994,16 +5103,8 @@ const data = {
     {
       name: 'Đồng hồ thể thao nam nữ AT111',
       slug: 'dong-ho-the-thao',
-      category: 'Điện tử',
       image: '/product-images/donghothethao.webp',
       price: '18.000',
-      shop: 'Thien Hoang Store',
-      shopRating: '4.1',
-      shopFollows: '341',
-      shopIcon: '/pdp-images/thienhoang.png',
-      shopReviewsNum: '256',
-      discount: '15.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6013,22 +5114,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 4,
       sold: 13,
     },
     {
       name: 'Chú Thuật Hồi Chiến: Trường Chuyên Chú Thuật Tokyo - Tập 0',
       slug: 'chu-thuat-hoi-chien',
-      category: 'Sách',
       image: '/product-images/chuthuat.webp',
       price: '27.300',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '25.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6038,22 +5130,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 617,
       sold: '1000+',
     },
     {
       name: 'Cho Tôi Xin Một Vé Đi Tuổi Thơ (Phiên Bản Đặc Biệt)',
       slug: 'cho-toi-xin-mot-ve-di-tuoi-tho',
-      category: 'Sách',
       image: '/product-images/chotoimotve.webp',
       price: '278.500',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '260.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6063,22 +5146,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 112,
       sold: 375,
     },
     {
       name: 'Pin Panasonic CR 2032 - Hàng chính hãng',
       slug: 'pin-panasonic-cr-2032',
-      category: 'Điện tử',
       image: '/product-images/pin.webp',
       price: '50.000',
-      shop: 'Thegioipin88',
-      shopRating: '4.7',
-      shopFollows: '133',
-      shopIcon: '/pdp-images/thegioipin.png',
-      shopReviewsNum: '2.3k',
-      discount: '45.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6088,22 +5162,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 40,
       sold: 624,
     },
     {
       name: 'Máy Tính Bảng Samsung Galaxy Tab S7 FE LTE T735 (4GB/64GB) - Hàng Chính Hãng',
       slug: 'may-tinh-bang',
-      category: 'Điện tử',
       image: '/product-images/tablet.webp',
       price: '10.390.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '10.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6113,22 +5178,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: 112,
     },
     {
       name: 'Máy Xay Thịt 2 Lưỡi Kép Nonostyle (2L) - Hàng Chính Hãng',
       slug: 'may-xay-tinh',
-      category: 'Điện tử',
       image: '/product-images/mayxaythit.webp',
       price: '275.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6138,22 +5194,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: '1000+',
     },
     {
       name: 'Cây Cam Ngọt Của Tôi',
       slug: 'cay-cam-ngot-cua-toi',
-      category: 'Sách',
       image: '/product-images/caycamngot.webp',
       price: '77.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6163,22 +5210,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 8352,
       sold: '1000+',
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Cotton Select Affinity gồm 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-cotton',
-      category: 'Nhà cửa',
       image: '/product-images/gagiuong2.webp',
       price: '1.526.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '1.500.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6188,22 +5226,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 5,
       sold: 17,
     },
     {
       name: 'Nồi áp suất điện đa năng Tefal CY601868 - 6 Lít - 15 chức năng - Hàng chính hãng',
       slug: 'noi-ap-suat-dien-da-nang-tefal',
-      category: 'Điện tử',
       image: '/product-images/noiapsuat.webp',
       price: '1.667.000',
-      shop: 'Mỏ Vàng HCM',
-      shopRating: '4.6',
-      shopFollows: '1k+',
-      shopIcon: '/pdp-images/movang.png',
-      shopReviewsNum: '1k',
-      discount: '1.640.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6213,22 +5242,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 3,
     },
     {
       name: 'Smart Tivi Sony Full HD 50 inch KDL-50W660G/Z',
       slug: 'smart-tivi-sony',
-      category: 'Điện tử',
       image: '/product-images/smarttivi.webp',
       price: '12.288.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '12.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6238,22 +5258,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 68,
       sold: 229,
     },
     {
       name: 'Combo Chảo chiên Tefal Natura B2260295 20cm & Chảo chiên sâu lòng Tefal Natura B2266495 24cm - Dùng được trên bếp gas/ bếp hồng ngoại - Công nghệ báo nhiệt thông minh - Hàng chính hãng',
       slug: 'combo-chao-choen',
-      category: 'Gia dụng',
       image: '/product-images/combochao.webp',
       price: '399.000',
-      shop: 'Tefal Official Store',
-      shopRating: '4.6',
-      shopFollows: '19k+',
-      shopIcon: '/pdp-images/tefal.png',
-      shopReviewsNum: '20k',
-      discount: '359.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6263,22 +5274,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 844,
       sold: '1000+',
     },
     {
       name: 'Bộ Cây Lau Nhà Tự Vắt Thông Minh 2 Ngăn Parroti Pro PR01 Cao Cấp - Lau Sạch Khô Nhanh – 3 Miếng Lau Microfiber',
       slug: 'cay-lau-nha',
-      category: 'Gia dụng',
       image: '/product-images/caylaunha.webp',
       price: '499.000',
-      shop: 'Parroti Store',
-      shopRating: '4.8',
-      shopFollows: '4.6k+',
-      shopIcon: '/pdp-images/parroti.png',
-      shopReviewsNum: '10k',
-
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6288,22 +5290,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2789,
       sold: '1000+',
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Uchi Tencel Melville Mont, 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-uchi-tencel-melville-mont-5-mon',
-      category: 'stuff',
       image: '/product-images/gagiuong.webp',
       price: '2.006.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '2.000.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6313,22 +5306,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 2,
       sold: 11,
     },
     {
       name: 'Bàn Gấp Học Sinh Thông Minh Gấp Gọn, Bàn Xếp Laptop Đa Năng Có Thể Gấp Gọn Tùy Chỉnh Nhiều Góc Độ. Chất Liệu Trúc Siêu Nhẹ - Hàng Chính Hãng Tamayoko TM02',
       slug: 'ban-gap-hoc-sinh',
-      category: 'stuff',
       image: '/product-images/bangap.webp',
       price: '399.000',
-      shop: 'Future Store',
-      shopRating: '4.6',
-      shopFollows: '2.2k',
-      shopIcon: '/pdp-images/future.png',
-      shopReviewsNum: '19k',
-      discount: '300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6338,22 +5322,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 301,
       sold: 908,
     },
     {
       name: 'Màn Hình Cong 1500R Gaming Gigabyte G27FC 27" FullHD (1920x1080) 1ms 165Hz VA Cong Stereo Speaker (2W x 2) - Hàng Chính Hãng',
       slug: 'man-hinh-cong-1550r-gaming-gigabyte',
-      category: 'Điện tử',
       image: '/product-images/manhinh.webp',
       price: '5.390.000',
-      shop: 'Vi Tinh Chi Cuong',
-      shopRating: '4.7',
-      shopFollows: '511',
-      shopIcon: '/pdp-images/vitinhchicuong.png',
-      shopReviewsNum: '2.1k',
-      discount: '5.300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6363,22 +5338,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 4,
     },
     {
       name: 'Điện Thoại iPhone 13 Pro Max 128GB - Hàng Chính Hãng',
       slug: 'dien-thoai-iphone-13-pro-max-128gb-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/iphone13.webp',
       price: '29.990.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '29.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6388,22 +5354,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 514,
       sold: '1000+',
     },
     {
       name: 'Tai Nghe Bluetooth Chụp Tai Sony WH-1000XM4 Hi-Res Noise Canceling - Hàng Chính Hãng',
       slug: 'tai-nghe-bluetooth',
-      category: 'Điện tử',
       image: '/product-images/tainghe.webp',
       price: '5.790.000',
-      shop: 'Happystores',
-      shopRating: '4.6',
-      shopFollows: '798',
-      shopIcon: '/pdp-images/happystores.png',
-      shopReviewsNum: '3.1k',
-      discount: '5.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6413,22 +5370,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 211,
       sold: 406,
     },
     {
       name: 'Bảng Treo Đồ Nghề Pegboard Cơ Khí SMLIFE WB3 Lưu Trữ Trưng Bày Dụng Cụ Sửa Chữa Thông Minh Dễ Tìm Kiếm',
       slug: 'bang-treo-do-nghe',
-      category: 'Dụng cụ cơ khí',
       image: '/product-images/donghe.webp',
       price: '2.169.000',
-      shop: 'SMLIFE',
-      shopRating: '4.5',
-      shopFollows: '850',
-      shopIcon: '/pdp-images/smlife.jpg',
-      shopReviewsNum: '708',
-      discount: '2.100.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6438,22 +5386,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2,
       sold: 5,
     },
     {
       name: 'Balo công sở, đi làm nam nữ GuBag, dòng balo doanh nhân cao cấp, đẹp xịn, chống nước, chống sốc',
       slug: 'balo-cong-so-di-lam-nam-nu-gubag-dong-balo-doanh-nhanh-cao-cap-dep-xin-chong-nuoc-chong-soc',
-      category: 'Balo, túi sách',
       image: '/product-images/balo.webp',
       price: '439.000',
-      shop: 'GuBag Official Store',
-      shopRating: '4.6',
-      shopFollows: '261',
-      shopIcon: '/pdp-images/gubag.png',
-      shopReviewsNum: '1k',
-      discount: '430.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6463,22 +5402,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 95,
       sold: 210,
     },
     {
       name: 'Dây nịch Huy Hoàng da bò vân cá sấu nhiều màu sắc',
       slug: 'day-nich-huy-hoang-da-bo-van-ca-sau-nhieu-mau-sac',
-      category: 'Quần áo',
       image: '/product-images/daynich.webp',
       price: '559.000',
-      shop: 'HuyHoang Shop',
-      shopRating: '4.5',
-      shopFollows: '93',
-      shopIcon: '/pdp-images/huyhoang.png',
-      shopReviewsNum: '908',
-      discount: '540.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6488,22 +5418,14 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 20,
     },
     {
       name: 'NHẬP KHẨU USA CHÍNH HÃNG - Viên uống ngừa loãng xương, hỗ trợ sức khỏe xương khớp Solgar Vitamin D3 1000 IU',
       slug: 'nhap-khau-usa-chinh-hang-vien-uong-ngua-loang-xuong',
-      category: 'Thực phẩm chức năng',
       image: '/product-images/nhansam.webp',
       price: '461.000',
       shop: 'Solgar Official Store',
-      shopRating: '4.7',
-      shopFollows: '313',
-      shopIcon: '/pdp-images/solgar.png',
-      shopReviewsNum: '190',
-      discount: '450.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6513,22 +5435,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 13,
       sold: 47,
     },
     {
       name: 'Tay Cầm PlayStation PS4 Sony Dualshock 4 (Màu Xanh Đen) - Hàng Chính Hãng',
       slug: 'tay-cam-playstation-ps4-sony-dualshock-4-mau-xanh-den-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/ps4.webp',
       price: '1.189.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '1.150.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6538,22 +5451,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 7,
       sold: 15,
     },
     {
       name: 'VGA GIGABYTE GTX 1050 Ti Windforce OC 4G -Hàng chính hãng',
       slug: 'vga-gigabyte-gtx-1050-ti-windforce-oc-4g-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/vga.webp',
       price: '5.500.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '5.450.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6563,22 +5467,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 11,
     },
     {
       name: 'Khẩu Trang 3D (10 chiếc), Khẩu Trang 4D KF94 Họa Tiết Thời Trang, Khung Vòm 4D Chống Trôi Son, Dùng Một Lần',
       slug: 'khau-trang-3d-10-chiec-khau-trang-4d-kf94-hoa-tiet-thoi-trang-khung-vom-4d-chong-troi-son-dung-mot-lan',
-      category: 'Quần áo',
       image: '/product-images/khautrang.webp',
       price: '9000',
-      shop: 'VSeat',
-      shopRating: '4.8',
-      shopFollows: '279',
-      shopIcon: '/pdp-images/vseat.jpg',
-      shopReviewsNum: '481',
-      discount: '8000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6588,7 +5483,6 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 101,
       sold: '1000+',
     },
   ],
@@ -6596,16 +5490,8 @@ const data = {
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Uchi Tencel Melville Mont, 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-uchi-tencel-melville-mont-5-mon',
-      category: 'stuff',
       image: '/product-images/gagiuong.webp',
       price: '2.006.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '2.000.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6615,22 +5501,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 2,
       sold: 11,
     },
     {
       name: 'Bàn Gấp Học Sinh Thông Minh Gấp Gọn, Bàn Xếp Laptop Đa Năng Có Thể Gấp Gọn Tùy Chỉnh Nhiều Góc Độ. Chất Liệu Trúc Siêu Nhẹ - Hàng Chính Hãng Tamayoko TM02',
       slug: 'ban-gap-hoc-sinh',
-      category: 'stuff',
       image: '/product-images/bangap.webp',
       price: '399.000',
-      shop: 'Future Store',
-      shopRating: '4.6',
-      shopFollows: '2.2k',
-      shopIcon: '/pdp-images/future.png',
-      shopReviewsNum: '19k',
-      discount: '300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6640,22 +5517,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 301,
       sold: 908,
     },
     {
       name: 'Màn Hình Cong 1500R Gaming Gigabyte G27FC 27" FullHD (1920x1080) 1ms 165Hz VA Cong Stereo Speaker (2W x 2) - Hàng Chính Hãng',
       slug: 'man-hinh-cong-1550r-gaming-gigabyte',
-      category: 'Điện tử',
       image: '/product-images/manhinh.webp',
       price: '5.390.000',
-      shop: 'Vi Tinh Chi Cuong',
-      shopRating: '4.7',
-      shopFollows: '511',
-      shopIcon: '/pdp-images/vitinhchicuong.png',
-      shopReviewsNum: '2.1k',
-      discount: '5.300.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6665,22 +5533,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 4,
     },
     {
       name: 'Điện Thoại iPhone 13 Pro Max 128GB - Hàng Chính Hãng',
       slug: 'dien-thoai-iphone-13-pro-max-128gb-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/iphone13.webp',
       price: '29.990.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '29.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6690,22 +5549,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 514,
       sold: '1000+',
     },
     {
       name: 'Tai Nghe Bluetooth Chụp Tai Sony WH-1000XM4 Hi-Res Noise Canceling - Hàng Chính Hãng',
       slug: 'tai-nghe-bluetooth',
-      category: 'Điện tử',
       image: '/product-images/tainghe.webp',
       price: '5.790.000',
-      shop: 'Happystores',
-      shopRating: '4.6',
-      shopFollows: '798',
-      shopIcon: '/pdp-images/happystores.png',
-      shopReviewsNum: '3.1k',
-      discount: '5.600.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6715,22 +5565,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 211,
       sold: 406,
     },
     {
       name: 'Bảng Treo Đồ Nghề Pegboard Cơ Khí SMLIFE WB3 Lưu Trữ Trưng Bày Dụng Cụ Sửa Chữa Thông Minh Dễ Tìm Kiếm',
       slug: 'bang-treo-do-nghe',
-      category: 'Dụng cụ cơ khí',
       image: '/product-images/donghe.webp',
       price: '2.169.000',
-      shop: 'SMLIFE',
-      shopRating: '4.5',
-      shopFollows: '850',
-      shopIcon: '/pdp-images/smlife.jpg',
-      shopReviewsNum: '708',
-      discount: '2.100.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6740,22 +5581,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2,
       sold: 5,
     },
     {
       name: 'Đồng hồ thể thao nam nữ AT111',
       slug: 'dong-ho-the-thao',
-      category: 'Điện tử',
       image: '/product-images/donghothethao.webp',
       price: '18.000',
-      shop: 'Thien Hoang Store',
-      shopRating: '4.1',
-      shopFollows: '341',
-      shopIcon: '/pdp-images/thienhoang.png',
-      shopReviewsNum: '256',
-      discount: '15.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6765,22 +5597,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 4,
       sold: 13,
     },
     {
       name: 'Chú Thuật Hồi Chiến: Trường Chuyên Chú Thuật Tokyo - Tập 0',
       slug: 'chu-thuat-hoi-chien',
-      category: 'Sách',
       image: '/product-images/chuthuat.webp',
       price: '27.300',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '25.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6790,22 +5613,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 617,
       sold: '1000+',
     },
     {
       name: 'Cho Tôi Xin Một Vé Đi Tuổi Thơ (Phiên Bản Đặc Biệt)',
       slug: 'cho-toi-xin-mot-ve-di-tuoi-tho',
-      category: 'Sách',
       image: '/product-images/chotoimotve.webp',
       price: '278.500',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '260.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6815,22 +5629,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 112,
       sold: 375,
     },
     {
       name: 'Pin Panasonic CR 2032 - Hàng chính hãng',
       slug: 'pin-panasonic-cr-2032',
-      category: 'Điện tử',
       image: '/product-images/pin.webp',
       price: '50.000',
-      shop: 'Thegioipin88',
-      shopRating: '4.7',
-      shopFollows: '133',
-      shopIcon: '/pdp-images/thegioipin.png',
-      shopReviewsNum: '2.3k',
-      discount: '45.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6840,22 +5645,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 40,
       sold: 624,
     },
     {
       name: 'Máy Tính Bảng Samsung Galaxy Tab S7 FE LTE T735 (4GB/64GB) - Hàng Chính Hãng',
       slug: 'may-tinh-bang',
-      category: 'Điện tử',
       image: '/product-images/tablet.webp',
       price: '10.390.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '10.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6865,22 +5661,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: 112,
     },
     {
       name: 'Máy Xay Thịt 2 Lưỡi Kép Nonostyle (2L) - Hàng Chính Hãng',
       slug: 'may-xay-tinh',
-      category: 'Điện tử',
       image: '/product-images/mayxaythit.webp',
       price: '275.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6890,22 +5677,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 42,
       sold: '1000+',
     },
     {
       name: 'Balo công sở, đi làm nam nữ GuBag, dòng balo doanh nhân cao cấp, đẹp xịn, chống nước, chống sốc',
       slug: 'balo-cong-so-di-lam-nam-nu-gubag-dong-balo-doanh-nhanh-cao-cap-dep-xin-chong-nuoc-chong-soc',
-      category: 'Balo, túi sách',
       image: '/product-images/balo.webp',
       price: '439.000',
-      shop: 'GuBag Official Store',
-      shopRating: '4.6',
-      shopFollows: '261',
-      shopIcon: '/pdp-images/gubag.png',
-      shopReviewsNum: '1k',
-      discount: '430.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6915,22 +5693,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 95,
       sold: 210,
     },
     {
       name: 'Dây nịch Huy Hoàng da bò vân cá sấu nhiều màu sắc',
       slug: 'day-nich-huy-hoang-da-bo-van-ca-sau-nhieu-mau-sac',
-      category: 'Quần áo',
       image: '/product-images/daynich.webp',
       price: '559.000',
-      shop: 'HuyHoang Shop',
-      shopRating: '4.5',
-      shopFollows: '93',
-      shopIcon: '/pdp-images/huyhoang.png',
-      shopReviewsNum: '908',
-      discount: '540.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6940,22 +5709,14 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 20,
     },
     {
       name: 'NHẬP KHẨU USA CHÍNH HÃNG - Viên uống ngừa loãng xương, hỗ trợ sức khỏe xương khớp Solgar Vitamin D3 1000 IU',
       slug: 'nhap-khau-usa-chinh-hang-vien-uong-ngua-loang-xuong',
-      category: 'Thực phẩm chức năng',
       image: '/product-images/nhansam.webp',
       price: '461.000',
       shop: 'Solgar Official Store',
-      shopRating: '4.7',
-      shopFollows: '313',
-      shopIcon: '/pdp-images/solgar.png',
-      shopReviewsNum: '190',
-      discount: '450.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6965,22 +5726,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 13,
       sold: 47,
     },
     {
       name: 'Tay Cầm PlayStation PS4 Sony Dualshock 4 (Màu Xanh Đen) - Hàng Chính Hãng',
       slug: 'tay-cam-playstation-ps4-sony-dualshock-4-mau-xanh-den-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/ps4.webp',
       price: '1.189.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '1.150.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -6990,22 +5742,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 7,
       sold: 15,
     },
     {
       name: 'VGA GIGABYTE GTX 1050 Ti Windforce OC 4G -Hàng chính hãng',
       slug: 'vga-gigabyte-gtx-1050-ti-windforce-oc-4g-hang-chinh-hang',
-      category: 'Điện tử',
       image: '/product-images/vga.webp',
       price: '5.500.000',
-      shop: 'Bách Tung PS',
-      shopRating: '4.7',
-      shopFollows: '240',
-      shopIcon: '/pdp-images/bachtung.png',
-      shopReviewsNum: '507',
-      discount: '5.450.000',
-      rating: 4,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7015,22 +5758,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 5,
       sold: 11,
     },
     {
       name: 'Khẩu Trang 3D (10 chiếc), Khẩu Trang 4D KF94 Họa Tiết Thời Trang, Khung Vòm 4D Chống Trôi Son, Dùng Một Lần',
       slug: 'khau-trang-3d-10-chiec-khau-trang-4d-kf94-hoa-tiet-thoi-trang-khung-vom-4d-chong-troi-son-dung-mot-lan',
-      category: 'Quần áo',
       image: '/product-images/khautrang.webp',
       price: '9000',
-      shop: 'VSeat',
-      shopRating: '4.8',
-      shopFollows: '279',
-      shopIcon: '/pdp-images/vseat.jpg',
-      shopReviewsNum: '481',
-      discount: '8000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7040,22 +5774,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 101,
       sold: '1000+',
     },
     {
       name: 'Cây Cam Ngọt Của Tôi',
       slug: 'cay-cam-ngot-cua-toi',
-      category: 'Sách',
       image: '/product-images/caycamngot.webp',
       price: '77.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7065,22 +5790,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 8352,
       sold: '1000+',
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Cotton Select Affinity gồm 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-cotton',
-      category: 'Nhà cửa',
       image: '/product-images/gagiuong2.webp',
       price: '1.526.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '1.500.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7090,22 +5806,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 5,
       sold: 17,
     },
     {
       name: 'Nồi áp suất điện đa năng Tefal CY601868 - 6 Lít - 15 chức năng - Hàng chính hãng',
       slug: 'noi-ap-suat-dien-da-nang-tefal',
-      category: 'Điện tử',
       image: '/product-images/noiapsuat.webp',
       price: '1.667.000',
-      shop: 'Mỏ Vàng HCM',
-      shopRating: '4.6',
-      shopFollows: '1k+',
-      shopIcon: '/pdp-images/movang.png',
-      shopReviewsNum: '1k',
-      discount: '1.640.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7115,22 +5822,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 3,
     },
     {
       name: 'Smart Tivi Sony Full HD 50 inch KDL-50W660G/Z',
       slug: 'smart-tivi-sony',
-      category: 'Điện tử',
       image: '/product-images/smarttivi.webp',
       price: '12.288.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '12.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7140,22 +5838,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 68,
       sold: 229,
     },
     {
       name: 'Combo Chảo chiên Tefal Natura B2260295 20cm & Chảo chiên sâu lòng Tefal Natura B2266495 24cm - Dùng được trên bếp gas/ bếp hồng ngoại - Công nghệ báo nhiệt thông minh - Hàng chính hãng',
       slug: 'combo-chao-choen',
-      category: 'Gia dụng',
       image: '/product-images/combochao.webp',
       price: '399.000',
-      shop: 'Tefal Official Store',
-      shopRating: '4.6',
-      shopFollows: '19k+',
-      shopIcon: '/pdp-images/tefal.png',
-      shopReviewsNum: '20k',
-      discount: '359.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7165,22 +5854,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 844,
       sold: '1000+',
     },
     {
       name: 'Bộ Cây Lau Nhà Tự Vắt Thông Minh 2 Ngăn Parroti Pro PR01 Cao Cấp - Lau Sạch Khô Nhanh – 3 Miếng Lau Microfiber',
       slug: 'cay-lau-nha',
-      category: 'Gia dụng',
       image: '/product-images/caylaunha.webp',
       price: '499.000',
-      shop: 'Parroti Store',
-      shopRating: '4.8',
-      shopFollows: '4.6k+',
-      shopIcon: '/pdp-images/parroti.png',
-      shopReviewsNum: '10k',
-
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7190,7 +5870,6 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2789,
       sold: '1000+',
     },
   ],
@@ -7198,16 +5877,8 @@ const data = {
     {
       name: 'Cây Cam Ngọt Của Tôi',
       slug: 'cay-cam-ngot-cua-toi',
-      category: 'Sách',
       image: '/product-images/caycamngot.webp',
       price: '77.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '70.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7217,22 +5888,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 8352,
       sold: '1000+',
     },
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Cotton Select Affinity gồm 5 món',
       slug: 'bo-ga-va-vo-goi-akemi-cotton',
-      category: 'Nhà cửa',
       image: '/product-images/gagiuong2.webp',
       price: '1.526.000',
-      shop: 'Akemi Official Store',
-      shopRating: '4.7',
-      shopFollows: '400',
-      shopIcon: '/pdp-images/akemi.png',
-      shopReviewsNum: '74',
-      discount: '1.500.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7242,22 +5904,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 5,
       sold: 17,
     },
     {
       name: 'Nồi áp suất điện đa năng Tefal CY601868 - 6 Lít - 15 chức năng - Hàng chính hãng',
       slug: 'noi-ap-suat-dien-da-nang-tefal',
-      category: 'Điện tử',
       image: '/product-images/noiapsuat.webp',
       price: '1.667.000',
-      shop: 'Mỏ Vàng HCM',
-      shopRating: '4.6',
-      shopFollows: '1k+',
-      shopIcon: '/pdp-images/movang.png',
-      shopReviewsNum: '1k',
-      discount: '1.640.000',
-      rating: 3,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7267,22 +5920,13 @@ const data = {
           <AiFillStar color="#c7c7c7" />
         </>
       ),
-      numReviews: 1,
       sold: 3,
     },
     {
       name: 'Smart Tivi Sony Full HD 50 inch KDL-50W660G/Z',
       slug: 'smart-tivi-sony',
-      category: 'Điện tử',
       image: '/product-images/smarttivi.webp',
       price: '12.288.000',
-      shop: 'Tiki Trading',
-      shopRating: '4.6',
-      shopFollows: '378k+',
-      shopIcon: '/pdp-images/tikitrading.png',
-      shopReviewsNum: '4.4tr',
-      discount: '12.200.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7292,22 +5936,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 68,
       sold: 229,
     },
     {
       name: 'Combo Chảo chiên Tefal Natura B2260295 20cm & Chảo chiên sâu lòng Tefal Natura B2266495 24cm - Dùng được trên bếp gas/ bếp hồng ngoại - Công nghệ báo nhiệt thông minh - Hàng chính hãng',
       slug: 'combo-chao-choen',
-      category: 'Gia dụng',
       image: '/product-images/combochao.webp',
       price: '399.000',
-      shop: 'Tefal Official Store',
-      shopRating: '4.6',
-      shopFollows: '19k+',
-      shopIcon: '/pdp-images/tefal.png',
-      shopReviewsNum: '20k',
-      discount: '359.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7317,22 +5952,13 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 844,
       sold: '1000+',
     },
     {
       name: 'Bộ Cây Lau Nhà Tự Vắt Thông Minh 2 Ngăn Parroti Pro PR01 Cao Cấp - Lau Sạch Khô Nhanh – 3 Miếng Lau Microfiber',
       slug: 'cay-lau-nha',
-      category: 'Gia dụng',
       image: '/product-images/caylaunha.webp',
       price: '499.000',
-      shop: 'Parroti Store',
-      shopRating: '4.8',
-      shopFollows: '4.6k+',
-      shopIcon: '/pdp-images/parroti.png',
-      shopReviewsNum: '10k',
-      discount: '399.000',
-      rating: 5,
       starRating: (
         <>
           <AiFillStar color="#ffd52e" />
@@ -7342,14 +5968,7 @@ const data = {
           <AiFillStar color="#ffd52e" />
         </>
       ),
-      numReviews: 2789,
       sold: '1000+',
-    },
-  ],
-
-  comments: [
-    {
-      commenter: 'Huy',
     },
   ],
 };

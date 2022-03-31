@@ -28,20 +28,20 @@ export default function ProductScreen() {
     return <div>Product Not Found</div>;
   }
   return (
-    <Grid
+    <div
       style={{
         backgroundColor: '#F6F5FA',
       }}
     >
       <Layout title={product.name}>
-        <Grid
+        <div
           style={{
             backgroundColor: '#FFFFFF',
             marginTop: '15px',
           }}
           className={classes.productOuterGrid}
         >
-          <Grid className={classes.productImageGrid}>
+          <div className={classes.productImageGrid}>
             <div className={classes.productImage}>
               <Image
                 src={product.image} //get product image straight from data.js
@@ -131,12 +131,12 @@ export default function ProductScreen() {
                 />
               </a>
             </div>
-          </Grid>
+          </div>
           {/* used a separator to creata a line
           IMPORTANT: pay attention to the color, it may blend in with the background
           */}
           <div className={classes.productSeparator2}></div>
-          <Grid className={classes.productDetailGrid}>
+          <div className={classes.productDetailGrid}>
             <div className={classes.productHeader}>
               <div className={classes.productBrand}>
                 <span className={classes.productBrandDetail}>
@@ -463,8 +463,8 @@ export default function ProductScreen() {
                 </div>
               </div>
             </div>
-          </Grid>
-        </Grid>
+          </div>
+        </div>
         <Grid className={classes.productSlideWrapper}>
           {/* Similar products, use the same data from data.js */}
           <h2 className={classes.blockTitle}>Sản Phẩm Tương Tự</h2>
@@ -512,8 +512,7 @@ export default function ProductScreen() {
             ))}
           </Grid>
         </Grid>
-
-        <Grid className={classes.moTaSanPham}>
+        <div className={classes.moTaSanPham}>
           <div className={classes.moTaLeft}>
             <div className={classes.group}>
               <h2 className={classes.blockTitle}>Thông Tin Chi Tiết</h2>
@@ -540,11 +539,10 @@ export default function ProductScreen() {
             </div>
           </div>
           <div className={classes.moTaRight}></div>
-        </Grid>
-
+        </div>
         {/* CUSTOMER REVIEWS */}
         <div>
-          <Grid className={classes.commentOuterGrid}>
+          <div className={classes.commentOuterGrid}>
             <div className={classes.customerReviewsHeading}>
               Đánh Giá - Nhận Xét Từ Khách Hàng
             </div>
@@ -871,7 +869,7 @@ export default function ProductScreen() {
                 </div>
               </div>
             </div>
-          </Grid>
+          </div>
         </div>
 
         <Tabs>
@@ -1179,6 +1177,6 @@ export default function ProductScreen() {
           </TabPanel>
         </Tabs>
       </Layout>
-    </Grid>
+    </div>
   );
 }

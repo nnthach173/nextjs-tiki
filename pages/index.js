@@ -28,13 +28,13 @@ import 'react-tabs/style/react-tabs.css';
 export default function Home() {
   const classes = useStyles();
   return (
-    <Grid
+    <div
       style={{
         backgroundColor: '#F6F5FA',
       }}
     >
       <Layout title="Tiki - Mua hàng online giá tốt, hàng chuẩn, ship nhanh">
-        <Grid
+        <div
           style={{
             backgroundColor: '#F6F5FA',
           }}
@@ -113,8 +113,7 @@ export default function Home() {
               <Image src="/header.png" alt="header" width={400} height={274} />
             </div>
           </div>
-        </Grid>
-
+        </div>
         <Grid
           style={{
             backgroundColor: '#FFFFFF',
@@ -213,7 +212,7 @@ export default function Home() {
             </div>
           </Grid>
         </Grid>
-        <Grid
+        <div
           style={{
             backgroundColor: '#F6F5FA',
           }}
@@ -245,9 +244,8 @@ export default function Home() {
               />
             </div>
           </div>
-        </Grid>
-
-        <Grid
+        </div>
+        <div
           className={classes.gridBorder}
           style={{ backgroundColor: '#FFFFFF' }}
         >
@@ -404,10 +402,9 @@ export default function Home() {
               </span>
             </div>
           </div>
-        </Grid>
-
+        </div>
         {/* Multiple mini banners, use in-line styling */}
-        <Grid
+        <div
           style={{
             backgroundColor: '#F6F5FA',
           }}
@@ -446,9 +443,8 @@ export default function Home() {
               />
             </div>
           </div>
-        </Grid>
-
-        <Grid
+        </div>
+        <div
           className={classes.gridBorder}
           style={{ backgroundColor: '#FFFFFF' }}
         >
@@ -545,10 +541,9 @@ export default function Home() {
               <p className={classes.brandCardItemTitle}>Ưu Đãi Siêu Phẩm</p>
             </div>
           </div>
-        </Grid>
-
+        </div>
         {/* Mini catalouge list*/}
-        <Grid
+        <div
           className={classes.gridBorder}
           style={{ backgroundColor: '#FFFFFF' }}
         >
@@ -904,7 +899,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-        </Grid>
+        </div>
         {/* catalouge banner */}
         <div className={classes.cataBanner}>
           <div className={classes.cataBanner2}>
@@ -1478,6 +1473,6 @@ export default function Home() {
           </TabPanel>
         </Tabs>
       </Layout>
-    </Grid>
+    </div>
   );
 }
