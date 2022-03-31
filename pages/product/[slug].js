@@ -419,7 +419,7 @@ export default function ProductScreen() {
                       </span>
                     </div>
                   </div>
-                  <div className={classes.container}>
+                  <div className={classes.container3}>
                     <div>
                       <div
                         style={{

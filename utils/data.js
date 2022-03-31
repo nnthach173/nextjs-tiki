@@ -3551,6 +3551,12 @@ const data = {
       ///////////////
     },
   ],
+
+  //2nd Tab (Deal sieu hot) contents
+  //Has less details than first tab (Danh cho ban)
+  //Only data that are visible from frontpage are included (ex. slug, prices, names, star ratings, etc)
+  //Rest are deleted (ex. shop, number of reviews, etc )
+
   products1: [
     {
       name: 'Đồng hồ thể thao nam nữ AT111',
@@ -3938,6 +3944,11 @@ const data = {
       sold: '1000+',
     },
   ],
+
+  //3rd Tab (Re vo doi) contents
+  //Has less details than first tab (Danh cho ban)
+  //Only data that are visible from frontpage are included (ex. slug, prices, names, star ratings, etc)
+  //Rest are deleted (ex. shop, number of reviews, etc )
   products2: [
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Uchi Tencel Melville Mont, 5 món',
@@ -4325,6 +4336,11 @@ const data = {
       sold: '1000+',
     },
   ],
+  //4th Tab (Di cho sieu sale) contents
+  //Has less details than first tab (Danh cho ban)
+  //Only data that are visible from frontpage are included (ex. slug, prices, names, star ratings, etc)
+  //Rest are deleted (ex. shop, number of reviews, etc )
+
   products3: [
     {
       name: 'Cây Cam Ngọt Của Tôi',
@@ -4712,6 +4728,11 @@ const data = {
       sold: 5,
     },
   ],
+
+  //5th Tab (Hang moi) contents
+  //Has less details than first tab (Danh cho ban)
+  //Only data that are visible from frontpage are included (ex. slug, prices, names, star ratings, etc)
+  //Rest are deleted (ex. shop, number of reviews, etc )
   products4: [
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Uchi Tencel Melville Mont, 5 món',
@@ -5099,6 +5120,11 @@ const data = {
       sold: '1000+',
     },
   ],
+
+  //6th Tab (Khong gioi han) contents
+  //Has less details than first tab (Danh cho ban)
+  //Only data that are visible from frontpage are included (ex. slug, prices, names, star ratings, etc)
+  //Rest are deleted (ex. shop, number of reviews, etc )
   products5: [
     {
       name: 'Đồng hồ thể thao nam nữ AT111',
@@ -5486,6 +5512,11 @@ const data = {
       sold: '1000+',
     },
   ],
+
+  //7th Tab (qua tet 2022) contents
+  //Has less details than first tab (Danh cho ban)
+  //Only data that are visible from frontpage are included (ex. slug, prices, names, star ratings, etc)
+  //Rest are deleted (ex. shop, number of reviews, etc )
   products6: [
     {
       name: 'Bộ Ga và Vỏ Gối Akemi Uchi Tencel Melville Mont, 5 món',

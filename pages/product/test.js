@@ -1,614 +1,104 @@
-<Grid
-  style={{
-    backgroundColor: '#FFFFFF',
-  }}
->
-  <Grid
-    className={classes.gridBorder}
-    style={{
-      backgroundColor: '#FFFFFF',
-      paddingTop: '10px',
-    }}
-    container
-    spacing={3} //spacing between items
-  >
-    <Grid>
-      <div className={classes.mainTitle}>
-        <div className={classes.mainTitle2}>
-          <div className={classes.flashIcon}>
-            <Image
-              className={classes.flashIcon}
-              src="/giasoc.svg"
-              alt=""
-              width={89}
-              height={28}
-            />
-          </div>
-          <div className={classes.flashIcon}>
-            <Image
-              className={classes.flashIcon}
-              src="/dealFlashIcon.svg"
-              alt=""
-              width={24}
-              height={28}
-            />
-          </div>
-          <div className={classes.flashIcon}>
-            <Image
-              className={classes.flashIcon}
-              src="/homnay.svg"
-              alt=""
-              width={113}
-              height={28}
-            />
-          </div>
-        </div>
+<AppBar position="static" className={classes.navbar}>
+  <Toolbar className={classes.customizeToolbar}>
+    <div className={classes.logoPosition}>
+      <div className={classes.logo}>
+        <Image src="/tiki.png" alt="tiki" width={55} height={40} />
       </div>
-    </Grid>
-
-    {/* /////////////////////// */}
-    {/* //// Display data ///// */}
-    {/* /////////////////////// */}
-    <div className={classes.hangHoa}>
-      {data.props.map(
-        (
-          product //take data from props array in data.js
-        ) => (
-          <Grid className={classes.hangHoa} item md={2} key={product.name}>
-            {/* used Card component from Material UI */}
-            <Card>
-              <NextLink href={`/product/${product.slug}`} passHref>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    image={product.image}
-                    title={product.name}
-                  ></CardMedia>
-                </CardActionArea>
-              </NextLink>
-
-              <CardActions>
-                <Typography
-                  style={{
-                    fontWeight: 'bold',
-                    color: 'red',
-                    margin: '0px auto',
-                  }}
-                >
-                  {product.price}đ
-                </Typography>
-              </CardActions>
-
-              <Box textAlign="center">
-                <Button className={classes.soldButton}>
-                  Đã bán {product.sold}
-                </Button>
-              </Box>
-            </Card>
-          </Grid>
-        )
-      )}
-    </div>
-  </Grid>
-</Grid>;
-
-<Tabs>
-  {/* zIndex (in class stickyTab) indicates stack order of elements */}
-  <div className={classes.stickyTab}>
-    {/* Mini icon - use padding to format positions */}
-    <Grid className={classes.gridWidth} style={{ backgroundColor: '#FFFFFF' }}>
-      <div className={classes.outerTab}>
-        <div className={classes.innerTab}>
-          <div>Gợi Ý Hôm Nay</div>
-        </div>
+      <div className={classes.logo2}>
+        <Image src="/freeship.png" alt="freeship" width={80} height={12} />
       </div>
-    </Grid>
-    {/* Tab list */}
-    <Grid style={{ backgroundColor: '#F6F5FA' }}>
-      <div className={classes.outerTab2}>
-        <div className={classes.innerTab2}>
-          <div>
-            <Tab className={classes.tabButton}>
-              <span className={classes.imageTags}>
-                <Image
-                  src="/buttonImage1.webp"
-                  alt="buttonimage1"
-                  width={48}
-                  height={48}
-                />
-              </span>
-              <span>Dành cho bạn</span>
-            </Tab>
+    </div>
 
-            <Tab className={classes.tabButton}>
-              <span className={classes.imageTags}>
-                <Image
-                  src="/buttonImage2.webp"
-                  alt="buttonimage2"
-                  width={48}
-                  height={48}
-                />
-              </span>
-              <span>Deal Siêu Hot</span>
-            </Tab>
-
-            <Tab className={classes.tabButton}>
-              <span className={classes.imageTags}>
-                <Image
-                  src="/buttonImage3.webp"
-                  alt="buttonimage3"
-                  width={48}
-                  height={48}
-                />
-              </span>
-              <span>Rẻ Vô Đối</span>
-            </Tab>
-
-            <Tab className={classes.tabButton}>
-              <span className={classes.imageTags}>
-                <Image
-                  src="/buttonImage4.webp"
-                  alt="buttonimage4"
-                  width={48}
-                  height={48}
-                />
-              </span>
-              <span>Đi Chợ Siêu Sale</span>
-            </Tab>
-
-            <Tab className={classes.tabButton}>
-              <span className={classes.imageTags}>
-                <Image
-                  src="/buttonImage5.webp"
-                  alt="buttonimage5"
-                  width={48}
-                  height={48}
-                />
-              </span>
-              <span>Hàng Mới</span>
-            </Tab>
-
-            <Tab className={classes.tabButton}>
-              <span className={classes.imageTags}>
-                <Image
-                  src="/buttonImage6.webp"
-                  alt="buttonimage6"
-                  width={48}
-                  height={48}
-                />
-              </span>
-              <span>Không giới hạn</span>
-            </Tab>
-
-            <Tab className={classes.tabButton}>
-              <span className={classes.imageTags}>
-                <Image
-                  src="/buttonImage7.webp"
-                  alt="buttonimage7"
-                  width={48}
-                  height={48}
-                />
-              </span>
-              <span>Quà Tết 2022</span>
-            </Tab>
-          </div>
-        </div>
+    <div className={classes.searchBarPosition}>
+      <div className={classes.searchBar}>
+        {/* place holder = words that appear inside the search bar */}
+        <input
+          placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn..."
+          style={{ height: '35px', width: '600px' }}
+        />
       </div>
-    </Grid>
-  </div>
 
-  {/* Tab 1 content, repeat for other tabs */}
-  <TabPanel>
-    <div>
-      <Grid
-        className={classes.gridBorder}
-        style={{ backgroundColor: '#FFFFFF' }}
-      >
-        {/* listing products */}
-        <div className={classes.mainTitle}>
-          <div className={classes.mainTitle2}>
-            <Grid container spacing={3}>
-              {/* take data from "products" array in data.js */}
-              {data.products.map((product) => (
-                <Grid item md={2} key={product.name}>
-                  <Card style={{ border: 'none', boxShadow: 'none' }}>
-                    {/* open a new page */}
-                    <NextLink href={`/product/${product.slug}`} passHref>
-                      {/* content */}
+      <div className={classes.buttonPosition}>
+        <Typography>
+          {/* Icon imported from: https://react-icons.github.io/react-icons/ */}
+          <Button className={classes.button}>
+            {/* size: icon size (in px) */}
+            <BiSearchAlt size={20} />
+            Tìm kiếm
+          </Button>
+        </Typography>
+      </div>
 
-                      <CardActionArea>
-                        {/* image and title of product */}
-                        <CardMedia
-                          component="img"
-                          image={product.image}
-                          title={product.name}
-                        ></CardMedia>
-
-                        {/* IMPORTANT, display product's names in 2 line and dots (AKA lineclamp) */}
-                        {/* overflow: 'hidden', the overflow is clipped, and the rest of the content is hidden
-                                    textOverflow: 'ellipsis', Render an ellipsis ("...") to represent the clipped text
-                                    display: '-webkit-box',
-                                    WebkitBoxOrient: 'vertical',
-                                    WebkitLineClamp: 2, Number of word lines 
-                                */}
-                        <Typography className={classes.twoLines}>
-                          {product.name}
-                        </Typography>
-
-                        <div style={{ textAlign: 'left ' }}>
-                          <Typography
-                            style={{
-                              fontSize: '12px',
-                              color: 'black',
-                              fontWeight: 400,
-                            }}
-                          >
-                            {/* products sold */}
-                            {/* Star rating */}
-                            {product.starRating} | đã bán {product.sold}
-                          </Typography>
-                        </div>
-
-                        {/* Product price*/}
-                        <Typography
-                          style={{
-                            fontWeight: 'bold',
-                            color: 'red',
-                            margin: '0px',
-                          }}
-                        >
-                          {product.price}đ
-                        </Typography>
-                      </CardActionArea>
-                    </NextLink>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </div>
-        </div>
-      </Grid>
+      {/* suggest tag */}
+      {/* outer div (suggestWordsFinal) has relative position */}
+      <div className={classes.suggestWordsFinal}>
+        {/* inner divs (suggestWords) has display: inline-block. To make them appear in a single line */}
+        <div className={classes.suggestWords}>trái cây</div>
+        <div className={classes.suggestWords}>thịt trứng</div>
+        <div className={classes.suggestWords}>rau củ quả</div>
+        <div className={classes.suggestWords}>sữa, bơ, phô mai</div>
+        <div className={classes.suggestWords}>hải sản</div>
+        <div className={classes.suggestWords}>gạo, mì ăn liền</div>
+        <div className={classes.suggestWords}>đồ uống, bia rượu</div>
+        <div className={classes.suggestWords}>bánh kẹo</div>
+      </div>
     </div>
-  </TabPanel>
 
-  {/* ***************** */}
-  {/* FROM THEN ON, this is the content of other tabs, identical to the previous tab */}
-  {/* ***************** */}
-
-  <TabPanel>
-    <div>
-      <Grid
-        className={classes.gridBorder}
-        style={{ backgroundColor: '#FFFFFF' }}
-      >
-        <div className={classes.mainTitle}>
-          <div className={classes.mainTitle2}>
-            <Grid container spacing={3}>
-              {data.products1.map((product) => (
-                <Grid item md={2} key={product.name}>
-                  <Card style={{ border: 'none', boxShadow: 'none' }}>
-                    <NextLink href={`/product/${product.slug}`} passHref>
-                      <CardActionArea>
-                        <CardMedia
-                          component="img"
-                          image={product.image}
-                          title={product.name}
-                        ></CardMedia>
-
-                        <Typography className={classes.twoLines}>
-                          {product.name}
-                        </Typography>
-
-                        <div style={{ textAlign: 'left ' }}>
-                          <Typography
-                            style={{
-                              fontSize: '12px',
-                              color: 'black',
-                              fontWeight: 400,
-                            }}
-                          >
-                            {product.starRating} | đã bán {product.sold}
-                          </Typography>
-                        </div>
-
-                        <Typography
-                          style={{
-                            fontWeight: 'bold',
-                            color: 'red',
-                            margin: '0px',
-                          }}
-                        >
-                          {product.price}đ
-                        </Typography>
-                      </CardActionArea>
-                    </NextLink>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </div>
+    {/* log in buttons */}
+    <BsPerson size={30} className={classes.personIcon} />
+    <div className={classes.loginButton}>
+      {/* #: mainpage */}
+      <Link href="#" underline="none">
+        <div style={{ fontSize: '12px', color: '#FFFFFF' }}>
+          Đăng nhập / Đăng ký
         </div>
-      </Grid>
-    </div>
-  </TabPanel>
-  <TabPanel>
-    <div>
-      <Grid
-        className={classes.gridBorder}
-        style={{ backgroundColor: '#FFFFFF' }}
-      >
-        <div className={classes.mainTitle}>
-          <div className={classes.mainTitle2}>
-            <Grid container spacing={3}>
-              {data.products2.map((product) => (
-                <Grid item md={2} key={product.name}>
-                  <Card style={{ border: 'none', boxShadow: 'none' }}>
-                    <NextLink href={`/product/${product.slug}`} passHref>
-                      <CardActionArea>
-                        <CardMedia
-                          component="img"
-                          image={product.image}
-                          title={product.name}
-                        ></CardMedia>
-
-                        <Typography className={classes.twoLines}>
-                          {product.name}
-                        </Typography>
-
-                        <div style={{ textAlign: 'left ' }}>
-                          <Typography
-                            style={{
-                              fontSize: '12px',
-                              color: 'black',
-                              fontWeight: 400,
-                            }}
-                          >
-                            {product.starRating} | đã bán {product.sold}
-                          </Typography>
-                        </div>
-
-                        <Typography
-                          style={{
-                            fontWeight: 'bold',
-                            color: 'red',
-                            margin: '0px',
-                          }}
-                        >
-                          {product.price}đ
-                        </Typography>
-                      </CardActionArea>
-                    </NextLink>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </div>
+      </Link>
+      <Link href="#" underline="none">
+        <div style={{ fontSize: '12px', color: '#FFFFFF' }}>
+          Tài khoản <AiFillCaretDown />
         </div>
-      </Grid>
+      </Link>
     </div>
-  </TabPanel>
-  <TabPanel>
+
+    <div
+      className={classes.shoppingCart}
+      style={{ fontSize: '12px', color: '#FFFFFF' }}
+    >
+      {/* icon from https://react-icons.github.io/react-icons/ */}
+      <FiShoppingCart size={30} />
+      <Link style={{ color: '#FFFFFF' }} href="#" underline="none">
+        Giỏ Hàng
+      </Link>
+    </div>
+
     <div>
-      <Grid
-        className={classes.gridBorder}
-        style={{ backgroundColor: '#FFFFFF' }}
-      >
-        <div className={classes.mainTitle}>
-          <div className={classes.mainTitle2}>
-            <Grid container spacing={3}>
-              {data.products3.map((product) => (
-                <Grid item md={2} key={product.name}>
-                  <Card style={{ border: 'none', boxShadow: 'none' }}>
-                    <NextLink href={`/product/${product.slug}`} passHref>
-                      <CardActionArea>
-                        <CardMedia
-                          component="img"
-                          image={product.image}
-                          title={product.name}
-                        ></CardMedia>
-
-                        <Typography className={classes.twoLines}>
-                          {product.name}
-                        </Typography>
-
-                        <div style={{ textAlign: 'left ' }}>
-                          <Typography
-                            style={{
-                              fontSize: '12px',
-                              color: 'black',
-                              fontWeight: 400,
-                            }}
-                          >
-                            {product.starRating} | đã bán {product.sold}
-                          </Typography>
-                        </div>
-
-                        <Typography
-                          style={{
-                            fontWeight: 'bold',
-                            color: 'red',
-                            margin: '0px',
-                          }}
-                        >
-                          {product.price}đ
-                        </Typography>
-                      </CardActionArea>
-                    </NextLink>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </div>
-        </div>
-      </Grid>
+      <Button className={classes.shoppingButton} variant="contained">
+        <MdOutlineStorefront />
+        Bán hàng cùng Tiki
+      </Button>
     </div>
-  </TabPanel>
-  <TabPanel>
-    <div>
-      <Grid
-        className={classes.gridBorder}
-        style={{ backgroundColor: '#FFFFFF' }}
-      >
-        <div className={classes.mainTitle}>
-          <div className={classes.mainTitle2}>
-            <Grid container spacing={3}>
-              {data.products4.map((product) => (
-                <Grid item md={2} key={product.name}>
-                  <Card style={{ border: 'none', boxShadow: 'none' }}>
-                    <NextLink href={`/product/${product.slug}`} passHref>
-                      <CardActionArea>
-                        <CardMedia
-                          component="img"
-                          image={product.image}
-                          title={product.name}
-                        ></CardMedia>
+  </Toolbar>
+</AppBar>;
 
-                        <Typography className={classes.twoLines}>
-                          {product.name}
-                        </Typography>
-
-                        <div style={{ textAlign: 'left ' }}>
-                          <Typography
-                            style={{
-                              fontSize: '12px',
-                              color: 'black',
-                              fontWeight: 400,
-                            }}
-                          >
-                            {product.starRating} | đã bán {product.sold}
-                          </Typography>
-                        </div>
-
-                        <Typography
-                          style={{
-                            fontWeight: 'bold',
-                            color: 'red',
-                            margin: '0px',
-                          }}
-                        >
-                          {product.price}đ
-                        </Typography>
-                      </CardActionArea>
-                    </NextLink>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </div>
-        </div>
-      </Grid>
+{
+  /* use in-line styling to make them appear in 1-line */
+}
+<AppBar position="relative" className={classes.navbar2}>
+  <Toolbar className={classes.customizeToolbar2}>
+    <div className={classes.menuWordsPosition}>
+      {/* inner divs has display: inline-block to display them in a single line */}
+      <div className={classes.menuWords}>Thịt, Rau Củ</div>
+      <div className={classes.menuWords}>Bách Hóa</div>
+      <div className={classes.menuWords}>Nhà Cửa</div>
+      <div className={classes.menuWords}>Điện tử</div>
+      <div className={classes.menuWords}>Thiết bị số</div>
+      <div className={classes.menuWords}>Điện thoại</div>
+      <div className={classes.menuWords}>Mẹ & Bé</div>
+      <div className={classes.menuWords}>Gia Dụng</div>
+      <div className={classes.menuWords}>Thời trang nữ</div>
+      <div className={classes.menuWords}>Thời trang nam</div>
+      <div className={classes.menuWords}>Giày nữ</div>
+      <div className={classes.menuWords}>Túi nữ</div>
     </div>
-  </TabPanel>
-  <TabPanel>
-    <div>
-      <Grid
-        className={classes.gridBorder}
-        style={{ backgroundColor: '#FFFFFF' }}
-      >
-        <div className={classes.mainTitle}>
-          <div className={classes.mainTitle2}>
-            <Grid container spacing={3}>
-              {data.products5.map((product) => (
-                <Grid item md={2} key={product.name}>
-                  <Card style={{ border: 'none', boxShadow: 'none' }}>
-                    <NextLink href={`/product/${product.slug}`} passHref>
-                      <CardActionArea>
-                        <CardMedia
-                          component="img"
-                          image={product.image}
-                          title={product.name}
-                        ></CardMedia>
-
-                        <Typography className={classes.twoLines}>
-                          {product.name}
-                        </Typography>
-
-                        <div style={{ textAlign: 'left ' }}>
-                          <Typography
-                            style={{
-                              fontSize: '12px',
-                              color: 'black',
-                              fontWeight: 400,
-                            }}
-                          >
-                            {product.starRating} | đã bán {product.sold}
-                          </Typography>
-                        </div>
-
-                        <Typography
-                          style={{
-                            fontWeight: 'bold',
-                            color: 'red',
-                            margin: '0px',
-                          }}
-                        >
-                          {product.price}đ
-                        </Typography>
-                      </CardActionArea>
-                    </NextLink>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </div>
-        </div>
-      </Grid>
-    </div>
-  </TabPanel>
-  <TabPanel>
-    <div>
-      <Grid
-        className={classes.gridBorder}
-        style={{ backgroundColor: '#FFFFFF' }}
-      >
-        <div className={classes.mainTitle}>
-          <div className={classes.mainTitle2}>
-            <Grid container spacing={3}>
-              {data.products6.map((product) => (
-                <Grid item md={2} key={product.name}>
-                  <Card style={{ border: 'none', boxShadow: 'none' }}>
-                    <NextLink href={`/product/${product.slug}`} passHref>
-                      <CardActionArea>
-                        <CardMedia
-                          component="img"
-                          image={product.image}
-                          title={product.name}
-                        ></CardMedia>
-
-                        <Typography className={classes.twoLines}>
-                          {product.name}
-                        </Typography>
-
-                        <div style={{ textAlign: 'left ' }}>
-                          <Typography
-                            style={{
-                              fontSize: '12px',
-                              color: 'black',
-                              fontWeight: 400,
-                            }}
-                          >
-                            {product.starRating} | đã bán {product.sold}
-                          </Typography>
-                        </div>
-
-                        <Typography
-                          style={{
-                            fontWeight: 'bold',
-                            color: 'red',
-                            margin: '0px',
-                          }}
-                        >
-                          {product.price}đ
-                        </Typography>
-                      </CardActionArea>
-                    </NextLink>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </div>
-        </div>
-      </Grid>
-    </div>
-  </TabPanel>
-</Tabs>;
+  </Toolbar>
+</AppBar>;

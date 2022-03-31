@@ -27,114 +27,138 @@ export default function Layout({ title, children }) {
         <title>{title ? `${title} - tiki.vn` : 'Tiki.vn'}</title>
       </Head>
 
-      {/* position static positioned the bar according to the normal flow of the page */}
-      <AppBar position="static" className={classes.navbar}>
-        <Toolbar className={classes.customizeToolbar}>
-          <div className={classes.logoPosition}>
-            <div className={classes.logo}>
-              <Image src="/tiki.png" alt="tiki" width={55} height={40} />
+      {/* Header are splitted into 2 part: Upper part is class container (including Tiki logo, search bar etc)
+        Other part is the class bottomRoot (including freeship logo, tiki seller button etc)
+        
+      */}
+      <header className={classes.header}>
+        <div className={classes.container}>
+          <div className={classes.middleWrap}>
+            <div className={classes.middleLeftContainer}>
+              <div className={classes.logoMenu}>
+                <div className={classes.styleLogo}>
+                  <a href="http://localhost:3000/" className={classes.tikiLogo}>
+                    <Image src="/tiki.png" alt="tiki" width={60} height={40} />
+                  </a>
+                </div>
+              </div>
+              <div className={classes.formSearch}>
+                <div className={classes.formSearchForm}>
+                  <input
+                    type="text"
+                    placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn..."
+                    className={classes.formSearchInput}
+                  />
+                  <button className={classes.formSearchButton}>
+                    <BiSearchAlt size={20} />
+                    Tìm kiếm
+                  </button>
+                </div>
+              </div>
             </div>
-            <div className={classes.logo2}>
+            <div className={classes.headerUserShortcut}>
+              <div className={classes.headerAccountContainer}>
+                <BsPerson className={classes.personIcon} />
+                <span className={classes.userStyleItemText}>
+                  <span className={classes.userStyleNowrap}>
+                    Đăng nhập / Đăng ký
+                  </span>
+                  <span className={classes.accountLabel}>
+                    <span className={classes.taiKhoan}>Tài khoản</span>
+                    <AiFillCaretDown />
+                  </span>
+                </span>
+              </div>
+              <div className={classes.userStyleCartItem}>
+                <a href="#">
+                  <div className={classes.userStyleCartItemInner}>
+                    <div className={classes.cartWrapper}>
+                      <FiShoppingCart className={classes.cartIcon} />
+                    </div>
+                    <span className={classes.cartText}>Giỏ hàng</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={classes.bottomRoot}>
+          <div className={classes.container2}>
+            <a href="#" className={classes.freeshipIcon}>
               <Image
                 src="/freeship.png"
                 alt="freeship"
-                width={80}
+                width={83}
                 height={12}
               />
+            </a>
+            <div className={classes.headerQuickLinks}>
+              <a className={classes.headerQuickLinksItem}>trái cây</a>
+              <a className={classes.headerQuickLinksItem}>thịt, trứng</a>
+              <a className={classes.headerQuickLinksItem}>rau củ quả</a>
+              <a className={classes.headerQuickLinksItem}>sữa, bơ, phô mai</a>
+              <a className={classes.headerQuickLinksItem}>hải sản</a>
+              <a className={classes.headerQuickLinksItem}>gạo, mì ăn liền</a>
+              <a className={classes.headerQuickLinksItem}>đồ uống, bia rượu</a>
+              <a className={classes.headerQuickLinksItem}>bánh kẹo</a>
+            </div>
+            <a className={classes.tikiSeller}>
+              <MdOutlineStorefront className={classes.tikiSellerIcon} />
+              <span className={classes.tikiSellerText}>Bán hàng cùng Tiki</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div className={classes.styledCategoryTabWrapper}>
+        <div className={classes.miniContainer}>
+          <div className={classes.styledSimpleSlider}>
+            <div className={classes.miniContent}>
+              <span className={classes.slider}>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Thịt, rau củ</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Bách Hóa</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Nhà Cửa</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Điện Tử</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Thiết Bị Số</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Điện thoại</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Mẹ & Bé</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Làm Đẹp</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Gia Dụng</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Thời trang nữ</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Thời trang nam</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Giày nữ</div>
+                </a>
+                <a className={classes.contentSlider}>
+                  <div className={classes.cateName}>Túi nữ</div>
+                </a>
+              </span>
             </div>
           </div>
-
-          <div className={classes.searchBarPosition}>
-            <div className={classes.searchBar}>
-              {/* place holder = words that appear inside the search bar */}
-              <input
-                placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn..."
-                style={{ height: '35px', width: '600px' }}
-              />
-            </div>
-
-            <div className={classes.buttonPosition}>
-              <Typography>
-                {/* Icon imported from: https://react-icons.github.io/react-icons/ */}
-                <Button className={classes.button}>
-                  {/* size: icon size (in px) */}
-                  <BiSearchAlt size={20} />
-                  Tìm kiếm
-                </Button>
-              </Typography>
-            </div>
-
-            {/* suggest tag */}
-            {/* outer div (suggestWordsFinal) has relative position */}
-            <div className={classes.suggestWordsFinal}>
-              {/* inner divs (suggestWords) has display: inline-block. To make them appear in a single line */}
-              <div className={classes.suggestWords}>trái cây</div>
-              <div className={classes.suggestWords}>thịt trứng</div>
-              <div className={classes.suggestWords}>rau củ quả</div>
-              <div className={classes.suggestWords}>sữa, bơ, phô mai</div>
-              <div className={classes.suggestWords}>hải sản</div>
-              <div className={classes.suggestWords}>gạo, mì ăn liền</div>
-              <div className={classes.suggestWords}>đồ uống, bia rượu</div>
-              <div className={classes.suggestWords}>bánh kẹo</div>
-            </div>
-          </div>
-
-          {/* log in buttons */}
-          <BsPerson size={30} className={classes.personIcon} />
-          <div className={classes.loginButton}>
-            {/* #: mainpage */}
-            <Link href="#" underline="none">
-              <div style={{ fontSize: '12px', color: '#FFFFFF' }}>
-                Đăng nhập / Đăng ký
-              </div>
-            </Link>
-            <Link href="#" underline="none">
-              <div style={{ fontSize: '12px', color: '#FFFFFF' }}>
-                Tài khoản <AiFillCaretDown />
-              </div>
-            </Link>
-          </div>
-
-          <div
-            className={classes.shoppingCart}
-            style={{ fontSize: '12px', color: '#FFFFFF' }}
-          >
-            {/* icon from https://react-icons.github.io/react-icons/ */}
-            <FiShoppingCart size={30} />
-            <Link style={{ color: '#FFFFFF' }} href="#" underline="none">
-              Giỏ Hàng
-            </Link>
-          </div>
-
-          <div>
-            <Button className={classes.shoppingButton} variant="contained">
-              <MdOutlineStorefront />
-              Bán hàng cùng Tiki
-            </Button>
-          </div>
-        </Toolbar>
-      </AppBar>
-
-      {/* use in-line styling to make them appear in 1-line */}
-      <AppBar position="relative" className={classes.navbar2}>
-        <Toolbar className={classes.customizeToolbar2}>
-          <div className={classes.menuWordsPosition}>
-            {/* inner divs has display: inline-block to display them in a single line */}
-            <div className={classes.menuWords}>Thịt, Rau Củ</div>
-            <div className={classes.menuWords}>Bách Hóa</div>
-            <div className={classes.menuWords}>Nhà Cửa</div>
-            <div className={classes.menuWords}>Điện tử</div>
-            <div className={classes.menuWords}>Thiết bị số</div>
-            <div className={classes.menuWords}>Điện thoại</div>
-            <div className={classes.menuWords}>Mẹ & Bé</div>
-            <div className={classes.menuWords}>Gia Dụng</div>
-            <div className={classes.menuWords}>Thời trang nữ</div>
-            <div className={classes.menuWords}>Thời trang nam</div>
-            <div className={classes.menuWords}>Giày nữ</div>
-            <div className={classes.menuWords}>Túi nữ</div>
-          </div>
-        </Toolbar>
-      </AppBar>
+        </div>
+      </div>
 
       {/* footer */}
       {/* styling copied from tiki.vn, very easy but takes alot of time */}
