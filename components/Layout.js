@@ -20,7 +20,6 @@ import { MdOutlineStorefront } from 'react-icons/md';
 export default function Layout({ title, children }) {
   const classes = useStyles();
   return (
-    // page title //
     <div>
       <Head>
         {/* {product's name} - tiki.vn. If there is no product's name, then just tiki.vn */}
