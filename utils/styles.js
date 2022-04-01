@@ -171,6 +171,7 @@ const useStyles = makeStyles({
   },
   soldButton: {
     positon: 'relative',
+    marginBottom: '5px',
     textTransform: 'none',
     size: 'small',
     color: '#FFFFFF',

@@ -201,9 +201,9 @@ export default function Home() {
                       </CardActions>
 
                       <Box textAlign="center">
-                        <Button className={classes.soldButton}>
+                        <button className={classes.soldButton}>
                           Đã bán {product.sold}
-                        </Button>
+                        </button>
                       </Box>
                     </Card>
                   </Grid>
