@@ -37,7 +37,7 @@ export default function Layout({ title, children }) {
             <div className={classes.middleLeftContainer}>
               <div className={classes.logoMenu}>
                 <div className={classes.styleLogo}>
-                  <a href="http://localhost:3000/" className={classes.tikiLogo}>
+                  <a href="\" className={classes.tikiLogo}>
                     <Image src="/tiki.png" alt="tiki" width={60} height={40} />
                   </a>
                 </div>
