@@ -60,49 +60,124 @@ export default function Home() {
               >
                 {/* carousel images */}
                 <div>
-                  <Image src="/1.png" alt="1" width={824} height={274} />
+                  <Image
+                    src="/carouselImage1.png"
+                    alt="1"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/2.png" alt="2" width={824} height={274} />
+                  <Image
+                    src="/carouselImage2.png"
+                    alt="2"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/3.png" alt="3" width={824} height={274} />
+                  <Image
+                    src="/carouselImage3.png"
+                    alt="3"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/4.png" alt="4" width={824} height={274} />
+                  <Image
+                    src="/carouselImage4.png"
+                    alt="4"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/5.png" alt="5" width={824} height={274} />
+                  <Image
+                    src="/carouselImage5.png"
+                    alt="5"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/6.png" alt="6" width={824} height={274} />
+                  <Image
+                    src="/carouselImage6.png"
+                    alt="6"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/7.png" alt="7" width={824} height={274} />
+                  <Image
+                    src="/carouselImage7.png"
+                    alt="7"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/8.png" alt="8" width={824} height={274} />
+                  <Image
+                    src="/carouselImage8.png"
+                    alt="8"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/9.png" alt="9" width={824} height={274} />
+                  <Image
+                    src="/carouselImage9.png"
+                    alt="9"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/10.png" alt="10" width={824} height={274} />
+                  <Image
+                    src="/carouselImage10.png"
+                    alt="10"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/11.png" alt="11" width={824} height={274} />
+                  <Image
+                    src="/carouselImage11.png"
+                    alt="11"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/12.png" alt="12" width={824} height={274} />
+                  <Image
+                    src="/carouselImage12.png"
+                    alt="12"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/13.png" alt="13" width={824} height={274} />
+                  <Image
+                    src="/carouselImage13.png"
+                    alt="13"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/14.png" alt="14" width={824} height={274} />
+                  <Image
+                    src="/carouselImage14.png"
+                    alt="14"
+                    width={824}
+                    height={274}
+                  />
                 </div>
                 <div>
-                  <Image src="/15.png" alt="15" width={824} height={274} />
+                  <Image
+                    src="/carouselImage15.png"
+                    alt="15"
+                    width={824}
+                    height={274}
+                  />
                 </div>
               </Carousel>
             </div>
